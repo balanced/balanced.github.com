@@ -1,18 +1,18 @@
---- 
+---
 layout: post
 title: What is Balanced Payments?
-tags: 
+tags:
 - balanced
 - payments
 ---
-  
 
-![Balanced Payments](https://s3.amazonaws.com/uploads.hipchat.com/7183/93765/5
-z96l45ky93hx7f/blog_post_balanced_logo.png)
+<p class="entry-image" align="center">
+    <img alt="Balanced Payments" src="/img/blog_post_balanced_logo.png">
+</p>
 
 * * *
 
-  
+
 
 Balanced is a payments company that enables entrepreneurs and developers to
 create new and amazing e-commerce experiences. We’ve built a white-labeled API

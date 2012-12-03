@@ -1,63 +1,18 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Mending the Designer-Developer Discord by balanced</title>
+---
+layout: default
+description: This is the landing page
+---
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Mending the Designer-Developer Discord</h1>
-        <p></p>
+{% for post in site.posts limit: 2 %}
+<div class="hfeed">{% include post-article.html %}</div>
+{% endfor %}
 
+<aside>
+	<h3>Most recent posts</h3>
+	<ul class="posts-list hfeed">
+		{% for post in site.posts limit: 5 %}
+		{% include post-list-item.html %}
+		{% endfor %}
+	</ul>
+</aside>
 
-        <p class="view"><a href="https://github.com/balanced">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <p>A design is completed—photoshop templates, specs, images, and all—and handed over to a third-party developer. The developer implements the design, but not without some “creative” maneuvering to fill design gaps and override functionality decisions lost in translation. The back and forward feedback loop breaks down, and we end up with a shitty product.</p>
-
-<p>Such is the case with many agencies utilizing third-party vendors and even in-house departments treating design and development as separate entities. Coming from an agency background, I’ve seen firsthand the designer-developer relationship condemned to the catacombs where design details go to die and sound usability sits in limbo. Now working for <a href="https://balancedpayments.com">Balanced</a>, I am once again presented with this challenge. How then, do we mend the designer-developer discord?</p>
-
-<p>I am a designer by trade; <a href="https://github.com/mjallday">Marshall</a> is a developer, but by no means do we view each other as counterpoints to the same project. The notion that design and development have conflicting roles is detrimental to success. Approaching the task together with an open dialogue allows us to avoid hold-ups by bringing design and development closer via an iterative workflow. <strong>Mark Otto, web platform designer at Twitter and creator of Bootstrap, wisely said, “Good design is constant contact.”</strong> I couldn’t agree more. The benefits of working together allows for an ongoing exchange of ideas and discussions around critical questions like, “is this added feature worth the excess code?” or, “what’s done easily?” versus, “what’s nearly impossible to execute?” We also avoid the guessing game, “what did you mean by this behavior?” In this sense, despite our disparate titles, we feel we are both intimately involved in producing a quality design, masterminding for usability, and implementing the final product.</p>
-
-<h2>Lessons learned:</h2>
-
-<p>// ensure both designer and developer have a clear understanding of the problems and objectives of the project</p>
-
-<p>// keep an open dialogue and bounce ideas off of one another</p>
-
-<p>// don't be afraid to iterate; the goal is not to get it perfect the first time</p>
-
-<p>// make informed design and engineering decisions by collecting feedback  from the targeted audience, both during and after the development process</p>
-
-<p><img src="https://s3.amazonaws.com/uploads.hipchat.com/7183/93765/ghi3hekohzx53e6/dc_signature.png" alt="Damon"></p>
-
-<p><strong><a href="http://dribbble.com/damonc">Damon</a> / Designer, Balanced</strong></p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-30733850-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-  </body>
-</html>
