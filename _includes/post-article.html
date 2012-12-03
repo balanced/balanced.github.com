@@ -1,6 +1,6 @@
-{% if content == nil %}
+
 {% assign content = post.content %}
-{% endif %}
+
 
 <article itemscope itemtype="http://schema.org/BlogPosting" class="group caption_and_post_info hentry">
     <section class="caption group">
@@ -11,7 +11,7 @@
         </header>
 
         <section class="entry-content cont group">
-            {{ post.content }}
+            {{ content }}
         </section>
 
     </section>
