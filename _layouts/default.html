@@ -24,23 +24,19 @@
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-<section id="header-container">
-    <img class="displayed wrapper clearfix" src="/img/blog_logo_header.png">
+<section id="color_bar" class="wrapper clearfix">
+    <img class="displayed" src="/img/blog_logo_header.png">
 </section>
 
-<div id="main-container">
-<div id="main" class="wrapper clearfix">
-
+<section id="container" class="wrapper clearfix">
     {{ content }}
+</section> <!-- #main-container -->
 
-</div> <!-- #main -->
-</div> <!-- #main-container -->
-
-<div id="footer-container">
-<footer class="wrapper">
-    <h3></h3>
-</footer>
-</div> <!-- #footer-container -->
+<section id="footer-container">
+    <footer class="wrapper clearfix">
+        <h3></h3>
+    </footer>
+</section> <!-- #footer-container -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.8.2.min.js"><\/script>')</script>

@@ -3,9 +3,13 @@ layout: default
 description: This is the landing page
 ---
 
+<ul id="posts">
 {% for post in site.posts limit: 2 %}
-<div class="hfeed">{% include post-article.html %}</div>
+  <li class="hfeed post group">
+      {% include post-article.html %}
+  </li>
 {% endfor %}
+</ul>
 
 <aside>
 	<h3>Most recent posts</h3>

@@ -1,0 +1,866 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+
+    background-image: url('/img/background_website.png');
+}
+
+*:active, *:focus { outline-width: 0px; }
+img { max-width: 100% }
+.post .top.media img { width: 100%; }
+a { text-decoration: none; color: #78a22f; }
+a img { border-width: 0px; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+
+.group:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+    }
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+iframe#tumblr_controls {
+    top: 12px !important;
+}
+
+.roundedtable {
+    width: 465px;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    -moz-box-shadow: 3px 3px #cfcfcf;
+    -webkit-box-shadow: 3px 3px #cfcfcf;
+    box-shadow: 3px 3px #cfcfcf;
+}
+
+#color_bar {
+    height: 300px;
+    background-image: url('/img/bg_texture2_72px.jpg');
+}
+
+IMG.displayed {
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding-top: 39px;
+}
+
+#container {
+    width: 950px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+#header {
+    height: 48px;
+    margin: 0 0 60px 0;
+}
+
+#blog_info {
+    width: 700px;
+    margin: 0 60px 0 0;
+    float: left;
+}
+
+#blog_info h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 36px;
+    margin: 8px 0 0 0;
+}
+
+#blog_info h1 a {
+    color: #333333;
+}
+
+#blog_info h1 a:hover {
+    color: #000;
+}
+
+#blog_info h1 a:active {
+    position: relative;
+    top: 1px;
+}
+
+#blog_info p, #blog_info .cont {
+    color: #646464;
+    margin-top: 7px;
+}
+.cont {
+    margin-bottom: 7px;
+}
+
+#blog_avatar {
+    width: 188px;
+    position: relative;
+    float: right;
+
+}
+
+#blog_avatar a {
+    width: 48px;
+    height: 48px;
+
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, .21);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, .21);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+#blog_avatar img {
+    width: 48px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+#blog_avatar a::before {
+    content: " ";
+    width: 46px;
+    height: 46px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,.1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    display: block;
+}
+
+#blog_avatar:hover a {
+    width: 64px;
+    height: 64px;
+    top: -8px;
+    left: -8px;
+}
+
+#blog_avatar:hover a img {
+    width: 64px;
+}
+
+#blog_avatar:hover a::before {
+    width: 62px;
+    height: 62px;
+}
+
+#blog_avatar:active a {
+    top: -7px;
+    -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, .21);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, .21);
+}
+
+#posts {
+    width: 700px;
+    color: #4C4C4C;
+    margin: 0 60px 0 0;
+    float: left;
+}
+
+#posts .post {
+    list-style-type: none;
+    border-bottom: 1px solid #E6E6E6;
+    margin: 0 0 45px 0;
+    padding: 0 0 45px 0;
+}
+
+.top.audio * {
+    width: 700px;
+    height: 91px
+}
+
+.top.media {
+    line-height: 0;
+
+        -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, .27);
+        box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, .27);
+
+    position: relative;
+    display: inline-block;
+}
+
+.top.media.photoset {
+    line-height: 0;
+
+        -webkit-box-shadow: none;
+        box-shadow: none;
+
+    position: relative;
+    display: inline-block;
+}
+
+.media img {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.link_post .link {
+    color: #78a22f;
+    font-size: 21px;
+    font-weight: bold;
+    border: 1px solid rgba(120,162,47, 0.13);
+    background: rgba(120,162,47, 0.13);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 15px 53px 15px 20px;
+    position: relative;
+    display: block;
+}
+
+.link .arrow {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid #78a22f;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -8px;
+    display: block;
+}
+
+.link_post .link:hover {
+    border: 1px solid rgba(120,162,47, 0.2);
+    background: rgba(120,162,47, 0.2);
+}
+
+.link_post .link:active {
+    position: relative;
+    top: 1px;
+}
+
+#posts .post .caption_and_post_info.after_top_part {
+    border-top: 0;
+    margin: 30px auto auto auto;
+    padding-top: 0;
+}
+
+.post .caption {
+    width: auto;
+    float: none;
+}
+
+
+.post .caption {
+    width: 513px;
+    float: right;
+}
+
+
+.content_source {
+    margin-bottom: 20px;
+}
+
+.content_source img {
+    margin: 0 0 0 4px !important;
+    opacity: 0.7;
+    vertical-align: middle;
+}
+
+.caption a, .description a {
+    color: #78a22f;
+    padding: 0 1px;
+}
+
+.caption a:hover, .description a:hover {
+    background: rgba(120,162,47, 0.13);
+}
+
+.caption a:active, .description a:active {
+    background: rgba(120,162,47, 0.2);
+}
+
+.caption h2 {
+    font-size: 32px;
+    line-height: 33px;
+    margin: 0 0 18px 0;
+}
+
+.caption h2 a {
+    color: #333;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.caption h2 a:hover {
+    color: #78a22f;
+    background: transparent;
+}
+
+.caption blockquote {
+    border-left: 2px solid #E6E6E6;
+    padding: 1px 0 1px 20px;
+}
+
+.caption pre {
+    background: #eee;
+    font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Anonymous Pro", "Courier New", monospace, serif;
+    overflow: scroll;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.caption p,
+.caption ol,
+.caption ul,
+.caption pre,
+.caption h1,
+.caption h2,
+.post h3,
+.caption h4,
+.caption h5,
+.caption blockquote,
+.caption img,
+.caption embed,
+.caption object {
+    margin: 0 0 20px 0;
+}
+
+.caption p:empty {
+    display: none;
+}
+
+.caption iframe {
+    display: block !important;
+}
+
+.post .caption ul,
+.post .caption ol {
+    margin-left: 18px;
+}
+
+.caption .question {
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.caption .answer {
+    margin-top: 20px;
+}
+
+.caption .asker {
+    line-height: 24px;
+    margin: 25px 20px 0 23px;
+}
+
+.caption .asker img {
+    float: left;
+    margin: 0 7px 0 0;
+}
+
+.caption .asker a {
+    margin-left: 0;
+}
+
+.caption .quote {
+    color: #333;
+    font-weight: bold;
+}
+
+.quote span {
+    display: inline-block;
+}
+
+.quote.short_text {
+    font-size: 50px;
+    letter-spacing: -2px;
+    line-height: 48px;
+    margin: 0 0 18px 0;
+}
+
+.quote.short_text span {
+    margin: 0 0 0 -22px;
+}
+
+.quote.medium_text {
+    font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 36px;
+    margin: 0 0 20px 0;
+}
+
+.quote.medium_text span {
+    margin: 0 0 0 -13px;
+}
+
+.quote.long_text,
+.quote.text {
+    font-size: 24px;
+    line-height: 27px;
+    margin: 0 0 20px 0;
+}
+
+.quote.long_text span {
+    margin: 0 0 0 -9px;
+}
+
+.quote.larger_text {
+    font-size: 50px !important;
+    letter-spacing: -2px !important;
+    line-height: 48px !important;
+    margin: 0 0 18px 0 !important;
+}
+
+.quote.larger_text span {
+    margin: 0 0 0 -22px !important;
+}
+
+.quote_source {
+    margin: 0 0 20px 0 !important;
+}
+
+.caption .conversation {
+    margin-left: 0 !important;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+
+.conversation .chat_line {
+    padding: 10px 16px;
+}
+
+.conversation .chat_line.user1 {
+    background: #f5f5f5;
+}
+
+.conversation .chat_line.user2 {
+    background: #fff;
+}
+
+.conversation .chat_line.user3 {
+    background: #ddd;
+}
+
+.conversation .chat_line.user4 {
+    background: #ccc;
+}
+
+.post .post_info {
+    width: auto;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    list-style-type: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    margin: 1px 0 0 -3px;
+    overflow: hidden;
+}
+
+.post_info li {
+    line-height: 14px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.post_info li a {
+    margin: 0 10px 0 0;
+    padding: 0 2px 0 5px;
+}
+
+.post_info .timestamp {
+    color: #4c4c4c;
+    padding: 0 2px 0 5px;
+    display: inline-block;
+}
+
+.post_info .timestamp:hover {
+    background: rgba(0,0,0,.08);
+}
+
+.post_info .timestamp:active {
+    background: rgba(0,0,0,.1);
+}
+
+.post_info .notecount {
+    color: #4c4c4c;
+    padding: 0 2px 0 5px;
+    display: inline-block;
+}
+
+.post_info .notecount:hover {
+    background: rgba(0,0,0,.08);
+}
+
+.post_info .notecount:active {
+    background: rgba(0,0,0,.1);
+}
+
+/* Baselines */
+
+
+.timestamp.has_caption {
+    margin-top: 6px;
+}
+
+.timestamp.has_caption.with_title {
+    margin-top: 18px
+}
+
+
+.tag {
+    color: #78a22f;
+    display: table;
+}
+
+.tag span {
+    color: #4c4c4c;
+    display: table-cell;
+}
+
+.tag:hover {
+    background: rgba(120,162,47, 0.13);
+}
+
+.tag:hover span {
+    color: #78a22f;
+}
+
+.tag:active {
+    background: rgba(120,162,47, 0.2);
+}
+
+.post .post_info.floating {
+    width: 157px;
+    float: left;
+}
+
+.post .post_info.floating li {
+    float: none;
+}
+
+.post_notes {
+    clear: both;
+}
+
+ol.notes {
+    color: #4C4C4C;
+    font-size: 13px;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.7);
+    text-align: left;
+    list-style-type: none;
+    border-top: solid 1px #E6E6E6;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    margin: 40px auto auto auto;
+}
+
+ol.notes li.note {
+    border-bottom: solid 1px #E6E6E6;
+    padding: 9px 0 10px 0;
+}
+
+ol.notes li.note img.avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    vertical-align: -4px;
+    margin-right: 6px;
+}
+
+ol.notes a {
+    color: #4C4C4C;
+    text-decoration: underline;
+}
+
+    ol.notes a:hover {
+        color: #4C4C4C;
+    }
+
+ol.notes li.note blockquote {
+    border-color: #eee;
+    padding: 4px 10px;
+    margin: 10px 0px 0px 25px;
+}
+
+ol.notes li.note blockquote a {
+    text-decoration: none;
+}
+
+ol.notes li.note:last-child {
+    border-width: 0px;
+}
+
+#sidebar {
+    width: 188px;
+    color: #4c4c4c;
+    font-size: 14px;
+    margin: -8px 0 0 0;
+    float: right;
+}
+
+#sidebar .description {
+    line-height: 21px;
+    border-bottom: 1px solid #E6E6E6;
+    margin: 3px 0 20px 0;
+    padding: 0 0 20px 0;
+}
+
+#sidebar .links {
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    list-style-type: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    margin: 0 0 20px 0;
+    line-height: 20px;
+}
+
+#sidebar .links a {
+    color: #4c4c4c;
+}
+
+#sidebar .links a:hover {
+    color: #78a22f;
+}
+
+.links .icon {
+    width: 12px;
+    height: 12px;
+    background: #383838 url('http://static.tumblr.com/thpaaos/1xRm66voi/icons_sprite.png');
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+
+.links a:hover .icon {
+    background-color: #78a22f;
+}
+
+.ask .icon { background-position: 0 0; margin-bottom: -2px; }
+.submit .icon { background-position: 0 -12px; margin-bottom: -1px; }
+.website .icon { background-position: 0 0;
+                background-image:url('https://s3.amazonaws.com/uploads.hipchat.com/7183/93765/76alswbfamu9akx/tumblr_website_icon.png');
+                }
+.rss .icon { background-position: 0 -24px; }
+.archive .icon { background-position: 0 -36px; }
+
+.bubble {
+    color: #6f6f6f;
+    font-size: 13px;
+    line-height: 20px;
+    background: #f5f5f5;
+    border: 1px solid #d5d5d5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: relative;
+    display: none;
+}
+
+#twitter_container .bubble:first-child {
+    display: block;
+}
+
+.bubble .arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    display: block;
+}
+
+.bubble .arrow.fill {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #f5f5f5;
+    bottom: -8px;
+    left: 25px;
+}
+
+.bubble .arrow.border {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #d5d5d5;
+    bottom: -10px;
+    left: 23px;
+}
+
+.bubble:hover {
+    background: #f2f2f2;
+    border-color: #CFCFCF;
+}
+
+.bubble:hover .arrow.fill {
+    border-top-color: #F1F1F1;
+}
+
+.bubble:hover .arrow.border {
+    border-top-color: #d5d5d5;
+}
+
+.twitter_username {
+    max-width: 166px;
+    color: #4c4c4c;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    -webkit-font-smoothing: subpixel-antialiased;
+    margin: 11px 0 0 22px;
+    overflow: hidden;
+    display: inline-block;
+    opacity: 1;
+}
+
+.twitter_username:hover {
+    color: #78a22f;
+}
+
+#footer {
+    width: 700px;
+    color: #4C4C4C;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+#footer .copyright {
+    width: 50%;
+    float: left;
+}
+
+#footer .pagination {
+    width: 230px;
+    text-align: right;
+    float: right;
+    position: relative;
+}
+
+.pagination .count {
+    float: left;
+}
+
+.pagination .buttons {
+    width: 113px;
+    height: 30px;
+    margin: -2px 0 0 30px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.pagination .buttons.disabled {
+    z-index: 9;
+}
+
+.buttons a,
+.buttons li {
+    width: 56px;
+    height: 28px;
+    line-height: 999px;
+    text-align: center;
+    border: 1px solid #C8C8C8;
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+    background: #f1f1f1; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f1f1f1 0%, #e8e8e8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%); /* IE10+ */
+    background: linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e8e8e8',GradientType=0 );/* IE6-9 */
+    list-style-type: none;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.buttons.disabled li {
+    background: #f5f5f5;
+}
+
+.buttons a:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #E6E6E6;
+}
+
+.buttons .arrow {
+    width: 10px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    display: block;
+    background-image: url(http://static.tumblr.com/ogedyaw/xu1m8jxnf/arrow_sprite.png);
+}
+
+.buttons .left {
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    position: absolute;
+    left: 0;
+}
+
+.left .arrow {
+    background-position: 0 15px;
+    margin: -7px auto auto 20px;
+}
+
+.disabled .left .arrow {
+    background-position: 0 0;
+}
+
+.buttons .right {
+    border-left-width: 1px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    position: absolute;
+    right: 0;
+}
+
+.right .arrow {
+    background-position: 10px -71px;
+    margin: -7px auto auto 24px;
+}
+
+.disabled .right .arrow {
+    background-position: 10px -56px;
+}
+
+/* Protection for parents that have floating children */
+#header:after,
+#container:after,
+.caption_and_post_info:after,
+#footer:after
+.buttons:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+

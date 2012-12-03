@@ -1,7 +1,7 @@
---- 
+---
 layout: post
 title: Mending the designer-developer discord
-tags: 
+tags:
 - balanced
 - collaboration
 - design
@@ -13,6 +13,7 @@ tags:
 - workflow
 - designer
 ---
+
 A design is completed—photoshop templates, specs, images, and all—and handed
 over to a third-party developer. The developer implements the design, but not
 without some “creative” maneuvering to fill design gaps and override
