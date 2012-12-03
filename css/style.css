@@ -4,7 +4,7 @@ body {
   line-height: 24px;
   margin: 0;
   padding: 0;
-  background-image: url('/img/background_website.png');
+
 }
 
 section#header-container {
@@ -39,3 +39,22 @@ section.entry-content {
   box-shadow: 3px 3px #cfcfcf;;
 }
 
+a {
+  text-decoration: none;
+}
+
+article h1 {
+  font-size: 32px;
+  line-height: 33px;
+}
+
+article a {
+  color: #78a22f;
+  padding: 0 1px;
+}
+
+article h1 a {
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;;
+}
