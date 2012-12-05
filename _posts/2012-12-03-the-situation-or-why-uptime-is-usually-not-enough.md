@@ -1,3 +1,11 @@
+---
+layout: post
+title: The Situation Or Why Uptime Is Usually Not Enough
+tags:
+- balanced
+- uptime
+- status
+---
 TL;DR [Source on Github](https://github.com/balanced/status.balancedpayments.com), [Install instructions](https://github.com/balanced/status.balancedpayments.com/blob/master/INSTALL), [Picture of kittens](http://x66.xanga.com/598b827a5233247895732/b32225086.gif)
 
 3 months ago, after a dodgy deploy, the community [asked us](https://github.com/balanced/balanced-api/issues/39) to give them more insight into the state of our API. Being the kind of people who love to please we quickly pushed out a MVP using Stashboard but quickly discovered that it didn't give the granularity or accuracy we needed.
