@@ -589,11 +589,45 @@ ol.notes li.note:last-child {
 }
 
 #sidebar {
-    width: 188px;
+    width: 195px;
     color: #4c4c4c;
     font-size: 14px;
     margin: -8px 0 0 0;
     float: right;
+}
+
+#sidebar h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+#sidebar .hfeed {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar .hfeed .hentry {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 12px 6px;
+    line-height: 15px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+#sidebar .hfeed .published {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+}
+
+#sidebar .hfeed .entry-title {
+    font-size: 14px;
+    line-height: 16px;
 }
 
 #sidebar .description {
