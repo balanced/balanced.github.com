@@ -69,6 +69,12 @@ article .post_info abbr {
 article .post_info .byline {
   font-size: 12px;
   float: right;
+  font-style: italic;
+}
+
+article .post_info .author {
+  font-style: normal;
+  display: inline;
 }
 
 article .post_info .published {
