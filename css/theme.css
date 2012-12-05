@@ -46,9 +46,18 @@ iframe#tumblr_controls {
     background-image: url('/img/bg_texture2_72px.jpg');
 }
 
-img.displayed {
+#logo {
+    background: url('/img/blog_logo_header.png') no-repeat 0 0;
+    text-indent: -9999em;
+    overflow: hidden;
+    text-align: left;
+    width: 311px;
+    height: 214px;
     display: block;
     margin: 79px auto 0
+}
+
+img.displayed {
 }
 
 #container {
