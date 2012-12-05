@@ -1,3 +1,8 @@
+#posts .post {
+  border-bottom: none;
+  padding-bottom: 64px;
+}
+
 .post h1 {
 }
 .post h2 {
@@ -31,19 +36,51 @@ section#header-container img.displayed {
 }
 
 article {
-  margin-right: auto;
-  margin-left: auto;
-  width: 700px;
+  margin: 42px auto 0;
+  position: relative;
+  width: 666px;
   text-align: justify;
-}
-
-section.entry-content {
-  padding: 25px;
   background-color: white;
   border-radius: 5px 5px 5px 5px;
   -webkit-box-shadow: 3px 3px #cfcfcf;
   -moz-box-shadow: 3px 3px #cfcfcf;;
   box-shadow: 3px 3px #cfcfcf;;
+  padding: 32px;
+}
+
+article header {
+  margin: -74px 0 0 -32px;
+  position: absolute;
+}
+
+article header .entry-title {
+  margin: 0;
+}
+
+article .post_info {
+  line-height: 15px;
+  border-bottom: 4px solid #bbbbbb;
+  padding-bottom: 8px;
+}
+
+article .post_info address,
+article .post_info abbr {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+article .post_info .byline {
+  font-size: 12px;
+  float: right;
+}
+
+article .post_info .published {
+  border: none;
+}
+
+section.entry-content {
+  margin: 32px 0;
 }
 
 a {
@@ -64,4 +101,40 @@ article h1 a {
   color: #333;
   font-weight: bold;
   letter-spacing: 1px;;
+}
+
+article .post_meta {
+  border-top: 1px solid #bbbbbb;
+}
+
+article .post_meta ul {
+  margin: 0;
+  padding: 4px 0 0;
+}
+
+article .post_meta ul li {
+  float: left;
+}
+
+article .post_meta .tags {
+  float: left;
+  line-height: 20px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+article .post_meta .tags li {
+  margin-right: 4px;
+}
+
+article .post_meta .tags span {
+  color: #78a22f;
+}
+
+article .post_meta .social_sharing {
+  float: right;
+}
+
+article .post_meta .social_sharing li {
+  margin-left: 4px;
 }

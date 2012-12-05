@@ -1,34 +1,28 @@
-
 {% assign content = post.content %}
-
-
 <article itemscope itemtype="http://schema.org/BlogPosting" class="group caption_and_post_info hentry">
-    <section class="caption group">
-        <header>
-            <h2 itemprop="name" class="entry-title">
-                <a href="{{ site.url }}{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-            </h2>
-        </header>
-
-        <section class="entry-content cont group">
-            {{ content }}
-        </section>
-
+    <header>
+        <h2 itemprop="name" class="entry-title">
+            <a href="{{ site.url }}{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+        </h2>
+    </header>
+    <div class="post_info">
+        <abbr class="published updated" title="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</abbr>
+        {% if post.author %}
+        <span class="byline">posted by:
+          <address class="vcard author"><span class="fn">{{ post.author }}</span></address>
+        </span>
+        {% endif %}
+    </div>
+    <section class="entry-content cont group">
+        {{ content }}
     </section>
-
-    <footer class="end-of-post">
-        <ul class="post_info floating">
-            <li class="timestamp has_caption with_title">
-                <abbr class="published updated" title="{{ post.date | date_to_xmlschema }}">
-                    {{ post.date | date_to_string }}
-                </abbr>
-            </li>
-            <li class="has_caption with_title">
-                <address class="vcard author"><span class="fn">{{ post.author }}</span></address>
-            </li>
+    <footer class="post_meta">
+        <ul class="tags">
         {% for tag in post.tags %}
             <li><a href="/tag#{{ tag }}" rel="tag" class="tag"><span>#</span>{{ tag }}</a></li>
         {% endfor %}
+        </ul>
+        <ul class="social_sharing">
             <li>
                 <g:plusone size="medium" href="{{ site.url }}{{ post.url }}"></g:plusone>
             </li>
@@ -42,4 +36,3 @@
         </ul>
     </footer>
 </article>
-

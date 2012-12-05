@@ -42,21 +42,18 @@ iframe#tumblr_controls {
 }
 
 #color_bar {
-    height: 300px;
+    height: 280px;
     background-image: url('/img/bg_texture2_72px.jpg');
 }
 
-IMG.displayed {
-display: block;
-margin-left: auto;
-margin-right: auto;
-padding-top: 39px;
+img.displayed {
+    display: block;
+    margin: 79px auto 0
 }
 
 #container {
-    width: 950px;
-    margin: 0 auto;
-    padding: 60px 20px;
+    width: 960px;
+    margin: 80px auto 32px;
 }
 
 #header {
@@ -252,16 +249,8 @@ padding-top: 39px;
 }
 
 .post .caption {
-    width: auto;
-    float: none;
+    width: 100%;
 }
-
-
-.post .caption {
-    width: 513px;
-    float: right;
-}
-
 
 .content_source {
     margin-bottom: 20px;
@@ -454,7 +443,7 @@ padding-top: 39px;
     background: #ccc;
 }
 
-.post .post_info {
+.post_meta ul {
     width: auto;
     font-size: 12px;
     font-family: 'Times New Roman', Times, serif;
