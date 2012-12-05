@@ -105,6 +105,10 @@ article a {
   padding: 0 1px;
 }
 
+article a:hover {
+	text-decoration: underline;
+}
+
 article h1 a {
   color: #333;
   font-weight: bold;
