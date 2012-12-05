@@ -1,29 +1,34 @@
 ---
 layout: post
-title: The Situation Or Why Uptime Is Usually Not Enough
+title: The Evolution of a Status page
+author: Marshall Jones
 tags:
 - balanced
 - uptime
 - status
 ---
-TL;DR [Source on Github](https://github.com/balanced/status.balancedpayments.com), [Install instructions](https://github.com/balanced/status.balancedpayments.com/blob/master/INSTALL), [Picture of kittens](http://x66.xanga.com/598b827a5233247895732/b32225086.gif)
 
-3 months ago, after a dodgy deploy, the community [asked us](https://github.com/balanced/balanced-api/issues/39) to give them more insight into the state of our API. Being the kind of people who love to please we quickly pushed out a MVP using Stashboard but quickly discovered that it didn't give the granularity or accuracy we needed.
+TL;DR
+* [Source on Github](https://github.com/balanced/status.balancedpayments.com)
+* [Install instructions](https://github.com/balanced/status.balancedpayments.com/blob/master/INSTALL)
+* [Picture of kittens](http://x66.xanga.com/598b827a5233247895732/b32225086.gif)
+
+Roughly 3 months ago, after some unexpected downtime, our community [asked us](https://github.com/balanced/balanced-api/issues/39) for more insight into the state of our API. Being the kind of people who love to please, we quickly pushed out an MVP using [Stashboard](http://www.stashboard.org/) but quickly discovered that it didn't give the granularity or accuracy we needed.
 
 ### El Problem
 
 We sat down and brainstormed what we need to accurately reflect the state of the system to satisfy customers:
 
-* We provide 3 distinct services that our customers interact with, so we should show these separately.
-* Because Balanced is distributed, parts of our system can go down while other parts are operating normally, therefore there is no digital up/down state.
-* Everyone in the company needs to be able to communicate issues, but if something goes wrong in the middle of the night the status page should automatically announce this.
+* We provide 3 distinct services that our customers interact with, so we should show the status of each of these service uptime separately.
+* Balanced is distributed. Parts of our system can go down while other parts are operating normally, therefore, there is no digital up/down state.
+* Everyone in the company needs to be able to communicate issues, but, if something goes wrong in the middle of the night the status page should automatically announce this.
 * Customers want notifications pushed to them.
-* This is 2012, we want real-time stats
+* It's almost 2013, we want real-time stats!
 * At the time Balanced had 8 employees, 5 of them were engineers, -1 of them had time to build the system.
 
 ### Quick, someone copy and paste a solution
 
-Everyone knows the quickest way to solve a problem is to piggyback on someone else's hard work. With this in mind we started exploring the existing commercial and open source products in the market.
+Everyone knows the quickest way to solve a problem is to piggyback on someone else's hard work. With this in mind, we started exploring the existing commercial and open source products in the market.
 
 * **Stashboard**
 
@@ -47,7 +52,7 @@ Like all good engineers I took the chance to try something new, we run on AWS an
 
 #### Good developers build, great designers steal
 
-In the meantime, Damon the designer, began scouring the web for inspiration. After checking out some amazing designs we found [Heroku's status page](https://status.heroku.com/) and [whipped up a mock](https://github.com/balanced/balanced-api/issues/12) based on that. We quickly built our a static HTML version and then sat down to figure out how to get information into the app.
+In the meantime, our designer, Damon, began scouring the web for inspiration. After checking out some amazing designs we found [Heroku's status page](https://status.heroku.com/) and [whipped up a mock](https://github.com/balanced/balanced-api/issues/12) based on that. We quickly built our a static HTML version and then sat down to figure out how to get information into the app.
 
 Internally we've both leveraged and built a slew of tools, I had it easy, all I needed to do was pick and choose and then write some glue to string everything together. Since we couldn't get the HTTP status codes from the ELB we dropped down a level and decided to parse the NGINX logs. These almost always correspond with the actual status code the user got so we consider them our authoritative source for deciding if a request succeeded. We already log these to a centralised server using [RSYSLOG](http://www.rsyslog.com/) so I already had a data source to draw from. Next, I went and brewed a fresh pot of coffee and bestowed it upon bninja for his prescient work in building our log parser [Slurp](https://github.com/bninja/slurp). We wrote a quick Slurp script that read the [HTTP status code](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) from each request and then fed them into [Graphite](http://graphite.wikidot.com/) buckets. Each bucket was based on service name (`DASHBOARD`, `API`, `JS`) and then response code family (`2xx`, `3xx`, `4xx`, `5xx`, and a special case `timeout` for slow requests).
 
