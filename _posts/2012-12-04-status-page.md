@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why Stashboard and Pingdom Weren't Enough: The Evolution of a Status Page
+title: "Why Stashboard and Pingdom Weren't Enough: The Evolution of a Status Page"
 author: Marshall Jones
 tags:
 - balanced
