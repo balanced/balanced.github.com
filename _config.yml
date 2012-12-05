@@ -1,9 +1,9 @@
-title: Balanced Payments
+title: "Balanced: Blog"
 #url: http://www.mydomain.com
 
 markdown: maruku
 pygments: true
-permalink: /:year/:month/:day/:title
+permalink: :title
 
 lsi: true
 paginate: 20
