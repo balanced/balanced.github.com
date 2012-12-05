@@ -3,7 +3,7 @@ title: "Balanced: Blog"
 
 markdown: maruku
 pygments: true
-permalink: :title
+permalink: /:title
 
 lsi: true
 paginate: 20
