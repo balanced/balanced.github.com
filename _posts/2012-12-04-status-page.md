@@ -13,27 +13,27 @@ TL;DR
 * [Install instructions](https://github.com/balanced/status.balancedpayments.com/blob/master/INSTALL)
 * [Picture of kittens](http://x66.xanga.com/598b827a5233247895732/b32225086.gif)
 
-Roughly 3 months ago and after some unexpected downtime, our community [asked us](https://github.com/balanced/balanced-api/issues/39) for more insight into the state of our API. We quickly pushed out an MVP using [Stashboard](http://www.stashboard.org/) being the kind of people who love to please but quickly discovered that it didn't give the granularity or accuracy we needed.
+Roughly 3 months ago and after some unexpected downtime, our community [asked us](https://github.com/balanced/balanced-api/issues/39) for more insight into the state of our API. We quickly pushed out an MVP using [Stashboard](http://www.stashboard.org/), given our people-pleasing nature, but, quickly discovered that it didn't give the granularity or accuracy we needed.
 
 ### El Problem
 
-We sat down and brainstormed what we need to accurately reflect the state of the system to satisfy customers:
+We sat down and brainstormed what was need to accurately reflect the state of the system to satisfy customers:
 
-* We provide 3 distinct services that our customers interact with, so we should show the status of each of these service uptime separately.
-* Balanced is distributed. Parts of our system can go down while other parts are operating normally, therefore, there is no digital up/down state.
+* We provide 3 distinct services that our customers interact with, so we should show the uptime of each of these services separately.
+* Balanced is distributed -- so, we must reflect what parts of our system are up or down while other parts are operating normally, therefore, there is no absolute up/down state.
 * Everyone in the company needs to be able to communicate issues, but, if something goes wrong in the middle of the night the status page should automatically announce this.
-* The status page should show the history of incidents in addition to the uptime percentage
-* Customers want notifications pushed to them.
+* The status page should also show the history of incidents in addition to the uptime percentage.
+* Customers want notifications pushed to them, so there needs to be some way for them to subscribe.
 * It's almost 2013, we want real-time stats!
 * At the time Balanced had 8 employees, 5 of them were engineers, -1 of them had time to build the system.
 
 ### Quick, someone copy and paste a solution
 
-Everyone knows the quickest way to solve a problem is to piggyback on someone else's hard work and started exploring the existing commercial and open source products in the 
+Everyone knows the quickest way to solve a problem is to piggyback on someone else's hard work and started exploring the existing commercial and open source products in the wild:
 
 #### Stashboard
 
-  [Stashboard](http://www.stashboard.org/) was the go to. It looks reasonable out of the box, it's widely supported, it takes about 10 seconds to setup. We had stashboard up and running and added our 3 services. 100% uptime ensued. The problem was that we _didn't_ have—100% uptime. Nobody (us included) believed the status page, which made it useless. Clearly our health checks were insufficient in this case.
+  [Stashboard](http://www.stashboard.org/) was the go to. It looks reasonable out of the box, it's widely supported, it takes about 10 seconds to setup. We had stashboard up and running and added our 3 services. 100% uptime ensued. The problem was that we _didn't_ have—100% uptime. Nobody (us included) believed the status page, which made it useless. Clearly, health checks are insufficient in this case.
 
 #### Pingdom
 
