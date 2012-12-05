@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Evolution of a Status page
-author: Marshall Jon
+author: Marshall Jones
 tags:
 - balanced
 - uptime
