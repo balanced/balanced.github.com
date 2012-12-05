@@ -36,6 +36,7 @@ article {
   -moz-box-shadow: 3px 3px #cfcfcf;;
   box-shadow: 3px 3px #cfcfcf;;
   padding: 32px;
+  font-size: 15px;
 }
 
 article header {
@@ -85,6 +86,11 @@ article .post_info .author {
 article .post_info .published {
   border: none;
 }
+
+article code {
+  font-size: 12px;
+}
+
 
 section.entry-content {
   margin: 32px 0;
