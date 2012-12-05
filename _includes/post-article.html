@@ -29,8 +29,10 @@
             <li>
                 <a href="https://twitter.com/share" class="twitter-share-button"
                    data-url="{{ site.url }}{{ post.url }}"
-                   data-text="{% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %}">
-                    Tweet
+                   data-text="{% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %}"
+                   data-count="none"
+                   data-lang="en">
+                    tweet
                 </a>
             </li>
         </ul>
