@@ -161,9 +161,10 @@ img.displayed {
 }
 
 #posts {
-    width: 700px;
+    width: 730px;
     color: #4C4C4C;
-    margin: 0 60px 0 0;
+    margin: 0 35px 0 0;
+    padding: 0;
     float: left;
 }
 

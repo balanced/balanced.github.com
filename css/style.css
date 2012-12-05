@@ -53,10 +53,15 @@ article header .entry-title {
   margin: 0;
 }
 
+article header .entry-title a {
+  color: #000000;
+}
+
 article .post_info {
   line-height: 15px;
-  border-bottom: 4px solid #bbbbbb;
+  border-bottom: 4px solid #bbbdfb;
   padding-bottom: 8px;
+  color: #000000
 }
 
 article .post_info address,
@@ -100,7 +105,7 @@ article h1 a {
 }
 
 article .post_meta {
-  border-top: 1px solid #bbbbbb;
+  border-top: 1px solid #666;
 }
 
 article .post_meta ul {
