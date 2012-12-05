@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Damon Chin
 title: Mending the designer-developer discord
 tags:
 - balanced

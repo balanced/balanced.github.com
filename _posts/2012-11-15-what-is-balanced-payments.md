@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Jareau Wade
 title: What is Balanced Payments?
 tags:
 - balanced
