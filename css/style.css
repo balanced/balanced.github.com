@@ -1,8 +1,3 @@
-#posts .post {
-  border-bottom: none;
-  padding-bottom: 64px;
-}
-
 .post h1 {
 }
 .post h2 {
@@ -32,7 +27,7 @@ section#header-container img.displayed {
 }
 
 article {
-  margin: 42px auto 0;
+  margin: 42px 0 0;
   position: relative;
   width: 666px;
   text-align: justify;
@@ -59,7 +54,7 @@ article header .entry-title a {
 
 article .post_info {
   line-height: 15px;
-  border-bottom: 4px solid #bbbdfb;
+  border-bottom: 4px solid #bbbdbf;
   padding-bottom: 8px;
   color: #000000
 }
