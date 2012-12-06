@@ -12,7 +12,6 @@ TL;DR
 * [Balanced status page](https://status.balancedpayments.com)
 * [Source on Github](https://github.com/balanced/status.balancedpayments.com)
 * [Install instructions](https://github.com/balanced/status.balancedpayments.com/blob/master/INSTALL)
-* [status.balancedpayments.com](https://status.balancedpayments.com)
 * [Picture of kittens](http://x66.xanga.com/598b827a5233247895732/b32225086.gif)
 
 Roughly 3 months ago and after some unexpected downtime, our community [asked us](https://github.com/balanced/balanced-api/issues/39) for more insight into the state of our API. We quickly pushed out an MVP using [Stashboard](http://www.stashboard.org/), given our people-pleasing nature, but, quickly discovered that it didn't give the granularity or accuracy we needed.
