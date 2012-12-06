@@ -9,6 +9,7 @@ tags:
 ---
 
 TL;DR
+* [Balanced status page](https://status.balancedpayments.com)
 * [Source on Github](https://github.com/balanced/status.balancedpayments.com)
 * [Install instructions](https://github.com/balanced/status.balancedpayments.com/blob/master/INSTALL)
 * [Picture of kittens](http://x66.xanga.com/598b827a5233247895732/b32225086.gif)
