@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hypermedia APIs and You"
-author: [Mahmoud Abdelkader](https://twitter.com/mahmoudimus)
+author: Mahmoud Abdelkader
 tags:
 - rest
 - hateoas
@@ -129,6 +129,6 @@ internally, let us know!
 [Open up an issue on Github](https://github.com/balanced/balanced-api/issues)
 and we'll keep you updated on our progress of open sourcing it.
 
-You can reach me on twitter (https://twitter/mahmoudimus) or email me:
+You can reach me on [twitter](https://twitter/mahmoudimus) or email me:
 m [@] balancedpayments.
 
