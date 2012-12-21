@@ -4,3 +4,5 @@ _site
 *.swp
 _includes/\#*
 _includes/\.\#*
+
+*.iml
