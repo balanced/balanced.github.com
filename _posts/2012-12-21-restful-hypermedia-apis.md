@@ -1,7 +1,7 @@
 ---
 layout: post
-author: [Mahmoud Abdelkader
-title: Hypermedia APIs and You
+title: "Hypermedia APIs and You"
+author: [Mahmoud Abdelkader](https://twitter.com/mahmoudimus)
 tags:
 - rest
 - hateoas
