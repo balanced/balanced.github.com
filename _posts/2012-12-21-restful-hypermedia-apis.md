@@ -114,9 +114,11 @@ this link? Nope.
 
 Steve Klabnik and the rest of the
 [rails-api](https://github.com/rails-api/rails-api) team are working
-to make the tooling available for the Ruby and Rails community. I have
-a gut feeling that they've realized that the tooling for hypermedia
-APIs just does not exist.
+to make the tooling available for the Ruby and Rails community. The
+[rails-api](https://github.com/rails-api/rails-api) project is for
+[**ALL** apis, not necessarily just hypermedia ones] [1]. I have a gut
+feeling that they've realized that the tooling for hypermedia APIs
+just does not exist.
 
 If you're using Python, you're in luck. The most recent versions of
 [django-rest-framework](http://django-rest-framework.org/) groks most
@@ -132,3 +134,4 @@ and we'll keep you updated on our progress of open sourcing it.
 You can reach me on [twitter](https://twitter/mahmoudimus) or email me:
 m [@] balancedpayments.
 
+ [1]: https://twitter.com/steveklabnik/status/282209954285359105
