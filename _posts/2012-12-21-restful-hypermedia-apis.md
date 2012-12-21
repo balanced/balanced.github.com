@@ -47,13 +47,20 @@ to establish contractual endpoint obligations for consuming services.
 
 * The search for the mythical universal "standard" API client.
 
-Fielding's dissertation, in its essence, allows leveraging a
-combination of hypermedia clients to explore APIs. There's no need to
-invent a universal "standard" API client, you are already using one
-right now. It's the web browser that's reading this piece of writing
-now. It follows a defined protocol specification, leverages content
-negotiation to control the layout of the server's response, respects
-redirects, etc.
+There's no need to invent a universal "standard" API client, you are
+already using one right now. It's the web browser that's reading this
+piece of writing now. It follows a defined protocol specification,
+leverages content negotiation to control the layout of the server's
+response, respects redirects, etc.
+
+There is nothing stopping you from using many API clients to explore
+an API, in fact, we do so now:
+
+ - We browse documentation using the web browser
+ - We keep an `ipython`, `pry`, or `curl` on our terminal
+
+These are our tools to play with HTTP APIs and interactively explore
+them.
 
 * What about self documentation? What's that all about?
 
@@ -81,8 +88,10 @@ that?
 
 [Balanced](https://balancedpayments.com) is experimenting with this
 internally and we've noticed it makes testing your API significantly
-easier. We can leverage all the web scraping tools like [phantomJS]()
-and [selenium]() and interact with our API using HTTP.
+easier. We can leverage all the web scraping tools like
+[phantomJS](http://phantomjs.org/) and
+[selenium](http://seleniumhq.org/) and interact with our API using
+HTTP.
 
 This is one of the most important parts about hypermedia APIs. The
 reason the benefits aren't clear to developers stems from the lack of
@@ -110,9 +119,16 @@ a gut feeling that they've realized that the tooling for hypermedia
 APIs just does not exist.
 
 If you're using Python, you're in luck. The most recent versions of
-[django-rest-framework]() groks most of these principles and their demo
-applications demonstrate appropriate hypermedia APIs principles.
+[django-rest-framework](http://django-rest-framework.org/) groks most
+of these principles and their demo applications demonstrate
+appropriate hypermedia APIs principles.
 
-If you're interested in some of the tooling that Balanced has
-experimented with internally, let us know! Open up an issue on Github
+If you're interested in some of the tooling that
+[Balanced](https://balancedpayments.com) has experimented with
+internally, let us know!
+[Open up an issue on Github](https://github.com/balanced/balanced-api/issues)
 and we'll keep you updated on our progress of open sourcing it.
+
+You can reach me on twitter (https://twitter/mahmoudimus) or email me:
+m [@] balancedpayments.
+
