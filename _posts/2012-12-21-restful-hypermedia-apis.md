@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Mahmoud Abdelkader
+author: [Mahmoud Abdelkader
 title: Hypermedia APIs and You
 tags:
 - rest
@@ -9,7 +9,7 @@ tags:
 - balanced
 ---
 
-[DHH](https://twitter.com/dhh)'s post about
+[David Heinemeier Hansson](https://twitter.com/dhh)'s post about
 [hypermedia APIs](http://37signals.com/svn/posts/3373-getting-hyper-about-hypermedia-apis)
 has sparked some very interesting discussion about the usefulness of
 hypermedia APIs, but the visceral reaction to the API was surprising.
