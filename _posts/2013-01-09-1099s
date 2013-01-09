@@ -10,26 +10,27 @@ tags:
 - tax forms
 ---
 
-As an online marketplace, you're responsible for submitting 1099-misc 
-forms to the IRS for any sub-contractors that makes more than $600 a year
-on your platform.
+Online marketplaces are responsible for submitting 1099-misc 
+forms to the IRS for any sub-vendors that makes more than $600 a year
+on their platform.
 
-As a payment processor, [Balanced](http://balancedpayments.com) is responsible for reporting 1099-K forms to the 
-IRS and the merchants selling goods or services on our marketplace partners platforms,
-but only when they make more than $20,000 from 200+ transactions in a year.
+As a payment processor, [Balanced](http://balancedpayments.com) is responsible for reporting 1099-K forms to the IRS for merchants selling goods or services on our marketplace partners' platforms, but only when those merchants make more than $20,000 from 200+ transactions in a year.
 
-[Requirements for reporting 1099-misc](http://www.irs.gov/instructions/i1099msc/ar02.html#d0e931):
+#### [Requirements for reporting 1099-misc](http://www.irs.gov/instructions/i1099msc/ar02.html#d0e931):
+
 - What is nonemployee compensation?   If the following four conditions are met, you must generally report a payment as nonemployee compensation.
 - You made the payment to someone who is not your employee;
 - You made the payment for services in the course of your trade or business (including government agencies and nonprofit organizations);
 - You made the payment to an individual, partnership, estate, or, in some cases, a corporation; and
 - You made payments to the payee of at least $600 during  the year.
 
-[Requirements for reporting 1099-K](http://www.irs.gov/Businesses/New-1099-K-Reporting-Requirements-for-Payment-Settlement-Entities):
-Beginning in January, 2012, payment settlement entities (PSEs) are required by the Housing Assistance Tax Act of 2008 to report on Form 1099-K the following transactions:
+#### [Requirements for reporting 1099-K](http://www.irs.gov/Businesses/New-1099-K-Reporting-Requirements-for-Payment-Settlement-Entities):
+
+Beginning in January, 2012, payment settlement entities (PSEs) are required by the Housing Assistance Tax Act of 2008 to report on Form 1099-K for the following transactions.
+
 Payments in settlement of third party network transactions IF:
+
 - Gross payments to a participating payee exceed $20,000; AND
 - There are more than 200 transactions with the participating payee.
 
-I wanted to bring this up since it's January and many of you are filing your tax form this month. How are you filing your 1099 forms this year?
-
+#### Are you submitting 1099s this year? If so, how?
