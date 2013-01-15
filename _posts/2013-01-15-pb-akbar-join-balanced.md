@@ -25,5 +25,5 @@ We're grateful to be able to add such talented people to our family, and look fo
 
 Happy payments!
 
-
+____
 UPDATE: [Ken Yeung](http://www.twitter.com/thenextkenyeung) of TheNextWeb covered the story on 1/15/13: ["Balanced nabs Eventbrite exec Patrick Breitenbach as Operations chief to boost its global expansion"](http://thenextweb.com/insider/2013/01/15/balanced-hires-eventbrite-exec-patrick-breitenbach/)
