@@ -1,3 +1,13 @@
+---
+layout: post
+author: Jareau Wade
+title: "Balanced Adds Former PayPal & Airbnb Execs to Team"
+tags:
+- balanced
+- new hires
+- international
+---
+
 Today, we're happy to announce that the Balanced team is getting a little bit bigger: 
 
 #### Balanced Hires Former Eventbrite & PayPal Exec. as Head of Operations
