@@ -18,3 +18,7 @@ We're very excited to be working with the great team at Art.sy!
 
 You can stay up to date with announcements from Balanced by following us on Twitter:
 [@balanced](http://www.twitter.com/balanced)
+
+---
+
+Help spread the word, upvote on HN (news.ycombinator.com/item?id=5069665) or [retweet](https://twitter.com/balanced/status/291651784445931520).
