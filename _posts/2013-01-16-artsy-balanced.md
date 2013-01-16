@@ -16,6 +16,5 @@ Art.sy's mission is to make all the world's art accessible to anyone with an Int
 
 We're very excited to be working with the great team at Art.sy!
 
-- --
 You can stay up to date with announcements from Balanced by following us on Twitter:
 [@balanced](http://www.twitter.com/balanced)
