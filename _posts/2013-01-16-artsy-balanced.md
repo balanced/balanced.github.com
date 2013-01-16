@@ -1,5 +1,13 @@
-### Art.sy selects Balanced to Power it's eCommerce Transactions 
-
+---
+layout: post
+author: Jareau Wade
+title: "Art.sy selects Balanced to Power it's eCommerce Transactions"
+tags:
+- balanced
+- partnerships
+- marketplaces
+---
+#### Art.sy + Balanced
 Balanced works with many existing online marketplaces, helping them move money between buyers and sellers. But over the past few months Balanced has helped several large online communities actually *become* marketplaces. 
 
 Continuing that trend, Balanced is very happy to announce that it has been selected by [Art.sy](http://artsy.net) to power the New York-based art platform's eCommerce transactions.
