@@ -15,6 +15,7 @@ Continuing that trend, Balanced is very happy to announce that it has been selec
 Art.sy's mission is to make all the world's art accessible to anyone with an Internet connection, and it's off to a great start with over 21,000 pieces of art available for viewing on it's platform. Now, users can purchase select pieces directly from the Art.sy site using Balanced's marketplace payments system. Check out their holiday collection as an example: [Art.sy Collecting](http://artsy.net/collecting).
 
 We're very excited to be working with the great team at Art.sy!
+
 - --
 You can stay up to date with announcements from Balanced by following us on Twitter:
 [@balanced](http://www.twitter.com/balanced)
