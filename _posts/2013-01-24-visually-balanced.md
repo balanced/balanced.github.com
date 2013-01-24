@@ -24,7 +24,4 @@ For Visual.ly, adding the marketplace functionality was a clear next step, since
 Adam Breckler, co-founder and head of product shares [why Visual.ly is using Balanced for their marketplace payments](http://www.quora.com/Balanced/Why-do-you-use-Balanced-for-payments/answer/Adam-Breckler) on Quora. 
 
 #### This is becoming a trend
-Balanced has helped several other online communities - including [reddit](redditgifts.com/marketplace) and [Fancy](thefancy.com) -  add a marketplace-style  ecommerce experiences to their sites. Last week, it was announced that [Balanced is behind Art.sy's ecommerce transactions](blog.balancedpayments.com/artsy-balanced) as well. If you run a large online community or network and are looking for ways to monetize and add value to your users at the same time, please contact us at bd@balancedpayments.com. 
-
---- 
-Spread the word! Use the buttons below to share on [HN](link to HN post) and [Twitter](link to tweet).
+Balanced has helped several other online communities - including [reddit](redditgifts.com/marketplace) and [Fancy](thefancy.com) -  add a marketplace-style  ecommerce experiences to their sites. Last week, it was announced that [Balanced is behind Art.sy's ecommerce transactions](blog.balancedpayments.com/artsy-balanced) as well. If you run a large online community or network and are looking for ways to monetize and add value to your users at the same time, please contact us at bd@balancedpayments.com.
