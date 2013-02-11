@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jareau Wade
-title: "Customer Profile: Forge - Simple Online Payments""
+title: "Customer Profile: Forge"
 tags:
 - balanced
 - payments
