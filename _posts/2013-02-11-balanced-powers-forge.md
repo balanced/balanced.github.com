@@ -28,4 +28,4 @@ Forge selected Balanced as the payments engine under it's hood because of the un
  If you'd like to be featured in one of Balanced's customer profiles please email support at balancedpayments.com.
  
 ---
-The guys at Forge posted thier work to HN: [http://news.ycombinator.com/item?id=5214218](http://news.ycombinator.com/item?id=5214218)
+The guys at Forge posted their work to HN: [http://news.ycombinator.com/item?id=5214218](http://news.ycombinator.com/item?id=5214218)
