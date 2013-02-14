@@ -47,7 +47,7 @@ Like I said, Balanced is the payments platform for online marketplace, so it's n
 We don't want to stop here. Balanced's philosophy for payouts is to get money into the hands of the recipient in a useable form as quickly as possible. To that end, [we're exploring international payouts](https://github.com/balanced/balanced-api/issues/44) so recipients outside of the US don't have to wait any longer than their US-based counterparts for that sweet, sweet cash. 
 
 #### Launch Partners:
-Special thanks to our launch partners for putting up with our worts and making us better:
+Special thanks to our launch partners for putting up with our warts and making us better:
 
 - [Vungle](http://vungle.com/): In-app video ads
 - [Grubwithus](https://www.grubwithus.com): Social meals
