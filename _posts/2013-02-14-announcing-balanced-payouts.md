@@ -57,7 +57,6 @@ Special thanks to our launch partners for putting up with our worts and making u
 - [Adworkz](http://www.adworkz.com/): ad network
 - [Simple Donation](https://simpledonation.com/) Simple donation forms
 
----
 If you'd like to learn more about [Balanced Payouts](https://www.balancedpayments.com/#payouts), please email: support at balancedpayments.com, and mention 'Payouts' in your subject line. 
 
 ---
