@@ -37,7 +37,7 @@ Balanced is *the* payments platform for online marketplace, but one happy accide
 If you're an ad network looking to pay your publishers via ACH, we'd love to hear from you. Email: support at balancedpayments.com. 
 
 ####  Payouts for Marketplaces
-Like I said, Balanced is the payments platform for online marketplaces. It's no surprise that several marketplace, like [CourseHorse](http://www.coursehorse.com/), have already adopted Payouts. Here's why CourseHorse selected Balanced:
+Like I said, Balanced is the payments platform for online marketplaces. It's no surprise that several marketplaces, like [CourseHorse](http://www.coursehorse.com/), have already adopted Payouts. Here's why CourseHorse selected Balanced:
 
 >We were initially looking for a cheap, easy way to pay our schools for enrollments, and after scouring the market, we found Balanced to be the easiest way to send safe, reliable ACH payments for only 25 cents per payment.
 
