@@ -64,4 +64,4 @@ UPDATE:
 
 [Ryan Lawler](http://twitter.com/ryanlawler) over at [Techcrunch](http://techcrunch.com/2013/02/14/balanced-payments-ach-api-omg/), and [Ken Yeung](https://twitter.com/thekenyeung) at [TheNextWeb](http://thenextweb.com/insider/2013/02/14/balanced-releases-its-payouts-api-as-a-standalone-offering-giving-access-to-next-day-ach-deposits) were kind enough to cover this announcment for us.
 
-We're discussing this announcement on HN: http://news.ycombinator.com/item?id=5220161 & http://news.ycombinator.com/item?id=5220359
+We're discussing this announcement on HN: http://news.ycombinator.com/item?id=5220161 & http://news.ycombinator.com/item?id=5220963
