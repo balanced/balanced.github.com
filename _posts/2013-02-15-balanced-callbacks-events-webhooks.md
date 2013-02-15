@@ -20,3 +20,6 @@ Our [python](https://github.com/balanced/balanced-python) and [ruby](https://git
 Let us know if you'd like to see examples of how to consume these events, we use them internally for all sorts of stuff so we've developed some patterns that may be handy. 
 
 A bug? Something missing? Let us know by commenting in [this thread](https://github.com/balanced/balanced-api/issues/70#issuecomment-13589282)!
+
+___
+The wold deserves to know about our webhooks, please upvote on HN: http://news.ycombinator.com/item?id=5227482 :)
