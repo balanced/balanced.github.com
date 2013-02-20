@@ -11,7 +11,7 @@ tags:
 ## PoundPay ==> Balanced
 
 #### A bit of background
-Balanced is a payments platform offering processing, escrow, and payouts in one simple API. We work with companies like Fancy, Grubwithus, reddit, and Crowdtilt. In the summer of 2012, we changed our name from [PoundPay](https://www.poundpay.com/) to [Balanced](https://www.balancedpayments.com/). A few times in the past several weeks I've been asked about this experience, so I figured I'd share my thoughts here. Thanks to [Andrew Kinzer](https://twitter.com/superkinz) of our client [GroupTalent](https://grouptalent.com/main/employers/) for helping me with this. 
+Balanced is a payments platform offering credit card processing, escrow, and ACH payouts in one simple API. We work with companies like Fancy, Grubwithus, reddit, and Crowdtilt. In the summer of 2012, we changed our name from [PoundPay](https://www.poundpay.com/) to [Balanced](https://www.balancedpayments.com/). I've been asked about this experience a few times in the past several weeks, so I figured I'd share my thoughts here. Thanks to [Andrew Kinzer](https://twitter.com/superkinz) of our client [GroupTalent](https://grouptalent.com/main/employers/) for helping me gather my thoughts. 
 
 
 ### The Story
