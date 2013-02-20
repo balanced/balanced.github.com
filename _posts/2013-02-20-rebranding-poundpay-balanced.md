@@ -1,8 +1,17 @@
+---
+layout: post
+author: Jareau Wade
+title: "On rebranding: The Evolution of a Startup Identity"
+tags:
+- balanced
+- rebranding
+- poundpay
+---
 
-## On rebranding: The evolution of a startup identity (PoundPay ==> Balanced)
+## PoundPay ==> Balanced
 
 #### A bit of background
-Balanced is a payments platform for online marketplaces. We work with companies like Fancy, Visual.ly, reddit, and Crowdtilt. We changed our name from "PoundPay" to "Balanced" over the summer of 2012. A few times in the past several weeks I've been asked about this experience, so I figured I'd share my thoughts here. 
+Balanced is a payments platform for online marketplaces. We work with companies like Fancy, Grubwithus, reddit, and Crowdtilt. We changed our name from "PoundPay" to "Balanced" over the summer of 2012. A few times in the past several weeks I've been asked about this experience, so I figured I'd share my thoughts here. 
 
 
 ### The Story
@@ -38,4 +47,4 @@ Overall, the new name has been received very positively. I've heard a few "oh th
 - Make sure it's the highest priority task
 - Don't just change the name, change the tone, colors, logo, etc
 - Make the change along with a major product change
-- Get our of the building and test your ideas on real people (however informally)
+- Get out of the building and test your ideas on real people (however informally)
