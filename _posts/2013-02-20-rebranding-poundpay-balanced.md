@@ -38,7 +38,7 @@ Throughout this process of brainstorming, two names emerged as front-runners: Te
 #### Creating a new identity
 We came up with a new logo before anything else. This helped anchor the new branding around something tangible. From the logo, we could decide what colors, tone, and layout the site and payments dashboard would have to include. We also tried to grab the domain "balanced.com" but the current site owner didn't want to play ball for the amount we were offering. We launched our new product on balancedpayments.com with the understanding that we'd switch to balanced.com once we could justify paying for it. So far, there has been no branding concern operating under that domain, and we've even noticed one nice SEO advantage.
 
-#### How its going so far
+#### How it's going so far
 The main downside we've experienced is that "Balanced" is a terrible name to search for because it's so ambiguous. As a result, potential customers have taken to searching for "balanced payments", which of course brings up our site. The flip side is that new customers take to calling us Balanced Payments instead of just Balanced, but once again, that isn't really a big deal. 
 
 Overall, the new name has been received very positively. I've heard a few "oh that's a great name" when I introduce myself and my company to strangers at conferences or networking events, and even those that think it's a bit bland understand the meaning once I tell them Balanced specialized in two-sided transactions. Another minor benefit of renaming the company is that we no longer felt hesitant to get certain pieces of swag made. We were always afraid to make PoundPay t-shirts because we always knew we were going to change the name "soon." 
