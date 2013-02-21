@@ -106,14 +106,14 @@ Wrong way to think - "Is this transaction fraudulent?". Right approach - "What i
 Now coming to data (and what I promised). Here are things you can look at:
 
 ###4.3.2 Velocity/actual amount of transactions from what you believe is the same person. 
-This could be as simple as same email address/same IP address/cookie etc. It could get a bit more complex if you are using some sort of device fingerprinting (careful, check with your lawyer on privacy issues). You expect a normal shopping cart to have 1.7 items on an average and you now have a shopping cart which 17 items? You expect star wars DVD's to be sold in your marketplace for $30 and now you have a DVD collection priced at $550. These are all outliers. By no means do they confirm fraud, but give you valuable signals and add further evidence (Bayes my fried, Bayes)
+This could be as simple as same email address/same IP address/cookie etc. It could get a bit more complex if you are using some sort of device fingerprinting (careful, check with your lawyer on privacy issues). You expect a normal shopping cart to have 1.7 items on an average and you now have a shopping cart which 17 items? You expect star wars DVD's to be sold in your marketplace for $30 and now you have a DVD collection priced at $550. These are all outliers. By no means do they confirm fraud, but give you valuable signals and add further evidence (Bayes my friend, Bayes)
 
 ###4.3.3 Social Signals 
 Are you signing in via facebook/twitter? If yes, do you know the number of friends/followers/following? Do you know the account creation date? So, you have a transaction for $550 on an item that's normally priced at $55 by someone with zero friends on facebook and account created yesterday? Should you review this? I think we know the answer.
 
 ###4.3.4 Collusion
 
-Anything that makes you think there's collusion between buyer and seller. Simple example: Buyer steals someone else's credit card information. Buyer also lists himself as a seller on your site. Buyer claims to "buy" the product and seller claims to "ship" it. Yours being "MVP, I need this site out asap" does no verification (no shipping information, tracking information etc.). Boom, you just got frauded. In this case, it was quite simple to detect that Buyer == Seller. 
+Anything that makes you think there's collusion between buyer and seller. Simple example: Buyer steals someone else's credit card information. Buyer also lists himself as a seller on your site. Buyer claims to "buy" the product and seller claims to "ship" it. Yours being "MVP, I need this site out asap" does no verification (no shipping information, tracking information etc.). Boom, you've just got defrauded. In this case, it was quite simple to detect that Buyer == Seller. 
 
 ###4.3.4 AVS
 'Address Verification System'. Verifies if you card number/expiration date matches with the billing address provided. The system, however is far from perfect due to the following reasons:
