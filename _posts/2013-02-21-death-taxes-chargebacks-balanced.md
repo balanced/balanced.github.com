@@ -44,7 +44,7 @@ with fraud, check the following prior to being hit with *any* form of fraud:
 1. Who's liable? You, the seller (in case of marketplaces), third party fraud protection etc.
 2. What are my next steps? Do I contact the seller to stop shipment (assuming he/she is not fraudulent)? Do I contact the buyer to make sure this is not a misunderstanding (more on this later)? Do I pull money out of the seller's account? Do I blacklist seller/buyer? Do I have the ability (I mean software ability) to do so?
 
-If you use Balanced, contact us, we will guide you through the process
+If you use Balanced, contact us, we will guide you through the process.
 
 ##3. A consequence of fraud - Chargebacks
 
