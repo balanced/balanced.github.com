@@ -26,7 +26,7 @@ overheard from blah etc.
 1. Fraud happens, do not panic
 2. There are different types of chargebacks. Each requires a different risk minimization technique
 3. Build high-pass filters: "bad for fraudsters, neutral on UX" 
-4. Real data from Balanced (see #5 below)
+4. Real data from Balanced (see [#5](#data) below)
 5. Additional reading is shared at the end of this post
 
 ##1. Fraud happens
@@ -128,7 +128,7 @@ Looking at these factors, it is easy to conclude that if you take the iron hand 
 'Card Security Code'. Flip you card and you will see a security code. Most banks do support CSC and unlike address, the false positives are rather low. Our data suggests very high fraud rate with relatively low number of false positives. Our recommendation on CSC failure - if you are starting off with low transaction volume and a rudimentary fraud system (or non-existing fraud system), treat CSC as hard failure. Accept the fact that you will lose 2% percent of legitimate transactions. If you have high transaction volume and have the means to look at other signals, do not give veto power to CSC. Treat it as a signal (with much higher weight that AVS)
 
 
-##5. Data (as promised):
+##<a id='data'>5. Data (as promised):</a>
 
 <table border="1">
 <tr>
