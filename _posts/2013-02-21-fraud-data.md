@@ -1,3 +1,13 @@
+---
+layout: post
+author: Jareau Wade
+title: "On Rebranding: The Evolution of a Startup Identity"
+tags:
+- balanced
+- rebranding
+- poundpay
+---
+
 #Death, Taxes and eCommerce Fraud
 
 ##Target Audience
@@ -176,3 +186,4 @@ References:
 2. [Using social network data for fraud prevention](http:////blog.signifyd.com/2013/01/22/social-network-data-fraud-prevention/)
 3. [Detecting Malice](http://www.detectmalice.com/)
 4. [Ohad Samet's blog on risk](http://www.ohadsamet.com/blog/)
+
