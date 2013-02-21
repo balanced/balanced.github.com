@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Ganesh Venkataraman
-title: "Chargebacks, Fraud, & High-pass Filters"
+title: "Death, Taxes, and Chargebacks"
 tags:
 - balanced
 - fraud
