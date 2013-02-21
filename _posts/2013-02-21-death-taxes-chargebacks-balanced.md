@@ -175,7 +175,7 @@ it is self evident what the signal means. The second column represents
 the probability of a transaction being fraudulent given the signal is true. For example, if
 you have an AVS failure, the likelihood of the transaction being fraudulent is
 5%. There is some subjectivity in this information - 'High Velocity' could mean
-different things. So, don't treat these numbers like Gospel, but as a general
+different things. So, don't treat these numbers like the Gospel, but as a general
 guide. The way to read it is a CSC failure about 4 times more risky than AVS.  
 
 
