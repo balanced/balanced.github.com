@@ -1,17 +1,18 @@
 ---
 layout: post
 author: Ganesh Venkataraman
-title: "Death, Taxes, and eCommerce Fraud"
+title: "Chargebacks, Fraud, & High-pass Filters"
 tags:
 - balanced
 - fraud
 - data
+- chargebacks
 ---
 
 ##Target Audience
 Anyone who handles commerce online - stores, marketplaces, payment processors
 etc. I don't care if you are a customer or a competitor. If you are dealing
-with fraud, you are my brother/sister. Read on.
+with fraud, you are my brother/sister of mine. Read on.
 
 ##Objective
 Share the knowledge/wisdom I gained so you benefit from it and hopefully spread
@@ -23,27 +24,27 @@ overheard from blah etc.
 ##TL;DR
 
 1. Fraud happens, do not panic
-2. Understand chargebacks and different types. Each type requires different risk minimization techniques
-3. Approach towards fraud must be "Bad for fraudsters, neutral on UX" 
-4. Data from Balanced Payments <provide link for later in page>
-5. References
+2. There are different types of chargebacks. Each requires a different risk minimization technique
+3. Build high-pass filters: "bad for fraudsters, neutral on UX" 
+4. Real data from Balanced (see #5 below)
+5. Additional reading is shared at the end of this post
 
 ##1. Fraud happens
 
-You are living in delusion/denial if you are immune to fraud. It is bound to
+You are living in delusion/denial if you are running an ecommerce business and think you are immune to fraud. It is bound to
 happen. It is a statistical certainty. And it's not all that bad.
 
 ##2. Got fraud? Do NOT panic
 
-We have seen marketplaces repeatedly panic after the first fraud attack. This
-is normal. Do NOT panic. It does no one any good. A wise man once told me that
+We have seen our customers -- usually marketplaces -- repeatedly panic after the first fraud attack. This
+is normal. Do NOT panic. A wise man once told me that
 the worst time to go over your insurance policy details is after you get sick. Same goes
 with fraud, check the following prior to being hit with *any* form of fraud:
 
 1. Who's liable? You, the seller (in case of marketplaces), third party fraud protection etc.
 2. What are my next steps? Do I contact the seller to stop shipment (assuming he/she is not fraudulent)? Do I contact the buyer to make sure this is not a misunderstanding (more on this later)? Do I pull money out of the seller's account? Do I blacklist seller/buyer? Do I have the ability (I mean software ability) to do so?
 
-If you use Balanced Payments, contact us, we will guide you through the process
+If you use Balanced, contact us, we will guide you through the process
 
 ##3. A consequence of fraud - Chargebacks
 
@@ -74,7 +75,7 @@ Either way, if you are a marketplace or a merchant you are responsible for this 
 
 ##4 "Bad for fraudsters, neutral on UX" 
 
-Chargebacks happen due to different reasons and each type needs different approach. The premise for all fraud prevention is simple - "How do I create practices that makes it hard for fraudsters to operate *and* does *not* create a poor user experience for legitimate customers/users"? You could go ahead and collect blood sample for every seller in your marketplace. I pretty much guarantee zero fraud this case - because you will have zero transactions. What you really need is a middle ground - "Bad for fraudsters, neutral on UX"
+Chargebacks happen due to different reasons and each type needs different approach. The premise for all fraud prevention is simple - "How do I create practices that makes it hard for fraudsters to operate *and* does *not* create a poor user experience for legitimate customers/users"? You could go ahead and collect blood sample for every seller in your marketplace. I pretty much guarantee zero fraud this case - because you will have zero transactions. What you really need is a middle ground - "Bad for fraudsters, neutral on UX." Think of it like a [high-pass filter](http://en.wikipedia.org/wiki/High-pass_filter): You want legitimate users to pass through your fraud system unaffected, while filtering out the fraudsters. 
 
 ###4.1 Misunderstanding - Customer genuinely does not recognize the charge.
 
@@ -112,7 +113,7 @@ Are you signing in via facebook/twitter? If yes, do you know the number of frien
 
 ###4.3.4 Collusion
 
-Anything that makes you think there's collusion between buyer and seller. Example: Buyer and seller cookie matches. <more examples needed>  
+Anything that makes you think there's collusion between buyer and seller. Example: Buyer and seller cookie/IP address matches. 
 
 ###4.3.4 AVS
 'Address Verification System'. Verifies if you card number/expiration date matches with the billing address provided. The system, however is far from perfect due to the following reasons:
@@ -127,7 +128,7 @@ Looking at these factors, it is easy to conclude that if you take the iron hand 
 'Card Security Code'. Flip you card and you will see a security code. Most banks do support CSC and unlike address, the false positives are rather low. Our data suggests very high fraud rate with relatively low number of false positives. Our recommendation on CSC failure - if you are starting off with low transaction volume and a rudimentary fraud system (or non-existing fraud system), treat CSC as hard failure. Accept the fact that you will lose 2% percent of legitimate transactions. If you have high transaction volume and have the means to look at other signals, do not give veto power to CSC. Treat it as a signal (with much higher weight that AVS)
 
 
-#5. Data (as I promised):
+##5. Data (as promised):
 
 <table border="1">
 <tr>
