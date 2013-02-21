@@ -188,6 +188,6 @@ References:
 
 ---
 This post made the front page of HN. Upvotes appreciated :)
-1. Go here: [http://news.ycombinator.com](http://news.ycombinator.com)
+1. Go here: http://news.ycombinator.com
 2. Search for "Nothing is certain, except death and taxes .. and chargebacks"
 3. Upvote
