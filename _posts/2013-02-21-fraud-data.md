@@ -1,14 +1,12 @@
 ---
 layout: post
-author: Jareau Wade
-title: "On Rebranding: The Evolution of a Startup Identity"
+author: Ganesh Venkataraman
+title: "Death, Taxes, and eCommerce Fraud"
 tags:
 - balanced
-- rebranding
-- poundpay
+- fraud
+- data
 ---
-
-#Death, Taxes and eCommerce Fraud
 
 ##Target Audience
 Anyone who handles commerce online - stores, marketplaces, payment processors
