@@ -186,3 +186,8 @@ References:
 3. [Detecting Malice](http://www.detectmalice.com/)
 4. [Ohad Samet's blog on risk](http://www.ohadsamet.com/blog/)
 
+---
+This post made the front page of HN. Upvotes appreciated :)
+1. Go here: [http://news.ycombinator.com](http://news.ycombinator.com)
+2. Search for "Nothing is certain, except death and taxes .. and chargebacks"
+3. Upvote
