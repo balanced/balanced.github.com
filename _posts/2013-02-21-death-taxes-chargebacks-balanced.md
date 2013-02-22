@@ -187,7 +187,4 @@ References:
 4. [Ohad Samet's blog on risk](http://www.ohadsamet.com/blog/)
 
 ---
-This post made the front page of HN. Upvotes appreciated :)
-1. Go here: http://news.ycombinator.com
-2. Search for "Nothing is certain, except death and taxes .. and chargebacks"
-3. Upvote
+This post sparked some great fraud/chargeback discussion on [Hacker News](http://news.ycombinator.com/item?id=5258942) and [/r/startups](http://www.reddit.com/r/startups/comments/18ywwk/nothing_is_certain_except_death_and_taxes_and/)
