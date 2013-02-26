@@ -13,7 +13,7 @@ solution. PoundPay on the other hand was not. We served our own form, had our
 phone number on the soft descriptor (this is what appears in your credit card
 statement) and handled all customer support - both phone and email. What I am
 going to describe happened in one of our marketplaces selling toys (call it
-selltoys.com)
+selltoys.com).
 
 ##2. The Incident
 
