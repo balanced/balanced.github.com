@@ -3,7 +3,9 @@
 ##1. TL;DR
 
 1. We got fooled by a simple yet elaborate social engineering scheme which involved phone conversations/email exchanges and marital disputes.
-2. We learned something and want to share the wisdom and hear your thoughts.
+2. Avoid distractions and misdirections. Focus on the problem.
+3. Train your user agents on social engineering. Information must be provided
+on a "need to know" basis.
 
 ##2. Some background
 The incident happened when we were 'PoundPay'. Later we rewrote the entire
@@ -99,4 +101,5 @@ disclose. Train all your agents on social engineering.
 on a 'need to know' basis. This has nothing to do with trust, but merely a
 common sense way of preventing someone from releasing information he/she really
 shouldn't. If you don't know something, no amount of social engineering's going
-to help
+to help. Above comment is not directly related to the post, but something we
+picked by talking to fellow anti-fruadsters.
