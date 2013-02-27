@@ -19,9 +19,9 @@ tags:
 on a "need to know" basis.
 
 ### 2. Some background
-The incident happened when we were known as 'PoundPay'. Later we rewrote the entire
-product and [re-branded](http://blog.balancedpayments.com/startup-rebranding-poundpay-balanced/) ourselves as 'Balanced,' which differs from 'PoundPay' in the one key aspect - 'Balanced' is a white labeled
-solution. PoundPay on the other hand was not, requiring the buyer to checkout via an iframe, and the merchant to register themselves on our web site. We served our own form, had our
+The incident happened when we were known as "PoundPay." Later, we rewrote the entire
+product and [re-branded](http://blog.balancedpayments.com/startup-rebranding-poundpay-balanced/) ourselves as "Balanced," which differs from "PoundPay" in the one key aspect - [Balanced](https://balancedpayments.com) is a white labeled
+solution. [PoundPay](https://poundpay.com) on the other hand was not, requiring the buyer to checkout via an iframe, and the merchant to register themselves on our web site. We served our own form, had our
 phone number on the soft descriptor (this is what appears in your credit card
 statement) and handled all customer support - both phone and email. What I am
 going to describe happened in one of our marketplaces. Let's call it
@@ -34,13 +34,13 @@ selltoys.com.
 We received a call from a woman stating she could not identity the $510.00
 charge on her credit card. She does not know PoundPay, blah blah. We asked her
 the usual stuff - "Do you know about selltoys.com?", "Did you make a purchase
-of star wars collectors DVD?" etc. And she was furious. 
+of star wars collectors DVD?" etc. She was furious. 
 
 #### 2.2 Email contact
 
 So, we decided to ask the marketplace to contact the payer directly and ask him if he made the
-purchase and if this is a misunderstanding (well, sometimes husband and wife
-have the same card, wife makes the purchase, husband checks the bill and freaks
+purchase and if this is a misunderstanding (well, sometimes both husband and wife
+share the same card; the wife makes the purchase and the husband checks the bill and freaks
 out). So, the marketplace sends out an email:
 
 
@@ -83,8 +83,8 @@ fight the chargeback if needed.
 
 Let's step back a bit and look at magician's trick (I promise, this is relevant). So, you have this magician
 who does what appears to be pulling out a rabbit from thin air. How does he do
-this? You have now clue. What you do know is that there's a hot skimpily
-dressed girl standing right next to him. Wait a second. Why do you need to
+this? You have now clue. What you do know is that there's a hot scantily
+dressed woman standing right next to him. Wait a second. Why do you need to
 notice the girl? Duh, she's right there! But, what did you just miss? Weren't
 you supposed to be looking at the magician? Well, you thought you did, but you
 really didn't, so he just pulled a rabbit from his long sleeve dress (again,
@@ -95,7 +95,7 @@ What has this to do with fraud or social engineering or the above incident?
 Everything! All the distractions with bad wife and irresponsible husband made
 us ignore the simple truth - what is the true cost of the DVD collection? It
 just happens to be $80 and well below the listed price of $510.0 AND it got
-sold out in minutes. Elementary my Dear Watson, this is fraud. As for the wife
+sold out in minutes. In the words of Sherlock Holmes, "elementary, my dear Watson," This was definitely fraud. As for the wife,
 he wanted to divorce - she is the hot girl who made us not look at the magician's long sleeve.
 
 ### 5. Summary
