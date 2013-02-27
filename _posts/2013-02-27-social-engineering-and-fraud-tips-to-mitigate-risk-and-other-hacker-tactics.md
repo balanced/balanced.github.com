@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Ganesh Venkataraman
-title: "Social Engineering & Fraud: How we got fooled"
+title: "Social Engineering & Fraud: Tips to Mitigate Risk and Other Hacker Tactics."
 tags:
 - balanced
 - ecommerce
@@ -9,11 +9,11 @@ tags:
 - social engineering
 ---
 
-##How We Got Fooled & Learned to Love Fraud
+## A Lesson in Social Engineering - How We Were Fooled and Learned to Love Fraud
 
 ### 1. TL;DR
 
-1. [Balanced](https://www.balancedpayments.com/) was fooled by a simple yet clever [social engineering](http://en.wikipedia.org/wiki/Social_engineering_(security)) scheme a few years ago which involved phone conversations/email exchanges and a marital dispute.
+1. [Balanced](https://www.balancedpayments.com/) was fooled by a simple yet clever [social engineering](http://en.wikipedia.org/wiki/Social_engineering_(security\)) scheme a few years ago which involved phone conversations/email exchanges and a marital dispute.
 2. Avoid distractions and misdirections. Focus on the problem.
 3. Train your customer support agents on social engineering. Information must be provided
 on a "need to know" basis.
