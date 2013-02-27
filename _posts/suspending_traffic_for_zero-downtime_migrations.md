@@ -28,20 +28,20 @@ Our migration was drastic enough that the amount of code we would have had to wr
 
 Most clients hitting our API will time out after 60 seconds with no response, so this set an upper bound for how long we could stall traffic. As it happens, we have some customers with even stricter client-side timeouts set, and we wanted to keep everyone happy. This led us to settle on 15 seconds as the longest we could stall traffic and not get any complaints from our users.
 
-Since we couldn't stop requests from coming in, and we didn't want any incoming requests to fail, we would have to hold them somewhere. We were familiar with the approach that another payment service provider had used to solve a similar issue, but their approach involved custom routing software and holding all requests in a Redis queue, which didn't really fit with our existing topology.
+Since we couldn't stop requests from coming in, and we didn't want any incoming requests to fail, we would have to hold them somewhere. We were familiar with the approach that Braintree, another payment service provider, had used to [solve a similar issue](https://www.braintreepayments.com/braintrust/switching-datacenters), but their approach involved custom routing software and holding all requests in a Redis queue, which didn't really fit with our existing topology.
 
 Our topology looks like this:
 
 ![Balanced topology](http://i.imgur.com/khBVvSZ.png)
 
-We have an Amazon Elastic Load Balancer at api.balancedpayments.com proxying to a number of nginx instances, which forward traffic to HAProxy load balancers. These HAProxy instances proxy traffic to our balanced application instances. Being that our topology is so simple, there are only a few places where requests can be held -- nginx, HAProxy, or our app itself. Of the three, HAProxy seemed like the most likely candidate.
+We have an Amazon Elastic Load Balancer at api.balancedpayments.com proxying to a number of nginx instances, which forward traffic to HAProxy load balancers. These HAProxy instances proxy traffic to our Balanced application instances. Being that our topology is so simple, there are only a few places where requests can be held -- nginx, HAProxy, or our app itself. Of the three, HAProxy seemed like the most likely candidate.
 
-HAProxy is an amazing piece of software. In addition to being extremely quick and reliable, it's also configurable on the fly, via its (oddly-named) "stats socket". By piping commands to a UNIX socket, one can dynamically change many parameters and control how requests are proxied. In this case, we wanted to tell HAProxy that balanced was still up (so it didn't report 5XX errors to the client), but that it shouldn't forward any new requests.
+HAProxy is an amazing piece of software. In addition to being extremely quick and reliable, it's also configurable on the fly, via its (oddly-named) "stats socket". By piping commands to a UNIX socket, one can dynamically change many parameters and control how requests are proxied. In this case, we wanted to tell HAProxy that Balanced was still up (so it didn't report 5XX errors to the client), but that it shouldn't forward any new requests.
 
 ## Initial failures
 
 
-Our first thought was to modify the haproxy.cfg file, using chef, and set the `maxconn` property for the balanced backend to zero. According to the HAProxy docs,
+Our first thought was to modify the haproxy.cfg file, using our [chef](http://www.opscode.com/chef/) infrastructure, and set the `maxconn` property for the Balanced backend to zero. According to the [HAProxy docs](http://haproxy.1wt.eu/download/1.5/doc/configuration.txt),
 
 ```Excess connections will be queued by the system in the socket's listen queue and will be served once a connection closes.```
 
@@ -53,28 +53,50 @@ The documentation also mentions using SIGTTOU and the '-st' and '-sf' options as
 
 These failures eventually led us to the previously-mentioned stats socket, which allows us to issue the command `set maxconn frontend balanced 0` to stop accepting new connections for a given frontend, and `set maxconn frontend balanced 100` to start again. So simple! Except -- first, we had to upgrade to the HAProxy development version (1.5) to support setting `maxconn` on the frontend at all. Then, the first command didn't work, since the 'set' command would only accept values over zero. I was about to hack a fix into HAProxy myself, but first decided to contact Willy Tarreu, the author, to see if he had a better recommendation. After discussing the issue, he was kind enough to release a small patch allowing `maxconn` to be set to zero in the `frontend` context and test it in the use case I had described.
 
-We tested how long the database migration would take on a duplicate of the database, and got it down to 13 seconds. We crossed our fingers, and started the process:
+We tested how long the database migration would take on a copy of the database, and got it down to 13 seconds. This gave us a two-second leeway in which to perform all the administrative tasks involved in this migration. We had two people open terminals and prepare the commands to be run, and prepared to execute them rapidly in sequence.
 
 ## The process
 
-- deploy an instance of the app with the new code, but don't route any traffic to it
+- Deploy an instance of the app with the new code, but don't route any traffic to it.
 
     ![New code (inactive)](http://i.imgur.com/SZMZiks.png)
-- suspend all traffic to our balanced frontend
+- First engineer suspends all traffic to our Balanced frontend, queueing requests in HAProxy. Yell at the other person to start the data migration.
 
     ![All suspended](http://i.imgur.com/GkwL4Zr.png)
-- start the data migration
-- wait 14 seconds for db migration to complete / pray
-- quickly resume traffic to the app instance with new code
+- Second engineer starts the data migration.
+- Wait 13 seconds for db migration to complete. Yell at the first engineer that the migration is done.
+- First engineer quickly resumes traffic to the app instance with new code.
 
     ![New code active](http://i.imgur.com/dk8IfsQ.png)
-- deploy updated code to all instances and resume at leisure
+- Deploy updated code to all instances and resume at leisure
 
     ![New code everywhere](http://i.imgur.com/kqn3xXJ.png)
 
-
-The first time we attempted this, it worked flawlessly, much to our surprise.
+The first time we attempted this it worked flawlessly, with no requests failing or timing out.
 
 ## Usage
+
+We added two simple tasks to our Fabric fabfile:
+
+```
+@parallel
+def suspend():
+    """
+    Suspends all connections to balanced. To be used sparingly.
+    """
+    with _make_tunnel():
+        run('echo "set maxconn frontend balanced 0" |'
+            'socat stdio /var/lib/haproxy/stats')
+
+
+@parallel
+def resume():
+    """
+    Re-allow connections to balanced.
+    """
+    with _make_tunnel():
+        run('echo "set maxconn frontend balanced 100" |'
+            'socat stdio /var/lib/haproxy/stats')
+```
 
 Now, using Fabric to automate the stats socket commands across all instances of HAProxy simultaneously, we can issue a simple command like `fab suspend` to hold all requests indefinitely, perform any time-consuming migrations/code updates/deploys, and then issue `fab resume` to allow the blocked connections to finally make their way to our backend. We've only had to use this heavy-handed approach twice in the past six months, whereas we've performed hundreds of code deploys and tens of database migrations, but having the option available to us has been a lifesaver.
