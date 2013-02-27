@@ -68,7 +68,7 @@ We tested how long the database migration would take on a copy of the database, 
 - First engineer quickly resumes traffic to the app instance with new code.
 
     ![New code active](http://i.imgur.com/dk8IfsQ.png)
-- Deploy updated code to all instances and resume at leisure
+- Deploy updated code to all instances and resume at leisure.
 
     ![New code everywhere](http://i.imgur.com/kqn3xXJ.png)
 
