@@ -4,9 +4,9 @@ author: Ganesh Venkataraman
 title: "Social Engineering & Fraud: How we got fooled"
 tags:
 - balanced
-- payouts
-- feature enhancement
-- ACH
+- ecommerce
+- fraud
+- social engineering
 ---
 
 ##How We Got Fooled 
