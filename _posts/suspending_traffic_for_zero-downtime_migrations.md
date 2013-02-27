@@ -41,13 +41,13 @@ HAProxy is an amazing piece of software. In addition to being extremely quick an
 ## Initial failures
 
 
-Our first thought was to modify the haproxy.cfg file, using our [chef](http://www.opscode.com/chef/) infrastructure, and set the `maxconn` property for the Balanced backend to zero. According to the [HAProxy docs](http://haproxy.1wt.eu/download/1.5/doc/configuration.txt),
+Our first thought was to modify the haproxy.cfg file, using our [chef](http://www.opscode.com/chef/) infrastructure, and set the `maxconn` property for the Balanced backend to zero. According to the [HAProxy docs](http://haproxy.1wt.eu/download/1.5/doc/configuration.txt), `maxconn`
 
-```Excess connections will be queued by the system in the socket's listen queue and will be served once a connection closes.```
+```is the maximum number of concurrent connections the frontend will accept to serve. Excess connections will be queued by the system in the socket's listen queue and will be served once a connection closes.```
 
 This sounds like what we want -- the OS itself will queue requests, and once we're done we can just modify the config file and SIGHUP HAProxy to get the new value. Except this didn't work. Setting `maxconn` to zero worked just fine -- requests were kept alive from the client's point of view, and never hit our app. It turns out, though, that HAProxy responds differently than other software to SIGHUP, and doesn't use it to reload its config file. Oops.
 
-The documentation also mentions using SIGTTOU and the '-st' and '-sf' options as a "soft-reconfiguration mechanism," which sounds great. Unfortunately, the way it works wasn't quite as expected -- you issue SIGTTOU to pause proxies, then start a *new* instance with the new config. This means that any connections to the instance of HAProxy with maxconn set to zero will never get a chance to complete.
+The documentation also mentions using SIGTTOU and the '-st' and '-sf' options as a "soft-reconfiguration mechanism," which sounds great. Unfortunately, the way it works wasn't quite as expected -- you issue SIGTTOU to pause proxies, then start a *new* instance with the new config. This means that any connections to the instance of HAProxy with `maxconn` set to zero will never get a chance to complete.
 
 ## Finally
 
