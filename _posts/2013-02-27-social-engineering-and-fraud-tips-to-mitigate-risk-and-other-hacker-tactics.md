@@ -13,7 +13,7 @@ tags:
 
 ### 1. TL;DR
 
-1. [Balanced](https://www.balancedpayments.com/) was fooled by a simple yet clever [social engineering](http://en.wikipedia.org/wiki/Social_engineering_(security\)) scheme a few years ago which involved phone conversations/email exchanges and a marital dispute.
+1. [Balanced](https://www.balancedpayments.com/) was fooled by a simple yet clever [social engineering](http://en.wikipedia.org/wiki/Social_engineering_%28security%29) scheme a few years ago which involved phone conversations/email exchanges and a marital dispute.
 2. Avoid distractions and misdirections. Focus on the problem.
 3. Train your customer support agents on social engineering. Information must be provided
 on a "need to know" basis.
