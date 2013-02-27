@@ -49,18 +49,28 @@ This sounds like what we want -- the OS itself will queue requests, and once we'
 
 The documentation also mentions using SIGTTOU and the '-st' and '-sf' options as a "soft-reconfiguration mechanism," which sounds great. Unfortunately, the way it works wasn't quite as expected -- you issue SIGTTOU to pause proxies, then start a *new* instance with the new config. This means that any connections to the instance of HAProxy with maxconn set to zero will never get a chance to complete.
 
-# Finally
+## Finally
 
 These failures eventually led us to the previously-mentioned stats socket, which allows us to issue the command `set maxconn frontend balanced 0` to stop accepting new connections for a given frontend, and `set maxconn frontend balanced 100` to start again. So simple! Except -- first, we had to upgrade to the HAProxy development version (1.5) to support setting `maxconn` on the frontend at all. Then, the first command didn't work, since the 'set' command would only accept values over zero. I was about to hack a fix into HAProxy myself, but first decided to contact Willy Tarreu, the author, to see if he had a better recommendation. After discussing the issue, he was kind enough to release a small patch allowing `maxconn` to be set to zero in the `frontend` context and test it in the use case I had described.
 
 We tested how long the database migration would take on a duplicate of the database, and got it down to 13 seconds. We crossed our fingers, and started the process:
 
+## The process
+
 - deploy an instance of the app with the new code, but don't route any traffic to it
+
+    ![New code (inactive)](http://i.imgur.com/SZMZiks.png)
 - suspend all traffic to our balanced frontend
+
+    ![All suspended](http://i.imgur.com/GkwL4Zr.png)
 - start the data migration
 - wait 14 seconds for db migration to complete / pray
-- resume traffic to the app instance with new code
+- quickly resume traffic to the app instance with new code
+
+    ![New code active](http://i.imgur.com/dk8IfsQ.png)
 - deploy updated code to all instances and resume at leisure
+
+    ![New code everywhere](http://i.imgur.com/kqn3xXJ.png)
 
 
 The first time we attempted this, it worked flawlessly, much to our surprise.
