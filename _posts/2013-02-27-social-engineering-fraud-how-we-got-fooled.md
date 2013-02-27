@@ -1,32 +1,42 @@
-#Social Engineering and Fraud: How we got fooled
+---
+layout: post
+author: Ganesh Venkataraman
+title: "Social Engineering & Fraud: How we got fooled"
+tags:
+- balanced
+- payouts
+- feature enhancement
+- ACH
+---
 
-##1. TL;DR
+##How We Got Fooled 
 
-1. We got fooled by a simple yet elaborate social engineering scheme which involved phone conversations/email exchanges and marital disputes.
+### 1. TL;DR
+
+1. We -- [Balanced](https://www.balancedpayments.com/) -- got fooled by a simple yet clever [social engineering](http://en.wikipedia.org/wiki/Social_engineering_(security)) scheme which involved phone conversations/email exchanges and a marital dispute.
 2. Avoid distractions and misdirections. Focus on the problem.
-3. Train your user agents on social engineering. Information must be provided
+3. Train your customer support agents on social engineering. Information must be provided
 on a "need to know" basis.
 
-##2. Some background
-The incident happened when we were 'PoundPay'. Later we rewrote the entire
-product and re-branded ourselves in our current avatar - 'Balanced'. 'Balanced'
-differs from 'PoundPay' in the one key aspect - 'Balanced' is a white labeled
-solution. PoundPay on the other hand was not. We served our own form, had our
+### 2. Some background
+The incident happened when we were known as 'PoundPay'. Later we rewrote the entire
+product and [re-branded](http://blog.balancedpayments.com/startup-rebranding-poundpay-balanced/) ourselves as 'Balanced,' which differs from 'PoundPay' in the one key aspect - 'Balanced' is a white labeled
+solution. PoundPay on the other hand was not, requiring the buyer to checkout via an iframe, and the merchant to register themselves on our web site. We served our own form, had our
 phone number on the soft descriptor (this is what appears in your credit card
 statement) and handled all customer support - both phone and email. What I am
-going to describe happened in one of our marketplaces selling toys (call it
-selltoys.com).
+going to describe happened in one of our marketplaces. Let's call it
+selltoys.com.
 
-##2. The Incident
+### 2. The Incident
 
-###2.1 Phone Call.
+#### 2.1 Phone Call.
 
-We received a call from a woman stating she could not identity the $510.0
+We received a call from a woman stating she could not identity the $510.00
 charge on her credit card. She does not know PoundPay, blah blah. We asked her
 the usual stuff - "Do you know about selltoys.com?", "Did you make a purchase
 of star wars collectors DVD?" etc. And she was furious. 
 
-###2.2 Email contact
+#### 2.2 Email contact
 
 So, we decided to ask the marketplace to contact the payer directly and ask him if he made the
 purchase and if this is a misunderstanding (well, sometimes husband and wife
@@ -62,14 +72,14 @@ For which we got this response:
         I am lost and desperate.  I hate this fucking goose.
 
 
-##3. Our Preliminary Conclusion
+### 3. Our Preliminary Conclusion
 
 This is just plain old domestic dispute gone bad. Husband wants to get
 something and wife does not. We will present this evidence to the bank and
 fight the chargeback if needed.
 
 
-##4. Of course we were wrong, here's why
+### 4. Of course we were wrong, here's why
 
 Let's step back a bit and look at magician's trick (I promise, this is relevant). So, you have this magician
 who does what appears to be pulling out a rabbit from thin air. How does he do
@@ -88,7 +98,7 @@ just happens to be $80 and well below the listed price of $510.0 AND it got
 sold out in minutes. Elementary my Dear Watson, this is fraud. As for the wife
 he wanted to divorce - she is the hot girl who made us not look at the magician's long sleeve.
 
-##5. Summary
+### 5. Summary
 
 1. Social Engineering is about creating distractions. Distractions take you
 away for core reality and focus on the illusion. Watch out for distractions.
