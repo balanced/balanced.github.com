@@ -13,7 +13,7 @@ tags:
 
 ## Introducing: Balanced Bank Payments
 
-[Balanced Processing](https://www.balancedpayments.com/# processing) has always supported payments from major credit/debit cards, but we're happy to announce that your buyers can now pay with any valid US-based bank account. We're calling this new functionality "Balanced Bank Payments," and we'll be rolling out limited beta invites starting today. <a href="mailto:support@balancedpayments.com?Subject=Bank%20Payments%20Beta%20Access%20Request">Contact</a> us to request access.
+[Balanced Processing](https://www.balancedpayments.com/#processing) has always supported payments from major credit/debit cards, but we're happy to announce that your buyers can now pay with any valid US-based bank account. We're calling this new functionality "Balanced Bank Payments," and we'll be rolling out limited beta invites starting today. <a href="mailto:support@balancedpayments.com?Subject=Bank%20Payments%20Beta%20Access%20Request">Contact</a> us to request access.
 
 ### The one and only
 Bank Payments, offers developers something no other payment processor does: a white-label, RESTful API for bank account payments. Buyers don't need to be redirected away from your website or app, and they won't be required to create a Balanced account to pay with their bank account. We've even added [bank account verification helpers](https://www.balancedpayments.com/docs/api?language=bash#bank-account-verifications) to our API, to save you the hassle of managing micro-deposit verifications yourself. No one else provides an on-site, white-label ACH/bank payments API -- not PayPal, Braintree, Stripe, nor WePay, not even Dwolla. 
