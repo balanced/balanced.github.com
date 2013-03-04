@@ -22,7 +22,7 @@ Seattle-based [GroupTalent](https://grouptalent.com/main/employers/) is __the__ 
 The team at GroupTalent believes this focus on the high-end market selects for the most substantial projects and the best designer/developer talent.
 
 #### Why GroupTalent switched from Stripe to Balanced
-[Wes Hather](https://grouptalent.com/talent/376), GroupTalent co-founder and CPO, wrote an amazing [blog post](https://grouptalent.com/blog/why-we-switched-from-stripe-to-balanced) about GroupTalent's payment vendor selection process. I won't repeat the entire post here, but will share Wes saw as the benefits of Balanced over Stripe:
+[Wes Hather](https://grouptalent.com/talent/376), GroupTalent co-founder and CPO, wrote an amazing [blog post](https://grouptalent.com/blog/why-we-switched-from-stripe-to-balanced) about GroupTalent's payment vendor selection process. I won't repeat the entire post here, but will share what Wes saw as the benefits of Balanced over Stripe:
 
 1. Built-in Escrow
 2. Next day ACH Credit
@@ -32,7 +32,7 @@ The team at GroupTalent believes this focus on the high-end market selects for t
 
 Read the full story [here](https://grouptalent.com/blog/why-we-switched-from-stripe-to-balanced).
 
-One interesting bit of the story Wes didn't share in his post is that GroupTalent originally planned to use Stripe for processing and Balanced just for payouts. But during the integration process they realized that set-up would take over a week to move the money from Stripe to their bank account, to Balanced, and then to the developer's bank account. Getting funds from Stripe alone is a 7-day process. So they decided to use Balanced for processing and payouts, which gave them the advantage of next-day payouts to their developers. 
+One interesting bit of the story Wes didn't share is that GroupTalent originally planned to use Stripe for processing and Balanced just for payouts, but during the integration process realized that set-up would take over a week to move the money from Stripe to their developers' bank accounts (via Balanced) -- getting funds from Stripe alone is a 7-day process. So they decided to use Balanced for processing _and_ payouts, which gave them the advantage of next-day payouts, a huge win for their developers. 
 
 ---
  If you'd like to be featured in one of Balanced's customer profiles please email support at balancedpayments.com.
