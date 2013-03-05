@@ -86,8 +86,7 @@ def suspend():
     Suspends all connections to balanced. To be used sparingly.
     """
     with _make_tunnel():
-        run('echo "set maxconn frontend balanced 0" |'
-            'socat stdio /var/lib/haproxy/stats')
+        run('echo "set maxconn frontend balanced 0" | socat stdio /var/lib/haproxy/stats')
 
 
 @parallel
@@ -96,8 +95,7 @@ def resume():
     Re-allow connections to balanced.
     """
     with _make_tunnel():
-        run('echo "set maxconn frontend balanced 100" |'
-            'socat stdio /var/lib/haproxy/stats')
+        run('echo "set maxconn frontend balanced 100" | socat stdio /var/lib/haproxy/stats')
 ```
 
 Now, using Fabric to automate the stats socket commands across all instances of HAProxy simultaneously, we can issue a simple command like `fab suspend` to hold all requests indefinitely, perform any time-consuming migrations/code updates/deploys, and then issue `fab resume` to allow the blocked connections to finally make their way to our backend. We've only had to use this heavy-handed approach twice in the past six months, whereas we've performed hundreds of code deploys and tens of database migrations, but having the option available to us has been a lifesaver.
