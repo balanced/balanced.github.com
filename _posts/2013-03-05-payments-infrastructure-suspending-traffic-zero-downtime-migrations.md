@@ -7,6 +7,7 @@ tags:
 - operations
 - devops
 - haproxy
+- infrastructure
 ---
 
 # Suspending traffic for zero-downtime migrations
