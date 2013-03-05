@@ -15,7 +15,7 @@ tags:
 Some time ago, we had to perform a fairly intensive database migration. Since we process payments for a number of marketplaces who don't want any downtime at all, scheduling a maintenance window to perform the migration wasn't an option.  We had to do everything without taking our app offline for even a short period of time.
 
 ### tl;dr
-We used used HAProxy to suspend traffic for a short period of time, while we switched out DBs.
+We used HAProxy to suspend traffic for a short period of time, while we switched out DBs.
 
 ### The normal way
 
