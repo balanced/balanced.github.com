@@ -88,7 +88,6 @@ def suspend():
     with _make_tunnel():
         run('echo "set maxconn frontend balanced 0" | socat stdio /var/lib/haproxy/stats')
 
-
 @parallel
 def resume():
     """
