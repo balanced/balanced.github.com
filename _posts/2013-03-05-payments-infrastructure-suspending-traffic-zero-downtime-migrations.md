@@ -78,7 +78,7 @@ The first time we attempted this it worked flawlessly, with no requests failing 
 
 We added two simple tasks to our Fabric fabfile:
 
-```
+```python
 @parallel
 def suspend():
     """
