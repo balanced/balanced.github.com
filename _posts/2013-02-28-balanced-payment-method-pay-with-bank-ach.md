@@ -34,7 +34,7 @@ __Cost:__ The developer pays Balanced 1% + 30¢ per bank payment.
 The idea for Bank Payments, it's spec, common uses cases, and even the pricing structure were developed in open conversation with our developer community in a public [GitHub issues thread](https://github.com/balanced/balanced-api/issues/2). We even built a [preliminary version of the API](https://github.com/balanced/balanced-api/tree/ach) and showed it off to get feedback. We came to the conclusion that we couldn't support ACH/bank payments for the price proposed --25¢-- so we shelved the product for a few months, but community interest resurged on the github issue, with some customers saying they'd pay 1% per transaction. That worked for us, so we built it. Hope you like it. 
 
 ### How to request access
-We'll be rolling out invites to a limited beta of Bank Payments over the next few weeks. If you'd like to request access please email us: support at balancedpayments.com. Include "Bank Payments Beta Access Request" in your subject.
+We'll be rolling out invites to a limited beta of Balanced Bank Payments over the next few weeks. If you'd like to request access please email us: support at balancedpayments.com. Include "Bank Payments Beta Access Request" in your subject.
 
 - --
 Earlier this week, we launched same-day payouts for all Wells Fargo customers. Check it out [here](http://blog.balancedpayments.com/introducing-balanced-same-day-payouts-wells-fargo/)!
