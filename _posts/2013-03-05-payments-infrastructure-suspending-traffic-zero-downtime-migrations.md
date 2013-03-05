@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Marc Sherry
-title: "How Balanced does Database Migrations with Zero-downtime"
+title: "How Balanced does Database Migrations with Zero-Downtime"
 tags:
 - balanced
 - operations
