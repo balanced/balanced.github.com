@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Marc Sherry
-title: "Suspending traffic for zero-downtime migrations"
+title: "Suspending Traffic for Zero-Downtime Migrations"
 tags:
 - balanced
 - operations
@@ -10,11 +10,14 @@ tags:
 - infrastructure
 ---
 
-# Suspending traffic for zero-downtime migrations
+## Database Migration with Zero-Downtime
 
 Some time ago, we had to perform a fairly intensive database migration. Since we process payments for a number of marketplaces who don't want any downtime at all, scheduling a maintenance window to perform the migration wasn't an option.  We had to do everything without taking our app offline for even a short period of time.
 
-## The normal way
+### tl;dr
+We used used HAProxy to suspend traffic for a short period of time, while we switched out DBs.
+
+### The normal way
 
 Normally when doing a database migration online, the correct way to do this involves multiple steps:
 
@@ -23,7 +26,7 @@ Normally when doing a database migration online, the correct way to do this invo
 - perform a data migration that backfills any old data correctly, and updates all constraints properly.
 - deploy code that only expects to see the new schema.
 
-## The harder way
+### The harder way
 
 Our migration was drastic enough that the amount of code we would have had to write to be compatible with both schemas simultaneously was prohibitive, so we started looking for a simpler way. We reasoned that if we could continue to accept incoming requests, but keep them from hitting our app for a short period of time, we could perform the migration and replace our code in one step.
 
@@ -39,7 +42,7 @@ We have an Amazon Elastic Load Balancer at api.balancedpayments.com proxying to 
 
 HAProxy is an amazing piece of software. In addition to being extremely quick and reliable, it's also configurable on the fly, via its (oddly-named) "stats socket". By piping commands to a UNIX socket, one can dynamically change many parameters and control how requests are proxied. In this case, we wanted to tell HAProxy that Balanced was still up (so it didn't report 5XX errors to the client), but that it shouldn't forward any new requests.
 
-## Initial failures
+### Initial failures
 
 
 Our first thought was to modify the haproxy.cfg file, using our [chef](http://www.opscode.com/chef/) infrastructure, and set the `maxconn` property for the Balanced backend to zero. According to the [HAProxy docs](http://haproxy.1wt.eu/download/1.5/doc/configuration.txt), `maxconn`
@@ -50,13 +53,13 @@ This sounds like what we want -- the OS itself will queue requests, and once we'
 
 The documentation also mentions using SIGTTOU and the '-st' and '-sf' options as a "soft-reconfiguration mechanism," which sounds great. Unfortunately, the way it works wasn't quite as expected -- you issue SIGTTOU to pause proxies, then start a *new* instance with the new config. This means that any connections to the instance of HAProxy with `maxconn` set to zero will never get a chance to complete.
 
-## Finally
+### Finally
 
 These failures eventually led us to the previously-mentioned stats socket, which allows us to issue the command `set maxconn frontend balanced 0` to stop accepting new connections for a given frontend, and `set maxconn frontend balanced 100` to start again. So simple! Except -- first, we had to upgrade to the HAProxy development version (1.5) to support setting `maxconn` on the frontend at all. Then, the first command didn't work, since the 'set' command would only accept values over zero. I was about to hack a fix into HAProxy myself, but first decided to contact Willy Tarreu, the author, to see if he had a better recommendation. After discussing the issue, he was kind enough to release a small patch allowing `maxconn` to be set to zero in the `frontend` context and test it in the use case I had described.
 
 We tested how long the database migration would take on a copy of the database, and got it down to 13 seconds. This gave us a two-second leeway in which to perform all the administrative tasks involved in this migration. We had two people open terminals and prepare the commands to be run, and prepared to execute them rapidly in sequence.
 
-## The process
+### The process
 
 - Deploy an instance of the app with the new code, but don't route any traffic to it.
 
@@ -75,7 +78,7 @@ We tested how long the database migration would take on a copy of the database, 
 
 The first time we attempted this it worked flawlessly, with no requests failing or timing out.
 
-## Usage
+### Usage
 
 We added two simple tasks to our Fabric fabfile:
 
