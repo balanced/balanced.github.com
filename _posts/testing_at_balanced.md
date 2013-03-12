@@ -61,9 +61,12 @@ was the problem that we set out to solve.
 ### The testing and deployment process
 
 We use [Jenkins](http://jenkins-ci.org/) for automating our testing and
-deployment process. It listens for commits to the `release` branch of our
-various services. When a commit is pushed, it begins the testing and deployment
-process.
+deployment process. We have a number of jobs configured, each one performing a
+specific function.  ![Image](http://i.imgur.com/NG7wImi.png)
+
+Jenkins listens for commits to the `release` branch of our various
+services. When a commit is pushed, it begins the testing and deployment process,
+and runs through a number of jobs.
 
 ![Diagram](http://i.imgur.com/Tt0aQS2.png)
 
@@ -139,17 +142,21 @@ services follow similar paths.
 
    Once the code is running in our staging environment, we can run a battery of
    tests against it to test the integration with other services. Each of our
-   various clients comes with a suite of tests, which are all run against the
-   staging server to ensure that the server behaves in a way that the client is
-   expecting. Most of these tests depend on the correct interaction of Balanced
-   with our other services, but we take it a step farther with our acceptance
-   suite, which consists of two more jobs.
+   various clients comes with a suite of tests (e.g., our
+   [balanced-python](https://github.com/balanced/balanced-python/blob/master/tests/suite.py)
+   and
+   [balanced-java](https://github.com/balanced/balanced-java/tree/master/src/test/java/com/balancedpayments)
+   suites), which are all run against the staging server to ensure that the
+   server behaves in a way that the client is expecting. Most of these tests
+   depend on the correct interaction of Balanced with our other services, but we
+   take it a step farther with our acceptance suite, which consists of two more
+   jobs.
 
    `acceptance server` runs a suite of tests designed to go all the way through
    our stack, onto our banking partners' test environments. For instance, we can
-   pass test card data on to Chase Paymentech (TODO: do we mention our partners
-   by name?) and verify that they receive well-formed requests from us, as well
-   as verifying that we can properly handle their responses.
+   pass test card data on to our acquiring bank and verify that they receive
+   well-formed requests from us, as well as verifying that we can properly
+   handle their responses.
 
    `acceptance` runs many of the same tests as `acceptance server`, but uses the
    [Werkzeug test client](http://werkzeug.pocoo.org/docs/test/) and patches
@@ -174,9 +181,20 @@ services follow similar paths.
    new code, and puts the app back into HAProxy, for each machine running our
    code.
 
-### Confidence in deployment
+### Confidence in quality
 
-This testing architecture is the result of a concerted effort we made to ensure
-that we have a consistently high level of quality. It has made deploys much more
-risk-free, and greatly increased our ability to move quickly and introduce new
-features by minimizing the introduction of new bugs.
+From start to finish, a deploy of Balanced takes about 10 minutes. During that
+time, we run over 950 unit tests, and another 200-300 integration and acceptance
+tests. We often deploy upwards of ten times a day, over multiple services.
+
+Deploys do occasionally become blocked due to a failing test. Every time this
+happens, we calmly fix the cause of the failure and start the process again --
+there's no rushing to fix a bug that's suddenly made it out into the wild,
+because it never got a chance to make it out of our staging environment.
+
+This freedom to iterate quickly without fear of breaking things is a huge win
+for us. This testing architecture is the result of a concerted effort we made to
+ensure that we have a consistently high level of quality, and it pays enormous
+dividends. It has made deploys much more risk-free, and greatly increased our
+ability to move quickly and introduce new features while minimizing the
+introduction of new bugs.
