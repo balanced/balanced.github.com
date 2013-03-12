@@ -68,6 +68,6 @@ This diagram represents the various stages of testing that our Balanced service 
 
    Once all these tests have passed, we're confident that the new code hasn't introduced any regressions and is ready to be deployed. To reduce the chance of operator error, our testing server performs deploys for us as well. We use Fabric and run a `deploy` task that pulls the code from our Github repo, removes an instance of the app from our load balancer (HAProxy), loads the new code, and puts the app back into HAProxy, for each machine running our code.
 
-## Title
+## Confidence in deployment
 
-This testing architecture is the result of a concerted effort we made to ensure that we have a consistently high level of quality. It had made deploys much more risk-free, and greatly increased our ability to move quickly and introduce new features without fear of introducing new bugs. TODO: end this somehow
+This testing architecture is the result of a concerted effort we made to ensure that we have a consistently high level of quality. It had made deploys much more risk-free, and greatly increased our ability to move quickly and introduce new features without fear of introducing new bugs.
