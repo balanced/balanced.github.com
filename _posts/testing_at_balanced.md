@@ -70,4 +70,4 @@ This diagram represents the various stages of testing that our Balanced service 
 
 ## Confidence in deployment
 
-This testing architecture is the result of a concerted effort we made to ensure that we have a consistently high level of quality. It had made deploys much more risk-free, and greatly increased our ability to move quickly and introduce new features without fear of introducing new bugs.
+This testing architecture is the result of a concerted effort we made to ensure that we have a consistently high level of quality. It has made deploys much more risk-free, and greatly increased our ability to move quickly and introduce new features without fear of introducing new bugs.
