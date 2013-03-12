@@ -111,7 +111,7 @@ services follow similar paths.
 
     (Jenkins' Cobertura plugin also enforces coverage levels, but at a
     granularity that [wasn't
-    sufficient](http://stackoverflow.com/questions/10747514/how-to-configure-jenkins-cobertura-plugin-to-monitor-specific-packages/10808868#10808868)
+    sufficient](http://stackoverflow.com/questions/10747514/how-to-configure-jenkins-cobertura-plugin-to-monitor-specific-packages/)
     for us.)
 
 1. ##### Staging deploy
