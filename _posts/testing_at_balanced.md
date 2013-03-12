@@ -58,10 +58,10 @@ Even if services are well-tested in isolation, this does not address the
 interactions between them. These service-level interactions need coverage. This
 was the problem that we set out to solve.
 
-### The testing and deployment process
+### The process
 
 We use [Jenkins](http://jenkins-ci.org/) for automating our testing and
-deployment process. We have a number of jobs configured, each one performing a
+deployment. We have a number of jobs configured, each one performing a
 specific function.  ![Image](http://i.imgur.com/NG7wImi.png)
 
 Jenkins listens for commits to the `release` branch of our various
@@ -82,7 +82,7 @@ services follow similar paths.
    since no one likes the guy (or gal) who commits broken code, but sometimes
    people are forgetful, and sometimes what works on one engineer's machine
    doesn't work on another's. A common mistake is to install some new
-   requirement manually, but forget to update the requirements file -- unit
+   library manually, but forget to update the requirements file -- unit
    tests would pass on the committer's machine, but fail when run
    elsewhere. Running unit tests in a fresh environment catches problems of that
    sort.
