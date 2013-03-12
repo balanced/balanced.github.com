@@ -151,7 +151,7 @@ services follow similar paths.
    by name?) and verify that they receive well-formed requests from us, as well
    as verifying that we can properly handle their responses.
 
-   `acceptance` runs many of the same tests as `acceptance_server`, but uses the
+   `acceptance` runs many of the same tests as `acceptance server`, but uses the
    [Werkzeug test client](http://werkzeug.pocoo.org/docs/test/) and patches
    Python's [requests](http://docs.python-requests.org/en/latest/) library to
    allow us to run all our servers in the same in-memory context. This allows us
