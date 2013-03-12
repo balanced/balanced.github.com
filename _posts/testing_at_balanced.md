@@ -174,7 +174,7 @@ services follow similar paths.
    new code, and puts the app back into HAProxy, for each machine running our
    code.
 
-## Confidence in deployment
+### Confidence in deployment
 
 This testing architecture is the result of a concerted effort we made to ensure
 that we have a consistently high level of quality. It has made deploys much more
