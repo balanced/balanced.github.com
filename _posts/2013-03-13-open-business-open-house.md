@@ -38,4 +38,8 @@ San Francisco, CA 94103](https://maps.google.com/maps?q=965+mission+street+san+f
  - Matin Tamizi, Co-Founder and CEO, [Balanced](https://www.balancedpayments.com/)
  - Chad Whitacre, Founder, [Gittip](https://www.gittip.com/)
 
+
+**RSVP:**
+Eventbrite link coming soon
+
 You can participate in the planning of this event [here](https://github.com/balanced/balanced.github.com/issues/18).
