@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Jareau Wade
-title: "Open Business 'Open' House"
+title: "Open Business, 'Open' House"
 tags:
 - open business
 - balanced
