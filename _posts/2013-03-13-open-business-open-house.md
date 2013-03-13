@@ -21,7 +21,7 @@ Balanced HQ - 965 Mission St., STE 425, San Francisco, CA 94103 [[map](https://m
 
 **Schedule:**
 
-`6:30 - 7:00` Drinks, warmup
+`6:30 - 7:00` Drinks, unstructured mingling
 
 `7:00 - 8:15` Moderated panel discussion on "Open Business"
 
