@@ -52,7 +52,7 @@ Balanced (the service) doesn't know how to get the information it needs and we
 start returning internal server errors to all of our clients (and filling our
 own emails with system warnings). Our unit tests were not sufficient to tell us
 that this small change to our fraud system was potentially a breaking change to
-our whole system.
+our system as a whole.
 
 Even if services are well-tested in isolation, this does not address the
 interactions between them. These service-level interactions need coverage. This
@@ -163,9 +163,9 @@ services follow similar paths.
    Python's [requests](http://docs.python-requests.org/en/latest/) library to
    allow us to run all our servers in the same in-memory context. This allows us
    to set arbitrary breakpoints and to patch/mock different objects at various
-   points throughout the request lifecycle all the way down through our stack to
-   assert that what is actually happening matches our understanding. Running all
-   servers in-memory also makes it trivially easy to use nosexcover and the
+   points throughout the request lifecycle, all the way down through our stack,
+   to assert that what is actually happening matches our understanding. Running
+   all servers in-memory also makes it trivially easy to use nosexcover and the
    Cobertura plugin again, this time to measure coverage of our test suite
    throughout the entire stack. If the Balanced service is well-tested by the
    acceptance suite, but the fraud system isn't being exercised enough, it's
