@@ -19,7 +19,7 @@ Mozilla WebFWD, Watsi, Trovebox, Balanced, & Gittip are hosting a panel discussi
 **Topic:**
 >I expect the open-source movement to have essentially won its point about software within three to five years (that is, by 2003–2005). Once that is accomplished, and the results have been manifest for a while, they will become part of the background culture of non-programmers. At that point it will become more appropriate to try to leverage open-source insights in wider domains. 
 
-_-_ Eric Raymond, [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/)
+> _-_ Eric Raymond, [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/)
 
 **Location:** 
 Balanced HQ - 965 Mission St., STE 425, San Francisco, CA 94103 [[map](https://maps.google.com/maps?q=965+mission+street+san+francisco&ie=UTF8&hq=&hnear=965+Mission+St,+San+Francisco,+California+94103&gl=us&t=m&z=16&vpsrc=0&iwloc=A)]
