@@ -37,7 +37,7 @@ Balanced HQ - 965 Mission St., STE 425, San Francisco, CA 94103 [[map](https://m
 **Panelists:**
 
  - [Chase Adam](http://blog.watsi.org/post/21043545556/meet-chase), Co-Founder/Vision, [Watsi](https://watsi.org/)
- - [Jaisen Mathai](http://www.jaisenmathai.com/), Founder, [Trovebox](https://trovebox.com/)
+ - [Jaisen Mathai](http://www.jaisenmathai.com/), Co-Founder, [Trovebox](https://trovebox.com/)
  - [Matin Tamizi](https://www.balancedpayments.com/about), Co-Founder/CEO, [Balanced](https://www.balancedpayments.com/)
  - [Chad Whitacre](https://www.gittip.com/whit537/), Founder, [Gittip](https://www.gittip.com/)
 
