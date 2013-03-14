@@ -14,6 +14,12 @@ tags:
 
 ## You're invited to our 'Open' House
 
+In his landmark book *[The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/)*, Eric Raymond concludes:
+
+> I expect the open-source movement to have essentially won its point about software within three to five years (that is, by 2003–2005). Once that is accomplished, and the results have been manifest for a while, they will become part of the background culture of non-programmers. At that point it will become more appropriate to try to leverage open-source insights in wider domains.
+
+He was basically right, and projects such as Wikipedia and PLoS ONE have amply demonstrated by now that "open-source insights" can indeed be applied beyond software. Just how far can these insights extend into the products we build? Can these insights extend even further than our products into our business models themselves?
+
 Mozilla WebFWD, Watsi, Trovebox, Balanced, & Gittip are hosting a panel discussion on the topic of '[Open Business](https://en.wikipedia.org/wiki/Open_business)' Wednesday, March 20th at the Balanced HQ, and we'd love for you to join us. Details below:
 
 **Location:** 
