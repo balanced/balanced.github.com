@@ -14,9 +14,9 @@ tags:
 
 ## You're invited to our 'Open' House
 
-![Balanced Open House](http://i.imgur.com/fF1NtEk.png)
+Mozilla WebFWD, Watsi, Trovebox, Balanced, & Gittip are hosting a panel discussion on the topic of '[Open Business](https://en.wikipedia.org/wiki/Open_business)' Wednesday, March 20th at the Balanced HQ, and we'd love for you to join us. Details below.
 
-Mozilla WebFWD, Watsi, Trovebox, Balanced, & Gittip are hosting a panel discussion on the topic of '[Open Business](https://en.wikipedia.org/wiki/Open_business)' Wednesday, March 20th at the Balanced HQ, and we'd love for you to join us. Details below:
+![Balanced Open House](http://i.imgur.com/fF1NtEk.png)
 
 **Topic:**
 >"I expect the open-source movement to have essentially won its point about software within three to five years (that is, by 2003–2005). Once that is accomplished, and the results have been manifest for a while, they will become part of the background culture of non-programmers. At that point it will become more appropriate to try to leverage open-source insights in wider domains."
