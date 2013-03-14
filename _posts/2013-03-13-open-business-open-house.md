@@ -14,6 +14,8 @@ tags:
 
 ## You're invited to our 'Open' House
 
+![Balanced Open House](http://imgur.com/fF1NtEk)
+
 Mozilla WebFWD, Watsi, Trovebox, Balanced, & Gittip are hosting a panel discussion on the topic of '[Open Business](https://en.wikipedia.org/wiki/Open_business)' Wednesday, March 20th at the Balanced HQ, and we'd love for you to join us. Details below:
 
 **Topic:**
