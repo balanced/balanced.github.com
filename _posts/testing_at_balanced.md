@@ -92,7 +92,7 @@ services follow similar paths.
 
          # Unit tests
          nosetests -sv --with-id --with-xunit --with-xcoverage \
-            --cover-package=balanced_service --cover-erase || true
+            --cover-package=balanced_service --cover-erase
 
          # Pylint
          python -c "import sys, pylint.lint; pylint.lint.Run(sys.argv[1:])" \
