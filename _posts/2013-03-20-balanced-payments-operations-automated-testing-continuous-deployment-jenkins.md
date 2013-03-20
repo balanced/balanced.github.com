@@ -107,7 +107,7 @@ services follow similar paths.
    We use [Nose](https://nose.readthedocs.org/en/latest/) as our test
    runner and we leverage a number of plugins to help streamline the
    testing process. We wrote a small plugin,
-   [nose-setenv](nose-setenv), to help us configure our tests for the
+   [nose-setenv](https://github.com/mahmoudimus/nose-setenv), to help us configure our tests for the
    environments we run them in and we leverage the
    [Xunit](http://nose.readthedocs.org/en/latest/plugins/xunit.html)
    plugin to produce an XML output file containing the results of the unit tests, which Jenkins uses to create graphs like this:
