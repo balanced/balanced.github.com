@@ -116,10 +116,10 @@ services follow similar paths.
    hunker down and write more tests, but this ensures that unit test coverage
    remains comprehensive
 
-    (Jenkins' Cobertura plugin also enforces coverage levels, but at a
-    granularity that [wasn't
-    sufficient](http://stackoverflow.com/questions/10747514/how-to-configure-jenkins-cobertura-plugin-to-monitor-specific-packages/)
-    for us.)
+   (Jenkins' Cobertura plugin also enforces coverage levels, but at a
+   granularity that [wasn't
+   sufficient](http://stackoverflow.com/questions/10747514/how-to-configure-jenkins-cobertura-plugin-to-monitor-specific-packages/)
+   for us.)
 
 1. ##### Staging deploy
 
