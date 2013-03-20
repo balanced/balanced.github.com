@@ -15,18 +15,18 @@ tags:
 As a payments company, we have very little room for error. Our customers count
 on us to be up and running constantly, since if we're not up, they can't do
 business. They also count on us to be innovative, to release new features that
-make their lives easier. These goals sometimes come into conflict, since any
-time we have a new feature to release, or another deploy to make, there's an
-inherent risk of breakage. To mitigate that risk, we've devised a few ways to
-minimize our chances of introducing bugs or regressions.
+make their lives easier. These goals sometimes come into conflict with each
+other, since any time we have a new feature to release, or another deploy to
+make, there's an inherent risk of breakage. To mitigate that risk, we've
+devised a few ways to minimize our chances of introducing bugs or regressions.
 
 ### Tests. Lots of tests.
 
 From the very beginning, Balanced has had extensive unit tests. We follow the
 Model-View-Controller pattern, and each of these sets of components has its own
 set of unit tests. When taken all together, these tests provide a good baseline
-level of confidence that our application works the way we think it
-should. However...
+level of confidence that our application works the way we think it should.
+However...
 
 ### Unit tests are not enough!
 
@@ -36,23 +36,23 @@ system, our vaulting system, our dashboard system, and so on, and all these
 interactions need to be tested. Unit tests alone are not sufficient to verify
 all these interactions.
 
-For example, we may know that our fraud system includes a field called
-`csc_check` in its responses, containing information about whether the [card
-security code](http://en.wikipedia.org/wiki/Card_security_code) provided on a
-transaction was a match. Balanced may have examples of this response in its unit
-tests, making sure that it can handle all the values it may receive, and life is
-good.
+For example, our fraud system may include a field called `csc_check` in its
+responses, containing information about whether the [card security
+code](http://en.wikipedia.org/wiki/Card_security_code) provided on a
+transaction was a match. Balanced may have examples of this response in its
+unit tests, making sure that it can handle all the values it may receive, and
+life is good.
 
-Then suppose, hypothetically, we decide that a better name for this field is
+Suppose we decide that a better name for this field is
 `security_code_check`. Since the CSC check can go by many names this should be
 fine, right? So we update our fraud system with the new name everywhere, its
-unit tests all pass, and we deploy it. Then, since we forgot to update the
-Balanced service, it has *no idea* that this field has a new name. Consequently,
-Balanced (the service) doesn't know how to get the information it needs and we
-start returning internal server errors to all of our clients (and filling our
-own emails with system warnings). Our unit tests were not sufficient to tell us
-that this small change to our fraud system was potentially a breaking change to
-our system as a whole.
+unit tests all pass, and we deploy it. However, since we forgot to update the
+Balanced service, it has *no idea* that this field has a new
+name. Consequently, Balanced (the service) doesn't know how to get the
+information it needs and we start returning internal server errors to all of
+our clients (and filling our own emails with system warnings). Our unit tests
+were not sufficient to tell us that this small change to our fraud system was
+potentially a breaking change to our system as a whole.
 
 Even if services are well-tested in isolation, this does not address the
 interactions between them. These service-level interactions need coverage. This
@@ -83,11 +83,32 @@ services follow similar paths.
    theoretically should have ensured that these tests pass before committing,
    since no one likes the guy (or gal) who commits broken code, but sometimes
    people are forgetful, and sometimes what works on one engineer's machine
-   doesn't work on another's. A common mistake is to install some new
-   library manually, but forget to update the requirements file -- unit
-   tests would pass on the committer's machine, but fail when run
-   elsewhere. Running unit tests in a fresh environment catches problems of that
-   sort.
+   doesn't work on another's. A common mistake is to install some new library
+   manually, but forget to update the requirements file -- unit tests would
+   pass on the committer's machine, but fail when run elsewhere. Running unit
+   tests in a fresh environment catches this type of problem.
+
+   After setting up our environment, we run our tests in a manner similar to this:
+
+         # Unit tests
+         nosetests -sv --with-id --with-xunit --with-xcoverage \
+            --cover-package=balanced_service --cover-erase || true
+
+         # Pylint
+         python -c "import sys, pylint.lint; pylint.lint.Run(sys.argv[1:])" \
+            --output-format=parseable --include-ids=y --reports=n           \
+            balanced_service/ | tee pylint.out
+
+         # Pep8
+         find balanced_service -name \*.py | xargs pep8 | tee pep8.out
+
+   [Nose](https://nose.readthedocs.org/en/latest/)'s [Xunit](http://nose.readthedocs.org/en/latest/plugins/xunit.html) plugin produces an XML output file containing the results of the unit tests, which Jenkins uses to create graphs like this:
+
+   ![Xunit graph](http://i.imgur.com/q1XspAD.png)
+
+   As you can see, our tests are mostly stable, with an occasional failure that necessitates a quick fix. Build #806 shows what happens when requirements aren't updated properly -- every single test fails due to a bad `import` statement, and the engineer who forgot to update the requirements file sheepishly commits a one-line fix.
+
+   We also run Pep8 and Pylint over our code, to track violations of style and good Python practices. Jenkins' [Violations](https://wiki.jenkins-ci.org/display/JENKINS/Violations) plugin can fail the build if code quality falls below a certain threshhold, but we use this for informational purposes only.
 
    We run our unit tests using
    [nosexcover](https://pypi.python.org/pypi/nosexcover/), which gives us an
@@ -95,7 +116,7 @@ services follow similar paths.
    [Cobertura](https://wiki.jenkins-ci.org/display/JENKINS/Cobertura+Plugin)
    Jenkins plugin to generate coverage graphs like this:
 
-   ![Coverage graph](http://i.imgur.com/1HWPmpd.png)
+   ![Coverage graph](http://i.imgur.com/XIrKQSq.png)
 
    The coverage output is also passed to the next step…
 
@@ -111,12 +132,12 @@ services follow similar paths.
    drops below a minimum threshold.
 
    For instance, for the Balanced service, we require that all models and
-   controllers have greater than 95% test coverage, which means that unit tests
+   controllers have at least 95% test coverage, which means that unit tests
    must exercise at least 95% of the code for the build to continue. Every
    engineer here has felt the pain of committing code and receiving an email
    stating that the coverage level has dropped to 94.47%, and then having to
    hunker down and write more tests, but this ensures that unit test coverage
-   remains comprehensive
+   remains comprehensive.
 
    (Jenkins' Cobertura plugin also enforces coverage levels, but at a
    granularity that [wasn't
@@ -128,7 +149,7 @@ services follow similar paths.
    After the self-contained unit tests have passed and been found to provide
    sufficient test coverage, we deploy the service to our internal staging
    environment. This is a test in and of itself -- if after the deploy the
-   service fails to start up properly, it may indicate that, a server setting
+   service fails to start up properly, it may indicate that a server setting
    has been misconfigured, and this code isn't ready for the production
    environment.
 
@@ -182,7 +203,7 @@ services follow similar paths.
    Once all these tests have passed, we're confident that the new code hasn't
    introduced any regressions and is ready to be deployed. To reduce the chance
    of operator error, our testing server performs deploys for us as well. We use
-   Fabric and run a `deploy` task that pulls the code from our Github repo,
+   [Fabric](http://docs.fabfile.org/en/1.6/) and run a `deploy` task that pulls the code from our Github repo,
    removes an instance of the app from our load balancer (HAProxy), loads the
    new code, and puts the app back into HAProxy, for each machine running our
    code.
