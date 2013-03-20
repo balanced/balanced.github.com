@@ -62,7 +62,9 @@ was the problem that we set out to solve.
 
 We use [Jenkins](http://jenkins-ci.org/) for automating our testing and
 deployment. We have a number of jobs configured, each one performing a
-specific function.  ![Image](http://i.imgur.com/NG7wImi.png)
+specific function.
+
+![Image](http://i.imgur.com/NG7wImi.png)
 
 Jenkins listens for commits to the `release` branch of our various
 services. When a commit is pushed, it begins the testing and deployment process,
