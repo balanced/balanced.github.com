@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Marc Sherry
-title: "How Balanced Automates Testing and Deployment"
+title: " How Balanced Automates Testing and Continuously Deploys"
 tags:
 - balanced
 - operations
@@ -11,7 +11,7 @@ tags:
 - jenkins
 ---
 
-## How Balanced automates testing and deployment
+## How Balanced Automates Testing and Continuously Deploys
 
 As a payments company, we have very little room for error. Our customers count
 on us to be up and running constantly, since if we're not up, they can't do
@@ -31,11 +31,12 @@ However...
 
 ### Unit tests are not enough!
 
-Balanced (the company) runs a number of separate services internally, of which
-Balanced (the service) is just one. This service has to interact with our fraud
-system, our vaulting system, our dashboard system, and so on, and all these
-interactions need to be tested. Unit tests alone are not sufficient to verify
-all these interactions.
+Balanced (the company) runs a number of separate services internally
+-- mostly written in [Python](https://python.org), of which Balanced
+(the service) is just one. This service has to interact with our fraud
+services, our vaulting services, our dashboard service, and so on, and all
+these interactions need to be tested. Unit tests alone are not
+sufficient to verify all these interactions. 
 
 For example, our fraud system may include a field called `csc_check` in its
 responses, containing information about whether the [card security
@@ -103,8 +104,13 @@ services follow similar paths.
          # Pep8
          find balanced_service -name \*.py | xargs pep8 | tee pep8.out
 
-   [Nose](https://nose.readthedocs.org/en/latest/)'s [Xunit](http://nose.readthedocs.org/en/latest/plugins/xunit.html) plugin produces an XML output file containing the results of the unit tests, which Jenkins uses to create graphs like this:
-
+   We use [Nose](https://nose.readthedocs.org/en/latest/) as our test
+   runner and we leverage a number of plugins to help streamline the
+   testing process. We wrote a small plugin,
+   [nose-setenv](nose-setenv), to help us configure our tests for the
+   environments we run them in and we leverage the
+   [Xunit](http://nose.readthedocs.org/en/latest/plugins/xunit.html)
+   plugin to produce an XML output file containing the results of the unit tests, which Jenkins uses to create graphs like this:
    ![Xunit graph](http://i.imgur.com/q1XspAD.png)
 
    As you can see, our tests are mostly stable, with an occasional failure that necessitates a quick fix. Build #806 shows what happens when requirements aren't updated properly -- every single test fails due to a bad `import` statement, and the engineer who forgot to update the requirements file sheepishly commits a one-line fix.
@@ -226,3 +232,16 @@ ensure that we have a consistently high level of quality, and it pays enormous
 dividends. It has made deploys much more risk-free, and greatly increased our
 ability to move quickly and introduce new features while minimizing the
 introduction of new bugs.
+
+### Final Thoughts
+
+Balanced still has a long way to go. This solution works for now, but we're always
+looking for ways to improve. We have to deal with a level of quality
+that catches problems early to let us move fast and break things, just
+not in a catastrophic way.
+
+If these kinds of problems interest you and you're looking for a real
+challenge, contact us! We're always looking for sharp and talented
+individuals that can make an impact.
+
+    NmQ2ZjYzMmU3Mzc0NmU2NTZkNzk2MTcwNjQ2NTYzNmU2MTZjNjE2MjQwNjU2MzZlNjU3MjY1NjY2NjY5NjQ2MTY1NmI2MTZkNmY3NDc0NmU2MTc3Njk=
