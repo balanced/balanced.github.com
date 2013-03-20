@@ -245,3 +245,7 @@ challenge, contact us! We're always looking for sharp and talented
 individuals that can make an impact.
 
     NmQ2ZjYzMmU3Mzc0NmU2NTZkNzk2MTcwNjQ2NTYzNmU2MTZjNjE2MjQwNjU2MzZlNjU3MjY1NjY2NjY5NjQ2MTY1NmI2MTZkNmY3NDc0NmU2MTc3Njk=
+    
+---
+
+We're discussing this post on [HN](https://news.ycombinator.com/item?id=5409062)
