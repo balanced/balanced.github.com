@@ -88,10 +88,13 @@ services follow similar paths.
    sort.
 
    We run our unit tests using
-   [nosexcover](https://pypi.python.org/pypi/nosexcover/), which gives us an XML
-   coverage report file. This is both used by the
+   [nosexcover](https://pypi.python.org/pypi/nosexcover/), which gives us an
+   XML coverage report file. This is both used by the
    [Cobertura](https://wiki.jenkins-ci.org/display/JENKINS/Cobertura+Plugin)
-   Jenkins plugin to generate coverage graphs, and passed to the next step...
+   Jenkins plugin to generate coverage graphs like this: ![Coverage
+   graph](http://i.imgur.com/1HWPmpd.png)
+
+   The coverage output is also passed to the next step…
 
 1. ##### Coverage enforcement
 
