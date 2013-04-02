@@ -16,11 +16,11 @@ tags:
 
 Today, we're thrilled to welcome two new investors to our list of amazing backers:
 
-- [Andreessen Horowitz](http://a16z.com/), via general partner [Jeff Jordan](http://jeff.a16z.com/about/), former president of PayPal, and
-- [Collaborative Fund](http://www.collaborativefund.com/), an early-stage investment firm with a strong focus on networks, Collaborative Consumption, and marketplacs.
+- [Andreessen Horowitz](http://a16z.com/) via general partner [Jeff Jordan](http://jeff.a16z.com/about/), former president of PayPal, and
+- [Collaborative Fund](http://www.collaborativefund.com/), an early-stage investment firm with a strong focus on networks, Collaborative Consumption, and marketplaces.
 
 #### Previous investors
-a16z and CollabFund join our list of already amazing and supportive investors, which includes Y Combinator, SV Angel, Airbnb CEO Brian Chesky, reddit CEO Yishan Wong, Ashton Kutcher, and over a dozen angel investors, [many of them Facebook alumni](http://pandodaily.com/2013/03/19/balanced-raises-a-rapid-800k-on-a-little-known-fundraising-platform-called-facebook/). We're blessed to have so many accomplished and supportive people believe in our team and our vision.
+a16z and CollabFund join our list of fantastic investors, which includes Y Combinator, SV Angel, Airbnb CEO Brian Chesky, reddit CEO Yishan Wong, Ashton Kutcher, and over a dozen angel investors, [many of them Facebook alumni](http://pandodaily.com/2013/03/19/balanced-raises-a-rapid-800k-on-a-little-known-fundraising-platform-called-facebook/). We're blessed to have so many accomplished and supportive people believe in our team and our vision.
 
 #### What we'll use the money for
 We want to continue fulfilling our goal of making Balanced the ideal payments solution for the toughest type of ecommerce model: marketplaces and networks (i.e. companies like Kickstarter and Airbnb). All of whom face significant issues around:
