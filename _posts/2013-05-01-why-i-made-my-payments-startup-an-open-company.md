@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Matin Tamizi
-title: "Why I Made My Payments Startup An Open Company"
+title: "Why I Made Balanced An Open Company"
 tags:
 - balanced
 - open company
