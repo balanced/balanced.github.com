@@ -1,0 +1,5 @@
+* Joonas Bergius (@joonas)
+* Steve Klabnik (@steveklabnik)
+* Chad Whitacre (@whit537)
+* Ben Mills (@remear)
+* Dmitri Shuralyov (@shurcooL)
