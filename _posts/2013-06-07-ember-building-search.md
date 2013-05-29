@@ -45,9 +45,7 @@ The tough decision was choosing how to perform search queries themselves. We saw
 1. Write a custom AJAX query and parse the data when it returns
 2. Treat a search query as a model object
 
-We tried both and opted for the second option. Since our API uses hypermedia, we'd already customized our data layer to use URI as the unique identifier instead of ID, so this made it easy to represent a single search as a model object. This allows us to take advantage of all of our model features as well as any model caching we may implement in the future.
-
-
+We tried both and opted for the second option. Since our API uses hypermedia, we'd already customized our data layer to use URIs as unique identifiers instead of IDs, so this made it easy to represent a single search as a model object. This allows us to take advantage of all of our model features as well as any model caching we may implement in the future.
 
 	Balanced.SearchQuery = Balanced.Model.extend({
 	});
@@ -67,25 +65,69 @@ With this code in place, running a search is simple.
 
 #### User Interface
 
-Why it's not a route.
+Going from the top down, the first choice was: is search a route or just a controller? Since we wanted search to be embedded at the top of every page, performing a search doesn't change the overall application state. This led us to make search a controller that's rendered into our application layout, rather than a route. If we were going to have a page with a URL for searches, that's when it would be appropriate to use a route.
 
-Controller
+Generally we wanted the controller to handle all the logic about queries, filters, and dealing with results. We broke down the views into logical components to keep things simple.
 
-Views
-	date picker
-	headers
+![View Composition Diagram](TODO)
+
+One aspect that complicated things a touch was that while the search was being performed, we wanted to display a loading spinner. We didn't want to display the results panel until the results had actually returned.
+
+Displaying the loading spinner was simple. We added a property to our controller called `isLoading` and updated it when we were actually performing a search. Then in the template, we could just use a simple conditional to display the loading spinner.
+
+	{{# if isLoading }}
+	    <span class="loader loading"></span>
+	{{else}}
+	    <span class="close" {{action closeSearch target="view"}}>×</span>
+	{{/if}}
 	
-Template/isLoading
+Displaying the results panel was a bit more complicated.
+
+TODO - we should clean up the callbacks we're passing all over the place for search and use Ember observers instead. Describing how it works now will be overly complicated for no reason.
 
 #### Date Picker Widget
 
-How to build out a widget view
+One of the more substantial widgets we had to create to get this working was the date picker.
 
-How to embed it in the page
+![Date Picker](TODO)
 
-How to fire change events to the parent
+The first consideration was what type of component it should be. The date picker doesn't deal with models or business logic at all, so it didn't make sense to make it a controller. It did have a significant amount of JavaScript to power all the advanced functionality, so we opted to make it a reusable view.
 
-How to handle those change events in the parent
+In order to communicate date selection changes, we fire events to the controller containing this view and let the controller handle it.
+
+	Balanced.SearchView = Balanced.View.extend({
+	  templateName: 'search',
+	
+	  selectSearchResult: function(uri) {
+	    this.reset();
+	    this.get('controller').send('selectSearchResult', uri);
+	  },
+	
+	  ...
+	  
+	  _changeDateFilter: function(label) {
+	    this._setTimingTitle(label);
+	    this.get("controller").send("changeDateFilter", this.minTime, this.maxTime);
+	  },
+	});
+
+In order to handle the update in the controller, you just need to write a handler for the `changeDateFilter` event.
+
+	Balanced.SearchController = Balanced.ObjectController.extend({
+		…
+		
+		changeDateFilter: function (minDate, maxDate) {
+		    this.set('minDate', minDate);
+		    this.set('maxDate', maxDate);
+		    this.query();
+		},
+		
+		…
+	});
+
+Once the view and template have been defined, embedding it into another template is simple.
+
+	{{view Balanced.DatePickerView}}
 
 #### Tying It All Together
 
@@ -97,7 +139,9 @@ How to handle those change events in the parent
 
 #### Testing
 
-Why it's awesome that we used a model / URI identifiers.
+As part of our quality process and to help contributors, we maintain test coverage for every part of our system including the front-end applications. We're using a simple JavaScript testing process using QUnit for testing and PhantomJS to run the suites through the command line.
+
+Since we built our search query as a model object, adding test data for it is easy. We added fixtures with URIs specific to what we were testing and wrote our tests against that. Testing a new query or filter is as easy as adding a new fixture object that matches the search URI.
 
 #### Final Thoughts
 
