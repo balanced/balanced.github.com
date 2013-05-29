@@ -18,7 +18,7 @@ We started out with an [open discussion on Github](https://github.com/balanced/b
 
 ![Image](https://f.cloud.github.com/assets/2037452/422511/bc188db0-ad29-11e2-9e3f-fa046e2065f5.png)
 
-If you browse the thread, you'll see the high level of detail our designer [Damon](https://github.com/dmdj03) gave us including font sizing, column layouts, opacity, and rollover behavior. This greatly reduced the back-and-forth between developers and designers during the process of building.
+If you browse the thread, you'll see the high level of detail our designer [Damon](https://github.com/dmdj03) gave us including font sizing, column layouts, opacity, and rollover behavior. This greatly reduced the back-and-forth between developers and designers during the building process.
 
 #### Data Model
 
@@ -67,12 +67,42 @@ With this code in place, running a search is simple.
 
 #### User Interface
 
-#### Widgets
+Why it's not a route.
+
+Controller
+
+Views
+	date picker
+	headers
+	
+Template/isLoading
+
+#### Date Picker Widget
+
+How to build out a widget view
+
+How to embed it in the page
+
+How to fire change events to the parent
+
+How to handle those change events in the parent
 
 #### Tying It All Together
 
+1. Typing into the search box updates the query in the controller
+2. Updating the date filter updates the query in the controller
+3. Controller calls off on model to update
+4. When model is fetched, controller updates content/isLoading
+5. Template updates dynamically
+
 #### Testing
 
-
+Why it's awesome that we used a model / URI identifiers.
 
 #### Final Thoughts
+
+Hopefully this was helpful.
+
+You should contribute.
+
+You should join our team.
