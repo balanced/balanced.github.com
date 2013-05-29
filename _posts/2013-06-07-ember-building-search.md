@@ -71,7 +71,19 @@ Generally we wanted the controller to handle all the logic about queries, filter
 
 ![View Composition Diagram](TODO)
 
-One aspect that complicated things a touch was that while the search was being performed, we wanted to display a loading spinner. We didn't want to display the results panel until the results had actually returned.
+We used a simple valueBinding on an input view to bind the query box to a variable on the controller.
+
+	{{view Balanced.SearchQueryInputView valueBinding="search" action="query" name="q" id="q" autocomplete="off"}}
+
+Thanks to the magic of Ember bindings, the value of the input box is now automatically synced to the corresponding variable we've definied in our controller and available for use.
+
+	Balanced.SearchController = Balanced.ObjectController.extend({
+		search: '',
+		
+		…
+	});
+
+One aspect that complicated things a bit was that while the search was being performed, we wanted to display a loading spinner. We didn't want to display the results panel until the results had actually returned.
 
 Displaying the loading spinner was simple. We added a property to our controller called `isLoading` and updated it when we were actually performing a search. Then in the template, we could just use a simple conditional to display the loading spinner.
 
@@ -89,7 +101,7 @@ TODO - we should clean up the callbacks we're passing all over the place for sea
 
 One of the more substantial widgets we had to create to get this working was the date picker.
 
-![Date Picker](TODO)
+![Date Picker](http://i.imgur.com/mF26ftR.png)
 
 The first consideration was what type of component it should be. The date picker doesn't deal with models or business logic at all, so it didn't make sense to make it a controller. It did have a significant amount of JavaScript to power all the advanced functionality, so we opted to make it a reusable view.
 
@@ -132,10 +144,10 @@ Once the view and template have been defined, embedding it into another template
 #### Tying It All Together
 
 1. Typing into the search box updates the query in the controller
-2. Updating the date filter updates the query in the controller
-3. Controller calls off on model to update
-4. When model is fetched, controller updates content/isLoading
-5. Template updates dynamically
+2. Updating the date filter updates the dates in the controller
+3. Controller does a search for a search query model using the search parameters
+4. When model is fetched, controller updates content and isLoading
+5. Templates updates dynamically from the bound variables
 
 #### Testing
 
@@ -145,8 +157,12 @@ Since we built our search query as a model object, adding test data for it is ea
 
 #### Final Thoughts
 
-Hopefully this was helpful.
+Hopefully this gave you more insight about how we develop software and how to use Ember.js effectively. If you want to dive deeper, the source to our whole application is available on [Github](https://github.com/balanced/balanced-dashboard).
 
-You should contribute.
+We'd love for you to get involved in the development process. Feature discussion and designs are on [Github](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](TODO) to get started!
 
-You should join our team.
+If these kinds of problems interest you and you're looking for a real
+challenge, contact us! We're always looking for sharp and talented
+individuals that can make an impact.
+
+	NmQ2ZjYzMmU3Mzc0NmU2NTZkNzk2MTcwNjQ2NTYzNmU2MTZjNjE2MjQwNjU2MzZlNjU3MjY1NjY2NjY5NjQ2MTY1NmI2MTZkNmY3NDc0NmU2MTc3Njk=
