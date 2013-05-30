@@ -10,7 +10,7 @@ tags:
 
 ## Ember.js Dashboard: Building Search
 
-To continue digging into Ember.js, we wanted to walk through the how we built the search system in the dashboard. This should help illustrate our design and development process. More specifically, we'll dive into how to construct models, choosing the right Ember.js components, and developing reusable widgets.
+To continue digging into Ember.js, we wanted to walk through how we built the search system in the dashboard. This should help illustrate our design and development process. More specifically, we'll dive into how to construct models, choosing the right Ember.js components, and developing reusable widgets.
 
 #### Design
 
@@ -65,11 +65,15 @@ With this code in place, running a search is simple.
 
 #### User Interface
 
-Going from the top down, the first choice was: is search a route or just a controller? Since we wanted search to be embedded at the top of every page, performing a search doesn't change the overall application state. This led us to make search a controller that's rendered into our application layout, rather than a route. If we were going to have a page with a URL for searches, that's when it would be appropriate to use a route.
+Since we wanted search to be embedded at the top of every page, performing a search doesn't change the overall application state. This led us to make search a controller that's rendered into our application layout, rather than a route. If we were going to have a page with a URL for searches, that's when it would be appropriate to use a route.
 
-Generally we wanted the controller to handle all the logic about queries, filters, and dealing with results. We broke down the views into logical components to keep things simple.
+We defined a simple controller and embedded it into the application layout using render.
 
-![View Composition Diagram](TODO)
+	{{ render "search" }}
+
+Generally we wanted the controller to handle all the logic about queries, filters, and dealing with results. We broke down its sub-views into logical components to keep things simple.
+
+![View Composition Diagram](http://i.imgur.com/qQ36nxF.png)
 
 We used a simple valueBinding on an input view to bind the query box to a variable on the controller.
 
@@ -93,9 +97,31 @@ Displaying the loading spinner was simple. We added a property to our controller
 	    <span class="close" {{action closeSearch target="view"}}>×</span>
 	{{/if}}
 	
-Displaying the results panel was a bit more complicated.
-
-TODO - we should clean up the callbacks we're passing all over the place for search and use Ember observers instead. Describing how it works now will be overly complicated for no reason.
+Showing the results panel when the search completed wasn't as simple because we had custom JavaScript in the view that needed to execute every time a search was run. We took advantage of callbacks make this work. In order to trigger a new search from the view, we fired an event to the controller with a callback as the parameter. This callback updated the views based on the newly returned results.
+	
+	Balanced.SearchView = Balanced.View.extend({
+	  templateName: 'search',
+	  
+	  … 	
+	
+	onQueryChange: function(e) {
+	    var self = this;
+	
+	    if($("#q").val().length === 0) {
+	      self.toggleResults();
+	      return;
+	    }
+	
+	    self._runSearch(function() {
+	      self.toggleResults();
+	      self._highlightResults();
+	    });
+	  },
+	
+	_runSearch: function(callback) {
+	    this.get('controller').send('query', callback);
+	  }
+	});
 
 #### Date Picker Widget
 
@@ -103,7 +129,7 @@ One of the more substantial widgets we had to create to get this working was the
 
 ![Date Picker](http://i.imgur.com/mF26ftR.png)
 
-The first consideration was what type of component it should be. The date picker doesn't deal with models or business logic at all, so it didn't make sense to make it a controller. It did have a significant amount of JavaScript to power all the advanced functionality, so we opted to make it a reusable view.
+The date picker doesn't deal with models or business logic at all, so it didn't make sense to make it a controller. It did have a significant amount of JavaScript to power all the advanced functionality, so we opted to make it a reusable view.
 
 In order to communicate date selection changes, we fire events to the controller containing this view and let the controller handle it.
 
@@ -143,15 +169,17 @@ Once the view and template have been defined, embedding it into another template
 
 #### Tying It All Together
 
+Here's a step by step view of how a search happens.
+
 1. Typing into the search box updates the query in the controller
 2. Updating the date filter updates the dates in the controller
-3. Controller does a search for a search query model using the search parameters
-4. When model is fetched, controller updates content and isLoading
+3. To run a search, the controller calls `search` on the search query model, which does a `find` using the search parameters
+4. When the model is fetched, the controller updates `content` and `isLoading`
 5. Templates updates dynamically from the bound variables
 
 #### Testing
 
-As part of our quality process and to help contributors, we maintain test coverage for every part of our system including the front-end applications. We're using a simple JavaScript testing process using QUnit for testing and PhantomJS to run the suites through the command line.
+As part of our quality process and to help contributors get started without breaking things, we maintain test coverage for every part of our system including the front-end applications. We're using a simple JavaScript testing process using QUnit for testing and PhantomJS to run the suites through the command line.
 
 Since we built our search query as a model object, adding test data for it is easy. We added fixtures with URIs specific to what we were testing and wrote our tests against that. Testing a new query or filter is as easy as adding a new fixture object that matches the search URI.
 
