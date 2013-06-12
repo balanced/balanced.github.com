@@ -23,17 +23,17 @@ If you browse the thread, you'll see the high level of detail our designer [Damo
 #### Data Model
 
 We started out by creating types for the data that needed to be returned in search results. Through this guide, I'm just going to focus on transactions. The code for accounts, bank accounts, and credit cards is similar. Since we wanted to show different types of transactions grouped together, we created a parent class for transactions from which children extended.
-	
+
 	Balanced.Transaction = Balanced.Model.extend({
-	
+
 	});
-	
+
 	Balanced.Debit = Balanced.Transaction.extend({
 	    funding_instrument_description: function() {
 	      return this.get('source').card_type;
 	    }.property('source')
 	});
-	
+
 	Balanced.Credit = Balanced.Transaction.extend({
 	    funding_instrument_description: function() {
 	      return this.get('bank_account').bank_name;
@@ -49,7 +49,7 @@ We tried both and opted for the second option. Since our API uses hypermedia, we
 
 	Balanced.SearchQuery = Balanced.Model.extend({
 	});
-	
+
 	Balanced.SearchQuery.reopenClass({
 	   search: function (marketplaceUri, params, options) {
 	        var uri = marketplaceUri + '/search?q=' + params.query;
@@ -83,7 +83,7 @@ Thanks to the magic of Ember bindings, the value of the input box is now automat
 
 	Balanced.SearchController = Balanced.ObjectController.extend({
 		search: '',
-		
+
 		…
 	});
 
@@ -96,28 +96,28 @@ Displaying the loading spinner was simple. We added a property to our controller
 	{{else}}
 	    <span class="close" {{action closeSearch target="view"}}>×</span>
 	{{/if}}
-	
+
 Showing the results panel when the search completed wasn't as simple because we had custom JavaScript in the view that needed to execute every time a search was run. We took advantage of callbacks make this work. In order to trigger a new search from the view, we fired an event to the controller with a callback as the parameter. This callback updated the views based on the newly returned results.
-	
+
 	Balanced.SearchView = Balanced.View.extend({
 	  templateName: 'search',
-	  
-	  … 	
-	
+
+	  …
+
 	onQueryChange: function(e) {
 	    var self = this;
-	
+
 	    if($("#q").val().length === 0) {
 	      self.toggleResults();
 	      return;
 	    }
-	
+
 	    self._runSearch(function() {
 	      self.toggleResults();
 	      self._highlightResults();
 	    });
 	  },
-	
+
 	_runSearch: function(callback) {
 	    this.get('controller').send('query', callback);
 	  }
@@ -135,14 +135,14 @@ In order to communicate date selection changes, we fire events to the controller
 
 	Balanced.SearchView = Balanced.View.extend({
 	  templateName: 'search',
-	
+
 	  selectSearchResult: function(uri) {
 	    this.reset();
 	    this.get('controller').send('selectSearchResult', uri);
 	  },
-	
+
 	  ...
-	  
+
 	  _changeDateFilter: function(label) {
 	    this._setTimingTitle(label);
 	    this.get("controller").send("changeDateFilter", this.minTime, this.maxTime);
@@ -153,13 +153,13 @@ In order to handle the update in the controller, you just need to write a handle
 
 	Balanced.SearchController = Balanced.ObjectController.extend({
 		…
-		
+
 		changeDateFilter: function (minDate, maxDate) {
 		    this.set('minDate', minDate);
 		    this.set('maxDate', maxDate);
 		    this.query();
 		},
-		
+
 		…
 	});
 
@@ -187,7 +187,7 @@ Since we built our search query as a model object, adding test data for it is ea
 
 Hopefully this gave you more insight about how we develop software and how to use Ember.js effectively. If you want to dive deeper, the source to our whole application is available on [Github](https://github.com/balanced/balanced-dashboard).
 
-We'd love for you to get involved in the development process. Feature discussion and designs are on [Github](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](TODO) to get started!
+We'd love for you to get involved in the development process. Feature discussion and designs are on [Github](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](https://github.com/balanced/balanced-dashboard/blob/master/CONTRIBUTING.md) to get started!
 
 If these kinds of problems interest you and you're looking for a real
 challenge, contact us! We're always looking for sharp and talented
