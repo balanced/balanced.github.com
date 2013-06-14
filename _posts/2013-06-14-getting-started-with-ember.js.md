@@ -10,17 +10,17 @@ tags:
 
 # Getting Started with Ember.js
 
-As part of being an open company, we're designing a brand new dashboard that's completely open source. We feel that this will help get our community involved and invested in a piece of software that they use on a day-to-day basis.
+As part of being an [open company](www.fastcolabs.com/3008944/open-company/why-i-made-my-payments-startup-an-open-company), we're designing a [brand new dashboard](https://dashboard.balancedpayments.com/) that's completely [open source](https://github.com/balanced/balanced-dashboard). In favor of giving back to the community, we are going to write several articles on [Ember.js](http://emberjs.com/) describing our experiences with Ember.js as we build our software in the public. We feel that this will help get our community involved and invested in a piece of software that thousands of companies use on a day-to-day basis.
 
-We wanted to build it in JavaScript to separate the front-end and back-end development. We chose [Ember.js](http://emberjs.com/) as our framework. It's an exciting technology and we've had fun picking it up. There are a few rough edges, so here are a few things we've learned along the way.
+We wanted to build our dashboard in JavaScript to separate the both front-end and back-end development as well as leverage the power of [Balanced's](https://balancedpayments.com/) RESTful API. We chose [Ember.js](http://emberjs.com/) as our framework. It's an exciting technology and we've had fun picking it up. There are a few rough edges, so our first article is about some few things which we've learned along the way.
 
 ## Concepts
 
 Since Ember is structured differently than many web-based MVC frameworks, one of the most important things to learn is how to structure your applications.
 
-The Ember Guides section on [Core Concepts](http://emberjs.com/guides/concepts/core-concepts/) is a great place to start. One thing I didn't feel this did a good job of explaining was how to know when to use different concepts. Here are a few tips on which components to use. In the next post of this series, we'll walk through an example of choosing components to use to build out a feature.
+The Ember Guides section on [Core Concepts](http://emberjs.com/guides/concepts/core-concepts/) is a great place to start, however, I felt that it didn't do a thorough job relaying how to know when to use different concepts. We'll share a few tips now, but the next post of this Ember series, we'll actually walk through an example of choosing components to use to build out a feature.
 
-##### View Components
+### View Components
 
 **Route** - Use a route when you want the page to have a URL.
 
@@ -30,7 +30,7 @@ The Ember Guides section on [Core Concepts](http://emberjs.com/guides/concepts/c
 
 **Partial** - Use a partial to include common template code. Use this if you solely need templating code and won't need to handle UI events or business logic.
 
-##### Template Components
+### Template Components
 
 **partial** - Used to include another template inside the current template.
 
@@ -54,7 +54,7 @@ Since we were dealing with a mature API that couldn't be changed and didn't work
 
 ## Resources
 
-[Ember Guides](http://emberjs.com/guides/) - The official starting point for Ember. Read it once, digest a bit, then I'd advise scanning it again. Many topics make more sense when you understand the whole system a bit better. Also, ignore the warnings about the 'Understanding Ember.js' section being for experts only; it answered a bunch of questions for me.
+[Ember Guides](http://emberjs.com/guides/) - The official starting point for Ember. Read it once, digest a bit, then I'd advise scanning it again. Many topics make more sense when you understand the whole system a bit better. Also, ignore the warnings about the 'Understanding Ember.js' section being for experts only; definitely start digging in -- it answered a bunch of questions for me.
 
 [Ember API Docs](http://emberjs.com/api/) - Very well written and chock full of sample code.
 
@@ -66,4 +66,6 @@ Since we were dealing with a mature API that couldn't be changed and didn't work
 
 ## Contributing
 
-We'd love for you to get involved in the development process. Feature discussion and designs are on [Github](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](https://github.com/balanced/balanced-dashboard/blob/master/CONTRIBUTING.md) to get started!
+We'd love for you to get involved in our development and contribution process. Feature discussion and designs are on [Github](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](https://github.com/balanced/balanced-dashboard/blob/master/CONTRIBUTING.md) to get started!
+
+We hope to have you dive in and we're happy to share more of our experiences.
