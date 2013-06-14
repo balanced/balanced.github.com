@@ -10,7 +10,7 @@ tags:
 
 # Getting Started with Ember.js
 
-As part of being an [open company](www.fastcolabs.com/3008944/open-company/why-i-made-my-payments-startup-an-open-company), we're designing a [brand new dashboard](https://dashboard.balancedpayments.com/) that's completely [open source](https://github.com/balanced/balanced-dashboard). In favor of giving back to the community, we are going to write several articles on [Ember.js](http://emberjs.com/) describing our experiences with Ember.js as we build our software in the public. We feel that this will help get our community involved and invested in a piece of software that thousands of companies use on a day-to-day basis.
+As part of being an [open company](http://www.fastcolabs.com/3008944/open-company/why-i-made-my-payments-startup-an-open-company), we're designing a [brand new dashboard](https://dashboard.balancedpayments.com/) that's completely [open source](https://github.com/balanced/balanced-dashboard). In favor of giving back to the community, we are going to write several articles on [Ember.js](http://emberjs.com/) describing our experiences with Ember.js as we build our software in the public. We feel that this will help get our community involved and invested in a piece of software that thousands of companies use on a day-to-day basis.
 
 We wanted to build our dashboard in JavaScript to separate the both front-end and back-end development as well as leverage the power of [Balanced's](https://balancedpayments.com/) RESTful API. We chose [Ember.js](http://emberjs.com/) as our framework. It's an exciting technology and we've had fun picking it up. There are a few rough edges, so our first article is about some few things which we've learned along the way.
 
