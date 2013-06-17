@@ -4,7 +4,7 @@ description: This is the landing page
 ---
 
 <ul id="posts">
-{% for post in site.posts limit: 2 %}
+{% for post in site.posts limit: 5 %}
   <li class="hfeed post group">
       {% include post-article.html %}
   </li>
@@ -14,7 +14,7 @@ description: This is the landing page
 <aside id="sidebar">
     <h3>Most recent posts</h3>
     <ul class="posts-list hfeed">
-        {% for post in site.posts limit: 5 %}
+        {% for post in site.posts limit: 10 %}
         {% include post-list-item.html %}
         {% endfor %}
     </ul>
