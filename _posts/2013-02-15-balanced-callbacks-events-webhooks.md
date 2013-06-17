@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Marshall Jones
-title: "Balanced Adds Webhooks & Callbacks"
+title: "Balanced Adds Webhooks &amp; Callbacks"
 tags:
 - balanced
 - engineering

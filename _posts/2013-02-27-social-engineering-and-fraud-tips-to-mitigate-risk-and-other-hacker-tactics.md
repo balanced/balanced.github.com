@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Ganesh Venkataraman
-title: "Social Engineering & Fraud: Tips to Mitigate Risk and Other Hacker Tactics."
+title: "Social Engineering &amp; Fraud: Tips to Mitigate Risk and Other Hacker Tactics."
 tags:
 - balanced
 - ecommerce
