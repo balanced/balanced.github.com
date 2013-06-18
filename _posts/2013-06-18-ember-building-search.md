@@ -190,8 +190,6 @@ Hopefully this gave you more insight about how we develop software at Balanced a
 
 We'd love for you to get involved in the development process. Feature discussion and designs are on [Github](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](https://github.com/balanced/balanced-dashboard/blob/master/CONTRIBUTING.md) to get started! If you're not ready to dive in and start contributing just yet, check out some of our other blogs posts on [fraud](http://blog.balancedpayments.com/death-taxes-chargebacks-balanced/) and [infrastructure](http://blog.balancedpayments.com/payments-infrastructure-suspending-traffic-zero-downtime-migrations/), and add our [RSS feed](blog.balancedpayments.com/feed.xml) to your newsreader.
 
-If these kinds of problems interest you and you're looking for a real
-challenge, contact us! We're always looking for sharp and talented
-individuals that can join our team and make an impact.
+We're always looking for sharp and talented individuals that can join our team and make an impact. If these kinds of problems interest you and you're looking for a real challenge, contact us!
 
 	0u7C3Ojo3trC1srCyNLMzMrkytzGyoDEwtjC3MbKyODC8trK3OjmXMbe2g==
