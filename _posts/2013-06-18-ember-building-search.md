@@ -11,7 +11,7 @@ tags:
 
 ## How Balanced Built Its New Search System Using Ember.js
 
-Last week, we shared some thoughts on [basic Ember.js concets](http://blog.balancedpayments.com/getting-started-with-ember.js/). To continue digging into Ember.js, we wanted to walk through how we built the search system in Balanced's [dashboard](https://github.com/balanced/balanced-dashboard). This should help illustrate our design and development process. More specifically, we'll dive into how to construct models, choosing the right Ember.js components, and developing reusable widgets.
+Last week, we shared some thoughts on [basic Ember.js concepts](http://blog.balancedpayments.com/getting-started-with-ember.js/). To continue digging into Ember.js, we wanted to walk through how we built the search system in Balanced's [dashboard](https://github.com/balanced/balanced-dashboard). This should help illustrate our design and development process. More specifically, we'll dive into how to construct models, choosing the right Ember.js components, and developing reusable widgets.
 
 #### Design
 
