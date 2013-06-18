@@ -6,11 +6,12 @@ tags:
 - balanced
 - engineering
 - ember.js
+- dashboard
 ---
 
 ## Ember.js Dashboard: Building Search
 
-To continue digging into Ember.js, we wanted to walk through how we built the search system in the dashboard. This should help illustrate our design and development process. More specifically, we'll dive into how to construct models, choosing the right Ember.js components, and developing reusable widgets.
+Last week, I shared some thoughts on [basic Ember concets](http://blog.balancedpayments.com/getting-started-with-ember.js/). To continue digging into Ember.js, we wanted to walk through how we built the search system in Balanced's [dashboard](https://github.com/balanced/balanced-dashboard). This should help illustrate our design and development process. More specifically, we'll dive into how to construct models, choosing the right Ember.js components, and developing reusable widgets.
 
 #### Design
 
@@ -183,14 +184,14 @@ As part of our quality process and to help contributors get started without brea
 
 Since we built our search query as a model object, adding test data for it is easy. We added fixtures with URIs specific to what we were testing and wrote our tests against that. Testing a new query or filter is as easy as adding a new fixture object that matches the search URI.
 
-#### Final Thoughts
+#### Getting Involved
 
-Hopefully this gave you more insight about how we develop software and how to use Ember.js effectively. If you want to dive deeper, the source to our whole application is available on [Github](https://github.com/balanced/balanced-dashboard).
+Hopefully this gave you more insight about how we develop software at Balanced and how to use Ember.js effectively. If you want to dive deeper, the source to our whole application is available on [Github](https://github.com/balanced/balanced-dashboard).
 
-We'd love for you to get involved in the development process. Feature discussion and designs are on [Github](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](https://github.com/balanced/balanced-dashboard/blob/master/CONTRIBUTING.md) to get started!
+We'd love for you to get involved in the development process. Feature discussion and designs are on [Github](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](https://github.com/balanced/balanced-dashboard/blob/master/CONTRIBUTING.md) to get started! If you're not ready to dive in and start contributing just yet, check out some of our other blogs posts on [fraud](http://blog.balancedpayments.com/death-taxes-chargebacks-balanced/) and [infrastructure](http://blog.balancedpayments.com/payments-infrastructure-suspending-traffic-zero-downtime-migrations/), and add our [RSS feed](blog.balancedpayments.com/feed.xml) to your newsreader.
 
 If these kinds of problems interest you and you're looking for a real
 challenge, contact us! We're always looking for sharp and talented
-individuals that can make an impact.
+individuals that can join our team and make an impact.
 
 	0u7C3Ojo3trC1srCyNLMzMrkytzGyoDEwtjC3MbKyODC8trK3OjmXMbe2g==
