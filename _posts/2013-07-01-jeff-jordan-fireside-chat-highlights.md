@@ -10,6 +10,10 @@ tags:
 
 ## Jeff Jordan on: eCommerce, Marketplaces, & Amazon
 
+View the full-length video of the discussion below: 
+
+[![ScreenShot](http://img.youtube.com/vi/0dQJW_jqKo4/0.jpg)](https://vimeo.com/balanced/jeffjordan)
+
 Many thanks to [Jeff Jordan](http://jeff.a16z.com/) for sharing his great insight on marketplaces and the trajectory of eCommerce with the Balanced Community. For those of you who were unable to attend the event we've highlighted some of the key takeaways from the talk below:
 
 #### Bullish Outlook on eCommerce
@@ -35,5 +39,3 @@ The dominance of Amazon in certain verticals can be seen as a limiting factor to
 #### Power of Product
 
 What makes a marketplace or any tech company succeed is first and foremost product. Focus on building an amazing product then continue to iterate and make it even better. The first step that Jeff took at both eBay and OpenTable was to double the number of engineers in order to accelerate product innovation. Each time the payoff was big! Eventually the rate of product innovation will slow and at that stage the priority starts to shift to user experience, but at an early stage the focus really is product, product, product!
-
-If you would like to view the full-length video of the discussion you can view it [here](http://bit.ly/JeffJordan).
