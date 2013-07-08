@@ -19,10 +19,10 @@ Balanced already provides next business day payouts, much faster than the indust
 Balanced customers have already praised the speed of our ACH payouts:
 
 James Beshara, CEO [Crowdtilt](https://www.crowdtilt.com/):
->Another reason we chose Balanced was 24 hr next day direct deposit. This was a feature for our use case that became a must-have as soon as we told users that it was possible. For our users, if you're collecting money for a party bus on Friday night or the tailgate on Saturday, you're likely going to begin collecting that money the week of the event. [ [source](http://www.quora.com/Balanced/Why-do-you-use-Balanced-for-payments/answer/James-Beshara) ]
+> Another reason we chose Balanced was 24 hr next day direct deposit. This was a feature for our use case that became a must-have as soon as we told users that it was possible. For our users, if you're collecting money for a party bus on Friday night or the tailgate on Saturday, you're likely going to begin collecting that money the week of the event.  [source](http://www.quora.com/Balanced/Why-do-you-use-Balanced-for-payments/answer/James-Beshara)
 
 [GroupTalent](https://grouptalent.com/main/employers/):
->Our developers LOVE how fast and easily they get paid. It's really amazing. [ [source](https://twitter.com/grouptalent/status/301763495106596865) ]
+> Our developers LOVE how fast and easily they get paid. It's really amazing.  [source](https://twitter.com/grouptalent/status/301763495106596865) 
 
 Now 15% of our payouts are even faster!
 
