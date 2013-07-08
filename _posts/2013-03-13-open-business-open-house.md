@@ -24,7 +24,7 @@ Mozilla WebFWD, Watsi, Trovebox, Balanced, & Gittip are hosting a panel discussi
 > _-_ Eric Raymond, [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/)
 
 **Location:** 
-Balanced HQ - 965 Mission St., STE 425, San Francisco, CA 94103 [[map](https://maps.google.com/maps?q=965+mission+street+san+francisco&ie=UTF8&hq=&hnear=965+Mission+St,+San+Francisco,+California+94103&gl=us&t=m&z=16&vpsrc=0&iwloc=A)]
+Balanced HQ - 965 Mission St., STE 425, San Francisco, CA 94103 [map](https://maps.google.com/maps?q=965+mission+street+san+francisco&ie=UTF8&hq=&hnear=965+Mission+St,+San+Francisco,+California+94103&gl=us&t=m&z=16&vpsrc=0&iwloc=A)
 
 **Schedule:**
 
