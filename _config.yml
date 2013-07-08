@@ -7,7 +7,7 @@ markdown: maruku
 pygments: true
 permalink: /:title
 
-lsi: true
+lsi: false
 paginate: 20
 
 exclude:
