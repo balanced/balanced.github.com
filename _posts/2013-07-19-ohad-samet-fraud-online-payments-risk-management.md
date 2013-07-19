@@ -8,6 +8,7 @@ tags:
 - online payments
 - risk
 - fraud
+- 
 ---
 
 ## Ohad Samet: Online Payments are as Risky as it Gets
