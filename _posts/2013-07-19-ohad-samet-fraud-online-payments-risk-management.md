@@ -8,12 +8,11 @@ tags:
 - online payments
 - risk
 - fraud
-
 ---
 
-## Ohad Samet on: Payments Risk Management & Fraud
+## Ohad Samet: Online Payments are as Risky as it Gets
 
-![Ohad is risky as it gets](http://i.imgur.com/ZX68LvG.jpg "Ohad Samet")
+![Ohad Samet at Balanced HQ in July, 2013](http://i.imgur.com/ZX68LvG.jpg "Ohad Samet at Balanced HQ in July, 2013")
 
 Ohad Samet is concerned about fraud, but not in the way that you might think.  It’s not merely the threat of fraud itself, but risk in general, and the repercussions it can have on business decisions: risk restricts growth, and causes panic.  “Don’t let risk prevent you from seeking out and acquiring new business, but be vigilant.  It’s all about finding a __balance__.”  The message?  Don’t let the threat of potential fraud scare you off from accepting new customers and pursuing new opportunities!   
     
@@ -31,6 +30,6 @@ As shocking as it may seem, at times it can be hard to convince managers to focu
 
 How, then, are you supposed to confront the specter of risk, and by default, fraud?  Use the right tools.  First, make sure that everyone on your team is on the same page: have a solid set of rules and procedures in place, and make sure everyone on your team is on the same page.  Creating a scalable, repeatable response to fraud issues enables you to get the information you need right away while avoiding confusion and making sure that you have the documentation you need down the road.  It’s important to take care of issues as they arise, but always keep in mind the long run endgame: six months down the road you want to be able to spot repeat offenders, and quickly see their past patterns of fraud.  
 
-#### Ohad Samet
+### Learn More
 
 Interested in learning more about online risk?  You can visit Ohad Samet’s blog [here](http://www.ohadsamet.com/introduction-to-online-payments-risk-management-an-oreilly-ebook/), where you can can also download a free copy of his most recent book, Introduction to Online Payments Management.  As Ohad puts it in his own words, “I believe that there is lots to share in risk management and fraud prevention that can advance web safety”.
