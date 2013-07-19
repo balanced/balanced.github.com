@@ -12,7 +12,7 @@ tags:
 
 ## Ohad Samet: Online Payments are as Risky as it Gets
 
-<img src="http://i.imgur.com/ZX68LvG.jpg" alt="Ohad Samet at Balanced HQ in July, 201" width="400">
+<img style="display:block;margin-left:auto;margin-right:auto" src="http://i.imgur.com/ZX68LvG.jpg" alt="Ohad Samet at Balanced HQ in July, 201" width="400">
 </img>
 
 Ohad Samet is concerned about fraud, but not in the way that you might think.  It’s not merely the threat of fraud itself, but risk in general, and the repercussions it can have on business decisions: risk restricts growth, and causes panic.  “Don’t let risk prevent you from seeking out and acquiring new business, but be vigilant.  It’s all about finding a __balance__.”  The message?  Don’t let the threat of potential fraud scare you off from accepting new customers and pursuing new opportunities!   
