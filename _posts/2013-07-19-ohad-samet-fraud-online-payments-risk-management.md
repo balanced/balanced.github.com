@@ -11,7 +11,7 @@ tags:
 
 ---
 
-## Ohad Samet on: Risk Management & Fraud
+## Ohad Samet on: Payments Risk Management & Fraud
 
 ![Ohad is risky as it gets](http://i.imgur.com/ZX68LvG.jpg "Ohad Samet")
 
@@ -33,22 +33,4 @@ How, then, are you supposed to confront the specter of risk, and by default, fra
 
 #### Ohad Samet
 
-Interested in learning more about online risk?  You can visit Ohad Samet’s blog [here](http://www.ohadsamet.com/introduction-to-online-payments-risk-management-an-oreilly-ebook/), where you can can also download a free copy of his most recent book, Introduction to Online Payments Management.  As Ohad puts it in his own words, “I believe that there is lots to share in risk management and fraud prevention that can advance web safety”.   
-
-<!-- Begin MailChimp Signup Form -->
-<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="http://balancedpayments.us2.list-manage1.com/subscribe/post?u=30382d347d3689814ca424c89&amp;id=10e603ba17" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	<label for="mce-EMAIL">Subscribe to our mailing list</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
-
+Interested in learning more about online risk?  You can visit Ohad Samet’s blog [here](http://www.ohadsamet.com/introduction-to-online-payments-risk-management-an-oreilly-ebook/), where you can can also download a free copy of his most recent book, Introduction to Online Payments Management.  As Ohad puts it in his own words, “I believe that there is lots to share in risk management and fraud prevention that can advance web safety”.
