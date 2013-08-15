@@ -31,4 +31,4 @@ Happy transacting,
 -[@jkwade](https://twitter.com/jkwade)
 
 ----
-Discuss on [Hacker News](https://news.ycombinator.com/item?id=6220026)!
+Discussion on [Hacker News](https://news.ycombinator.com/item?id=6220026)!
