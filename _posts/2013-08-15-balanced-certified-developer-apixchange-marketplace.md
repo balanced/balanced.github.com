@@ -20,7 +20,7 @@ API Xchange works with developer APIs like Balanced, [Chargebee](http://www.char
 
 Still doesn't make sense? Here's a great [video](http://vimeo.com/67745272#) explaining how their platform works. 
 
-### Balanced, a Developer API for Marketplaces, Powers Payments for API XChange, a Marketplace for API Developers
+### A Developer API for Marketplaces Powers Payments for a Marketplace for API Developers
 API Xchange will also be using Balanced's ACH capabilities to power payments and escrow on their platform as they move money between companies and certified developers. So not only is Balanced a customer of API Xchange, we're also a vendor!
 
 ### Get Started
