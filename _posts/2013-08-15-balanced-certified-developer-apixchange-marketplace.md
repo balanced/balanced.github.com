@@ -29,3 +29,6 @@ Fill out [this application](https://apixchange.com/create-account?next=%2Fdevelo
 Happy transacting,
 
 -[@jkwade](https://twitter.com/jkwade)
+
+----
+Discuss on [Hacker News](https://news.ycombinator.com/item?id=6220026)!
