@@ -4,12 +4,13 @@ description: This is the landing page
 ---
 
 <ul id="posts">
-{% for post in site.posts limit: 5 %}
+{% for post in paginator.posts %}
   <li class="hfeed post group">
       {% include post-article.html %}
   </li>
 {% endfor %}
 </ul>
+
 
 <aside id="sidebar">
     <h3>Most recent posts</h3>
@@ -19,3 +20,26 @@ description: This is the landing page
         {% endfor %}
     </ul>
 </aside>
+
+<div id="pagination">
+  <span id="previous">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <a href="/">Previous</a>
+      {% else %}
+        <a href="{{ paginator.previous_page_path }}">Previous</a>
+      {% endif %}
+    {% else %}
+      Previous
+    {% endif %}
+  </span>
+
+  <span id="next">
+  {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}" class="next">Next</a>
+  {% else %}
+    Next
+  {% endif %}
+  </span>
+
+</div>
