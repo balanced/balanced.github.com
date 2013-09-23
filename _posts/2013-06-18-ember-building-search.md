@@ -15,7 +15,7 @@ Last week, we shared some thoughts on [basic Ember.js concepts](http://blog.bala
 
 #### Design
 
-We started out with an [open discussion on Github](https://github.com/balanced/balanced-dashboard/issues/29) of how search should work and what data it should return. After gathering info from all the stakeholders, we started designing how search would look.
+We started out with an [open discussion on GitHub](https://github.com/balanced/balanced-dashboard/issues/29) of how search should work and what data it should return. After gathering info from all the stakeholders, we started designing how search would look.
 
 ![Image](https://f.cloud.github.com/assets/2037452/422511/bc188db0-ad29-11e2-9e3f-fa046e2065f5.png)
 
@@ -186,9 +186,9 @@ Since we built our search query as a model object, adding test data for it is ea
 
 #### Getting Involved
 
-Hopefully this gave you more insight about how we develop software at Balanced and how to use Ember.js effectively. If you want to dive deeper, the source to our whole application is available on [Github](https://github.com/balanced/balanced-dashboard).
+Hopefully this gave you more insight about how we develop software at Balanced and how to use Ember.js effectively. If you want to dive deeper, the source to our whole application is available on [GitHub](https://github.com/balanced/balanced-dashboard).
 
-We'd love for you to get involved in the development process. Feature discussion and designs are on [Github](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](https://github.com/balanced/balanced-dashboard/blob/master/CONTRIBUTING.md) to get started! If you're not ready to dive in and start contributing just yet, check out some of our other blogs posts on [fraud](http://blog.balancedpayments.com/death-taxes-chargebacks-balanced/) and [infrastructure](http://blog.balancedpayments.com/payments-infrastructure-suspending-traffic-zero-downtime-migrations/), and add our [RSS feed]({{ site.url }}/feed.xml) to your newsreader.
+We'd love for you to get involved in the development process. Feature discussion and designs are on [GitHub](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](https://github.com/balanced/balanced-dashboard/blob/master/CONTRIBUTING.md) to get started! If you're not ready to dive in and start contributing just yet, check out some of our other blogs posts on [fraud](http://blog.balancedpayments.com/death-taxes-chargebacks-balanced/) and [infrastructure](http://blog.balancedpayments.com/payments-infrastructure-suspending-traffic-zero-downtime-migrations/), and add our [RSS feed]({{ site.url }}/feed.xml) to your newsreader.
 
 We're always looking for sharp and talented individuals that can join our team and make an impact. If these kinds of problems interest you and you're looking for a real challenge, contact us!
 

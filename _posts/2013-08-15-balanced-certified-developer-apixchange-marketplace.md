@@ -24,7 +24,7 @@ Still doesn't make sense? Here's a great [video](http://vimeo.com/67745272#) exp
 API Xchange will also be using Balanced's ACH capabilities to power payments and escrow on their platform as they move money between companies and certified developers. So not only is Balanced a customer of API Xchange, we're also a vendor!
 
 ### Get Started
-Fill out [this application](https://apixchange.com/create-account?next=%2Fdeveloper%2Fapplication) if you're a developer looking to become a Balanced Certified Developer. If you're an individual or company looking for a Certified Balanced Developer, fill out [this application](https://apixchange.com/create-account?next=%2Fcustomer%2Fnew-project) to create a project. If you'd like to find a developer to help with your Balanced integration outside of APIXchange, please post your criteria on [this Github thread](https://docs.balancedpayments.com/current/?language=bash#certified-developers).
+Fill out [this application](https://apixchange.com/create-account?next=%2Fdeveloper%2Fapplication) if you're a developer looking to become a Balanced Certified Developer. If you're an individual or company looking for a Certified Balanced Developer, fill out [this application](https://apixchange.com/create-account?next=%2Fcustomer%2Fnew-project) to create a project. If you'd like to find a developer to help with your Balanced integration outside of APIXchange, please post your criteria on [this GitHub thread](https://docs.balancedpayments.com/current/?language=bash#certified-developers).
 
 Happy transacting,
 

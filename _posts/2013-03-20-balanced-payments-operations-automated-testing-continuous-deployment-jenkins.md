@@ -210,7 +210,7 @@ services follow similar paths.
    Once all these tests have passed, we're confident that the new code hasn't
    introduced any regressions and is ready to be deployed. To reduce the chance
    of operator error, our testing server performs deploys for us as well. We use
-   [Fabric](http://docs.fabfile.org/en/1.6/) and run a `deploy` task that pulls the code from our Github repo,
+   [Fabric](http://docs.fabfile.org/en/1.6/) and run a `deploy` task that pulls the code from our GitHub repo,
    removes an instance of the app from our load balancer (HAProxy), loads the
    new code, and puts the app back into HAProxy, for each machine running our
    code.
