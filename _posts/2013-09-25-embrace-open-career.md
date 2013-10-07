@@ -9,6 +9,7 @@ tags:
 - open career
 - open source
 - employment
+- recruitment
 ---
 
 ### Solve puzzles and get hired?
