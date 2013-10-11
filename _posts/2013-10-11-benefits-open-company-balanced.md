@@ -28,7 +28,7 @@ The attention from serious engineering organizations and publications has been v
 ### A love letter to the Balanced community
 The Balanced community is full of extremely talented people, just like Ben, that spend their precious time working on our projects – I'm still shocked every time I see a PR from a non-Balanced employee. Thank you all so much! On the [Balanced Dashboard](https://github.com/balanced/balanced-dashboard/pulse/monthly), for example, there have been 28 merged pull requests, 276 commits, and 293 files changed over the past month by 8 developers, only two of whom Balanced actually pays. Being an open company involves more than just open sourcing code for Balanced (of course we do [tons of that](https://github.com/balanced) too). It involves respecting our community by answering tough questions in public and recognizing that we're lucky to have so much support. The same community that makes Balanced better with their contributions and time deserves straight answers and recognition – openness works both ways. We're incredibly grateful for all of the time and energy you share with us. We hope we can pay it forward.
 
-- [@jkwade](https://twitter.com/jkwade)
+-[@jkwade](https://twitter.com/jkwade)
 ---
 
 Learn more about Balanced's ['Open Company' philosophy](https://www.balancedpayments.com/open). 
