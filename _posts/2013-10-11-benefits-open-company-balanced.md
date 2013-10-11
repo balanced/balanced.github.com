@@ -18,7 +18,7 @@ tags:
 ## Balanced, an Open Company
 <a href="https://www.balancedpayments.com/open"><img style="display:block;margin-left:auto;margin-right:auto" alt="remear box" src="http://i.imgur.com/hridjJ2.png"></a>
 
-Balanced is most often thought of as a payments company. Although, internally, we think of ourselves more as purveyors of *infrastructure* for marketplaces, rather than just a payments service [1]. Of course, we are both of those things, and we own it: The first thing you see on our [homepage](https://www.balancedpayments.com/) is "Balanced - Payments for Marketplaces." One piece of our identity that's been crystalizing more slowly; however, is Balanced as an 'Open Company.' 
+Balanced is most often thought of as a payments company. Although, internally, we think of ourselves more as purveyors of *infrastructure* for marketplaces, rather than just a payments service `[1]`. Of course, we are both of those things, and we own it: The first thing you see on our [homepage](https://www.balancedpayments.com/) is "Balanced - Payments for Marketplaces." One piece of our identity that's been crystalizing more slowly; however, is Balanced as an 'Open Company.' 
 
 [Chad Whitacre](https://twitter.com/whit537) of [Gittip](https://www.gittip.com/) first put us onto the open company model over a year ago, and it initially terrified us. We slowly embraced the openness as Gittip and Balanced began working more closely together, and today, we're pretty much all in. Our CEO, [Matin](https://twitter.com/matin), tried to articulate what the philosophy meant for us back in April, 2013 via a [guest post on Fast Company Labs](http://www.fastcolabs.com/3008944/open-company/why-i-made-my-payments-startup-an-open-company), but it's kind of taken on a life of it's own since then, which is kind of the point. In August, GitHub profiled Balanced's open company approach in their [OctoTales video series](https://www.youtube.com/watch?v=ukKd8W3Bvo0), and just this week [The Changelog interviewed one of our engineers](http://thechangelog.com/107/), [Marshall](https://twitter.com/marshall_jones), about all our open source projects. 
 
@@ -28,12 +28,12 @@ This attention from serious engineering organizations and publications has been 
 Being an open company involves more than just open sourcing code for Balanced (of course we do [tons of that](https://github.com/balanced) too). It involves respecting our community by answering tough questions in public and justifying changes in our product roadmap. The same community that makes Balanced better with their contributions and time deserves straight answers. Openness works both ways. 
 
 ### The Curious Case of Remear
-Yesterday, one of our engineers, Ben aka [Remear](https://twitter.com/remear), shared his story about finding Balanced for a 'free-time' project, contributing to our community by manning the IRC room and building mobile SDKs, and eventually ending up as Balanced's only remote employee. I think it's a really a special story that only could have happened for Balanced as an open company. Read Ben's story here: [I asked for a t-shirt, I got a job](http://remear.unfiniti.com/i-asked-for-a-t-shirt-i-got-a-job/).
+Yesterday, one of our engineers, Ben aka [Remear](https://twitter.com/remear), shared his story about finding Balanced for a 'free-time' project, contributing to our community by manning the IRC room and building mobile SDKs, and eventually ending up as Balanced's only remote employee. I think it's a really a special story that only could have happened for Balanced as an open company. Read Ben's story here: [I asked for a t-shirt, I got a job](http://remear.unfiniti.com/i-asked-for-a-t-shirt-i-got-a-job/) and we're thrilled it did.
 
-[1] Seriously, we spend ridiculous amounts of time thinking about [what makes marketplaces successful](http://www.collaborativeconsumption.com/2013/10/08/online-marketplaces-are-hard/) beyond just payments.
+`[1]` Seriously, we spend ridiculous amounts of time thinking about [what makes marketplaces successful](http://www.collaborativeconsumption.com/2013/10/08/online-marketplaces-are-hard/) beyond just payments.
 
 ---
 
-To learn more about Balanced's 'Open Company' philosophy, follow [this link](https://www.balancedpayments.com/open). 
+Learn more about Balanced's ['Open Company' philosophy](https://www.balancedpayments.com/open). 
 
 Interested in working at Balanced? [Build a Hangman app, get a job at Balanced](https://gist.github.com/mjallday/6891926).
