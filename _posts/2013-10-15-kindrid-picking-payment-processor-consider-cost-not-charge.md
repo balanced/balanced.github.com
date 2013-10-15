@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Leighton Cusack
-title: "Picking A Payment Processor? Consider What It Costs Not What They Charge"
+title: "When Picking A Payment Processor, Consider What It Costs Not Just What They Charge"
 tags:
 - balanced
 - kindrid
@@ -24,7 +24,7 @@ This made companies like WePay an immediate no. It was also one of the primary r
 #### Cost - 
 Here is a huge one we believe a lot of early stage companies miss. People often assume all payment companies cost the same, 2.9% + 30¢ right? That’s what they charge but it’s not what they cost. 
 
-What it costs your company is [2.9% + .30 per transaction](https://www.balancedpayments.com/pricing), plus the time it takes to integrate, plus the time it takes to troubleshoot, plus the number of customers you lose while you’re taking time to integrate, etc., etc. 
+What it costs your company is [2.9% + .30¢ per transaction](https://www.balancedpayments.com/pricing), plus the time it takes to integrate, plus the time it takes to troubleshoot, plus the number of customers you lose while you’re taking time to integrate, etc., etc. 
 
 Picking a processor based on transaction fee is the definition of penny-wise, pound-foolish and for an early stage company it can be fatal. To us, Balanced is an amazingly good deal. We got our system up and running incredibly quick, the completely white labeled API helps conversion, we haven’t lost any customers over technical issues or downtimes, we get live customer support etc. 
 
@@ -45,4 +45,4 @@ We chose Balanced and haven’t looked back. We’ve been growing our processing
   
 ---
 
-[Leighton Cusack](https://twitter.com/lay2000lbs) leads innovation projects at [OneHope](http://onehope.net/) and is a co-founder of [Kindrid](https://kindrid.com/), an SMS and mobile donation management platform for churches. To date, Kindrid is one of Balanced's fastest growing donation platforms.
+[Leighton Cusack](https://twitter.com/lay2000lbs) leads innovation projects at [OneHope](http://onehope.net/) and is a co-founder of [Kindrid](https://kindrid.com/), an SMS and mobile donation management platform for churches. To date, Kindrid is one of Balanced's fastest growing donation platforms. Follow Kindrid on Twitter: [@_kindrid](https://twitter.com/_Kindrid).
