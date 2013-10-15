@@ -45,4 +45,4 @@ We chose Balanced and haven’t looked back. We’ve been growing our processing
   
 ---
 
-<small>[Leighton Cusack](https://twitter.com/lay2000lbs) leads innovation projects at [OneHope](http://onehope.net/) and is a co-founder of [Kindrid](https://kindrid.com/), an SMS and mobile donation management platform for churches. To date, Kindrid is one of Balanced's fastest growing donation platforms.</small>
+[Leighton Cusack](https://twitter.com/lay2000lbs) leads innovation projects at [OneHope](http://onehope.net/) and is a co-founder of [Kindrid](https://kindrid.com/), an SMS and mobile donation management platform for churches. To date, Kindrid is one of Balanced's fastest growing donation platforms.
