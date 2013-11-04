@@ -8,7 +8,7 @@ pygments: true
 permalink: /:title
 
 lsi: false
-paginate: 20
+paginate: 5
 
 exclude:
 - CNAME

@@ -185,6 +185,15 @@ img.displayed {
     padding-bottom: 64px;
 }
 
+#pagination{
+    float:left;
+    margin-top: -80px;
+}
+
+#next{
+    padding-left: 630px;
+}
+
 .top.audio * {
     width: 700px;
     height: 91px
