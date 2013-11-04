@@ -66,6 +66,6 @@ Since we were dealing with a mature API that couldn't be changed and didn't work
 
 ## Contributing
 
-We'd love for you to get involved in our development and contribution process. Feature discussion and designs are on [Github](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](https://github.com/balanced/balanced-dashboard/blob/master/CONTRIBUTING.md) to get started!
+We'd love for you to get involved in our development and contribution process. Feature discussion and designs are on [GitHub](https://github.com/balanced/balanced-dashboard/issues). If you're a developer, read the [contribution guidelines](https://github.com/balanced/balanced-dashboard/blob/master/CONTRIBUTING.md) to get started!
 
 We hope to have you dive in and we're happy to share more of our experiences.
