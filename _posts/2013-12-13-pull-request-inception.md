@@ -38,3 +38,7 @@ he was able to jump in and help out. If we did it all in private, that never wou
 
 Sending pull requests to pull requests is a really interesting part of the way that Git and GitHub 
 interact. That's all I've got for you today, have a great weekend!
+
+
+(Okay, one last thing: I of course [made a pull request about my blog post about pull requests to pull requests](https://github.com/balanced/balanced.github.com/pull/52)
+so that my co-workers could proofread this before I posted. BWWWAAAAAAAAAAAA)
