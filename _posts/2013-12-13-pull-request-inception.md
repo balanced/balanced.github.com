@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Steve Klabnik
-title: "When Picking A Payment Processor, Consider What It Costs Not Just What They Charge"
+title: "Pull Request Inception"
 tags:
 - balanced
 - collaboration
