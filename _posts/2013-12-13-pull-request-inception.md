@@ -36,6 +36,8 @@ Funny enough, another Balanced employee, Marshall, just happend to see this come
 I'm not even sure if Marshall knew we were working on this together, but because of the open nature of GitHub,
 he was able to jump in and help out. If we did it all in private, that never would have happened.
 
+This works because pull requests are tied to branches. So if I'm requesting to merge branch B into branch A, that's the same as someone asking to merge branch C into my branch B. A pull request to a pull request.
+
 Sending pull requests to pull requests is a really interesting part of the way that Git and GitHub 
 interact. That's all I've got for you today, have a great weekend!
 
