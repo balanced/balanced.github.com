@@ -68,7 +68,67 @@ And most vividly, Ian:
 
 This isn't how things are supposed to work. Partnerships are supposed to be about, well, partners. Not one side of the partnership lording over the other one. Constantly breaking things indicates that you don't care about your supposed partner. You expect them to dedicate time and energy to re-doing work they already did, because you don't want to deal with the legacy burden.
 
-Taking care to not break stuff is sort of the minimum amount that you can do to be respectful of your partners' time, efforts, and roadmaps. But I like to do more than the minimum.
+Taking care to not break stuff is sort of the minimum amount that you can do to be respectful of your partners' time, efforts, and roadmaps. But I like to do more than the minimum. To go further, Balanced wants to include everyone who uses the Balanced API as much of a part of the 'product team' as Balanced employees are.
+
+This is a big part of the ["Open Company"](http://opencompany.biz/) philosophy, and changes the way software gets built. This is only tangential, so I won't get into it now, but as an example, some of our customers wanted recurring billing added to our API. So [billy](https://github.com/balanced/billy) was created, which basically adds recurring building on top of our existing API. Sometimes, we'll need to make changes that are more low-level than this, but we can get pretty far with this kind of approach.
+
+Another way that this plays out is in discussions in Issues. If you check out [the pull request implementing our new API spec](https://github.com/balanced/balanced-api/pull/431), we had a ton of discussion. Some people involved weren't even Balanced customers or employees, and were just generally interested in using Cucumber (which we'll talk about shortly) to test APIs. We also got two of the Cucumber team members to [directly](https://github.com/balanced/balanced-api/pull/431#issuecomment-29705876) give us [advice](https://github.com/balanced/balanced-api/pull/431#issuecomment-29884794) on how to write good Cukes, and it was [directly actionable](https://github.com/balanced/balanced-api/pull/431#issuecomment-29887903). We also got some [great dissent](https://github.com/balanced/balanced-api/pull/431#issuecomment-29706071) that warned us of problems with this approach.
+
+Having these discussions takes time, it's true. I could have just slapped together a Cucumber suite in a few days, and been done with it. But it would have been a worse product because of it. I'll take the extra week of time for the increase in quality almost every time.
 
 ### Cucumber
+
+So. Cucumber. As I've mentioned, [here](https://github.com/balanced/balanced-api/pull/431) is how that all played out. Cucumber allows you to write "features" which collect "scenarios" which contain "steps." They look like this:
+
+```
+Feature: API Keys
+  API Keys are what customers use to authenticate against the Balanced API.
+  Generally speaking, this will be the first step that is needed to be taken by
+  the customer to get started with the API.
+
+  Scenario: List all API keys
+    Customers can make as many keys as they'd like. Being able to see all of
+    them is a good thing.
+
+    Given I have created more than one API keys
+    When I GET to /api_keys
+    Then I should get a 200 OK status code
+```
+
+These end up turning into Ruby code, via methods like this:
+
+```
+When I GET to /api_keys
+```
+
+Goes to
+
+```
+When(/^I (\w+) to (\/\S*?)$/) do |verb, url|
+  options = {
+    headers: {
+      "Accept" => "application/vnd.api+json;revision=1.1",
+    },
+    basic_auth: {
+        username: $api_secret,
+        password: "",
+    }
+  }
+  response = HTTParty.send(verb.downcase, "https://api.balancedpayments.com#{url}", options)
+  @response_code = response.code
+  @response_body = JSON.parse(response.body)
+end
+```
+
+Given that we have a wide array of people who we want to collaborate on our API's specification, I really didn't want to tie our spec too strongly to a particular programming language. Cucumber allows us to abstract away the ugly code details, and focus on what things do. That code does say "make a GET request to /foo", but there's all sorts of tangential header and authorization information, as well as that not everyone speaks Ruby. Interested parties can just edit the feature files, and I can worry about mapping them into Ruby code.
+
+### Moving forward
+
+Anyway, so I am excited to continue to work on this project. I'll be expanding more on how I see our API's development moving forward, but for now, this is what we've got. If you want something to be in the API, please [open an issue](https://github.com/balanced/balanced-api/issues/new) or file a new pull request, adding a scenario. Please know that API stability and reliability is incredibly important to me moving forward, and if you ever need anything, don't hesitate to [get in touch](mailto:steve@balancedpayments.com).
+
+
+
+
+
+
 
