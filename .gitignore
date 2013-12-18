@@ -6,3 +6,5 @@ _includes/\#*
 _includes/\.\#*
 
 *.iml
+
+.vagrant/
