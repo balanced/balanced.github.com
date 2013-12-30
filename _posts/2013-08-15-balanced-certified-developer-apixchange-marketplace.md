@@ -2,6 +2,7 @@
 layout: post
 author: Jareau Wade
 title: "Kicking off the Balanced Certified Developer Program with API Xchange"
+image: /img/blogimages/2013-08-15.jpg
 tags:
 - balanced
 - apixchange

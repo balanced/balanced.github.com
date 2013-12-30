@@ -1,4 +1,4 @@
-$(function(){
+$(window).load(function(){
 	headerToggleInit();
 	function headerToggleInit(){
 		var open = false;

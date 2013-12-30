@@ -318,7 +318,7 @@ p {
   margin: 20px 0;
 }
 .container {
-  max-width: 1800px;
+  max-width: 1020px;
   margin: 0 auto;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -493,7 +493,7 @@ a#footer-url {
   padding: 0 10px;
 }
 .timestyle {
-  color: inherit;
+  color: #000;
   text-align: center;
 }
 .timestyle span {
@@ -947,7 +947,9 @@ a#footer-url {
     padding: 0;
     font-size: 14px;
     line-height: 18px;
-    position: static;
+    position: relative;
+    bottom: auto;
+    top: -5px;
   }
   #content-info {
     height: 60px;

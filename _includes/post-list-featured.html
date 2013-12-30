@@ -1,5 +1,5 @@
 <article class="item" id="list-item-featured">
-  <a href="item.html">
+  <a href="{{ site.url }}{{ post.url }}" rel="bookmark">
     {% if post.image %}
     <div class="list-item-img" id="feat-img">
       <img class="img-responsive" src="{{ post.image }}" alt="{{ post.image_alt }}">
@@ -7,7 +7,7 @@
     {% endif %}
     <div class="list-item-copy" id="feat-headline">
       <h2 class="entry-title">
-        <a href="{{ site.url }}{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+        {{ post.title }}
       </h2>
 
       {% include post-timestyle.html %}
