@@ -687,7 +687,7 @@ a#footer-url {
   background-color: rgba(0, 0, 0, 0.15);
 }
 .item a:hover {
-  color: #0096af;
+  color: #000;
 }
 .item a:hover .list-item-img:after {
   background-color: rgba(0, 0, 0, 0);

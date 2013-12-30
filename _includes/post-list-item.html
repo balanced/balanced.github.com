@@ -1,4 +1,4 @@
-<article class="item masonry-item">
+<article class="item masonry-item{% if forloop.counter|divisibleby:7 %} w2{% endif %}">
   <a href="{{ site.url }}{{ post.url }}">
     {% if post.image %}
     <div class="list-item-img">
