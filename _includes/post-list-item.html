@@ -1,8 +1,8 @@
-<article class="item masonry-item{% if forloop.counter|divisibleby:7 %} w2{% endif %}">
+<article class="item masonry-item">
   <a href="{{ site.url }}{{ post.url }}">
     {% if post.image %}
     <div class="list-item-img">
-      <img class="img-responsive" src="{{ post.image }}" alt="{{ post.image_alt }}" data-adaptive-background='1'>
+      <img class="img-responsive" src="{{ post.image }}" alt="{{ post.image_alt }}">
     </div>
     {% endif %}
     <div class="list-item-copy">
