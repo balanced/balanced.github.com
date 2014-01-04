@@ -2,6 +2,7 @@
 layout: post
 author: Leighton Cusack
 title: "When Picking A Payment Processor, Consider What It Costs Not Just What They Charge"
+image: /img/blogimages/2013-10-15.jpg
 tags:
 - balanced
 - kindrid

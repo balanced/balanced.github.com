@@ -2,22 +2,50 @@
 {% assign content = post.content %}
 {% endif %}
 
-<article itemscope itemtype="http://schema.org/BlogPosting" class="group caption_and_post_info hentry post">
-    <header>
-        <h2 itemprop="name" class="entry-title">
-            <a href="{{ site.url }}{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-        </h2>
-    </header>
-    <div class="post_info">
-        <abbr class="published updated" title="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</abbr>
-        {% if post.author %}
-        <span class="byline">posted by:
-          <address class="vcard author"><span class="fn">{{ post.author }}</span></address>
-        </span>
-        {% endif %}
-    </div>
-    <section class="entry-content cont group">
-        {{ content }}
-    </section>
-    {% include post-footer.html %}
-</article>
+<header id="article-mast">
+  {% if post.image %}
+  <div id="mast-img">
+    <img class="img-responsive" src="{{ post.image }}">
+  </div>
+  {% endif %}
+
+  <div id="mast-copy">
+    <h1 id="article-title">
+      {{ post.title }}
+      {% if post.author %}
+      <small>posted by: {{ post.author }}</small>
+      {% endif %}
+    </h1>
+
+    {% include post-timestyle.html %}
+  </div>
+</header>
+
+<ul id="article-social">
+  <li>
+    <a data-title="{{ post.title }}"
+       data-url="{{ site.url }}{{ post.url }}">
+      <span class="social-ico" id="social-ico-hacker"></span> Hacker News
+    </a>
+  </li>
+  <li>
+    <a href="https://twitter.com/share" class="twitter-share-button"
+       data-url="{{ site.url}}{{ post.url }}"
+       data-via="balanced"
+       data-text="{% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %}"
+       data-lang="en">
+      <span class="social-ico" id="social-ico-twitter"></span> Twitter
+    </a>
+  </li>
+</ul>
+
+
+<div id="article-body" itemscope itemtype="http://schema.org/BlogPosting">
+  <h2>
+    <a href="{{ site.url }}{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+  </h2>
+
+  {{ content }}
+</div>
+
+{% include post-footer.html %}

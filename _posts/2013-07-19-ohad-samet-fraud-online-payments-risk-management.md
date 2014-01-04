@@ -2,6 +2,7 @@
 layout: post
 author: Andrew Nossiter
 title: "Online Payments Risk Management & Fraud"
+image: /img/blogimages/2013-07-19.jpg
 tags:
 - balanced
 - marketplaces

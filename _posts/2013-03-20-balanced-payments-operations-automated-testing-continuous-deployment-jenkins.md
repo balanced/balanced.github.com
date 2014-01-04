@@ -2,6 +2,7 @@
 layout: post
 author: Marc Sherry
 title: " How Balanced Automates Testing and Continuously Deploys"
+image: /img/blogimages/2013-03-20.jpg
 tags:
 - balanced
 - operations

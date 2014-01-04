@@ -1,21 +1,16 @@
-    <footer class="post_meta">
-        <ul class="tags">
-        {% for tag in post.tags %}
-            <li><a href="/tag#{{ tag }}" rel="tag" class="tag"><span>#</span>{{ tag }}</a></li>
-        {% endfor %}
-        </ul>
-        <ul class="social_sharing">
-            <li>
-                <a href="https://twitter.com/share" class="twitter-share-button"
-                   data-url="{{ site.url}}{{ post.url }}"
-                   data-via="balanced"
-                   data-text="{% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %}"
-                   data-lang="en">
-                    tweet
-                </a>
-            </li>
-            <li>
-              <a href="http://news.ycombinator.com/submit" class="hn-share-button" data-title="{{ post.title }}" data-url="{{ site.url }}{{ post.url }}">Vote on HN</a>
-            </li>
-        </ul>
-    </footer>
+<aside id="author-bio">
+  <h3 class="hide">
+    <a href="#" title="{{ post.author }}" rel="author">
+      Posts by <span>{{ post.author }}</span>
+    </a>
+  </h3>
+  {% if post.author_image %}
+    <img class="img-responsive" src="http://placehold.it/120x120">
+  {% endif %}
+  <p>
+    <strong>{{ post.author }}</strong>
+    {% if post.author_bio %}
+      {{ post.author_bio }}
+    {% endif %}
+  </p>
+</aside>

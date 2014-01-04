@@ -2,6 +2,7 @@
 layout: post
 author: Nick Kleinschmidt
 title: "Getting Started with Ember.js"
+image: /img/blogimages/2013-06-14.jpg
 tags:
 - balanced
 - engineering

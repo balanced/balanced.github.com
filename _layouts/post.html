@@ -2,17 +2,25 @@
 layout: default
 ---
 {% assign post = page %}
-<div class="hfeed">
-    {% include post-article-detail.html %}
-</div>
 
-{% if site.related_posts.size > 0 %}
-<aside id="sidebar">
-    <h3>Related posts</h3>
-    <ul class="posts-list hfeed">
-        {% for post in site.related_posts %}
-        {% include post-list-item.html %}
-        {% endfor %}
-    </ul>
-</aside>
-{% endif %}
+<article id="article-main" class="container clearfix" role="main">
+
+    {% include post-article-detail.html %}
+
+    <nav class="clearfix" id="article-nav">
+      {% if page.next.url %}
+        <a id="article-nav-next" href="{{ site.url }}{{ page.next.url }}">
+            <strong>Next</strong><!--
+            --><span id="article-nav-next-name"><!--
+            	--><strong>:</strong>
+              {{ page.next.title }}
+            </span>
+			<span class="article-ico" id="article-ico-next"></span>
+        </a>
+      {% endif %}
+        <a id="article-nav-blogs" href="{{ site.url }}">
+            <span class="article-ico" id="article-ico-blogs"></span>
+            <strong>Back to Blogs</strong>
+        </a>
+    </nav>
+</article>

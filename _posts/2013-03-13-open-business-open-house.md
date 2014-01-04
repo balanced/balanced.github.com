@@ -2,6 +2,7 @@
 layout: post
 author: Jareau Wade
 title: "Open Business, 'Open' House"
+image: /img/blogimages/2013-03-13.jpg
 tags:
 - open business
 - balanced
