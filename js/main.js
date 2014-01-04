@@ -1,4 +1,5 @@
-$(window).load(function(){
+$(document).ready(function(){
+	$.adaptiveBackground.run()
 	headerToggleInit();
 	function headerToggleInit(){
 		var open = false;
@@ -20,10 +21,12 @@ $(window).load(function(){
 	}
 });
 
-
-var $container = $('#masonry');
-// initialize
-$container.masonry({
-  itemSelector: '.item'
+$(window).load(function(){
+	var $container = $('#masonry');
+	// initialize
+	$container.masonry({
+	  itemSelector: '.item'
+	});
 });
+
 

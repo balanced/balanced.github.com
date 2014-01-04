@@ -2,6 +2,7 @@
 layout: post
 author: Jareau Wade
 title: "Split with GroupMe, powered by Balanced"
+image: /img/blogimages/2013-03-07.jpg
 tags:
 - balanced
 - groupme
