@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	$.adaptiveBackground.run()
 	headerToggleInit();
 	function headerToggleInit(){
 		var open = false;
