@@ -165,7 +165,6 @@ p {
 	max-width: 1020px;
 	margin: 0 auto;
 	.clearfix();
-	.transition(all 1s ease);
 }
 
 /* Layout */
@@ -363,6 +362,18 @@ a#footer-url {
 
 }
 
+.vertCent-parent{   
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.vertCent-child{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+}
+
 .item {
 	a {
 		display: block;
@@ -370,6 +381,7 @@ a#footer-url {
 		overflow: hidden;
 		color: #000;
 		h2, .timestyle {
+			font-weight: 600;
 			color: inherit;
 			.transition(all .5s ease);
 		}
@@ -420,11 +432,12 @@ a#footer-url {
 		border-right: 16px solid transparent; 
 		border-bottom: 16px solid @gray1; 
 	}
-	> h2 {
+	> h2,
+	h2.vertCent-child {
 		margin: 0;
 		font-size: 24px;
 		line-height: 32px;
-		font-weight: 400;
+		font-weight: 600;
 	}
 	.timestyle {
 		height: 64px;
@@ -593,7 +606,11 @@ a#footer-url {
 	#masonry .item {
 		width: 50%;
 		float: left;
-		.list-item-copy {height: 110px;}
+		.list-item-copy {
+			height: 110px;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
 		&:nth-child(odd) .list-item-copy {
 			background-color: @gray2;
 			&:before {
@@ -606,7 +623,8 @@ a#footer-url {
 	.list-item-copy {
 		padding-top: 18px;
 		padding-bottom: 18px;
-		> h2 {
+		> h2,
+		h2.vertCent-child {
 			font-size: 14px;
 			line-height: 18px;
 		}
@@ -618,7 +636,8 @@ a#footer-url {
 	#list-item-featured .list-item-copy {
 		padding-top: 44px;
 		padding-bottom: 44px;
-		> h2 {
+		> h2,
+		h2.vertCent-child {
 			font-size: 36px;
 			line-height: 42px;
 		}
@@ -704,7 +723,8 @@ a#footer-url {
 	.list-item-copy {
 		padding-top: 20px;
 		padding-bottom: 20px;
-		> h2 {
+		> h2,
+		h2.vertCent-child {
 			font-size: 14px;
 			line-height: 18px;
 		}
@@ -712,9 +732,8 @@ a#footer-url {
 	#list-item-featured .list-item-copy,
 	.item.w2 .list-item-copy,
 	.item:nth-child(7n+7) .list-item-copy {
-		padding-top: 44px;
-		padding-bottom: 44px;
-		> h2 {
+		> h2,
+		h2.vertCent-child {
 			font-size: 36px;
 			line-height: 42px;
 		}
@@ -727,8 +746,6 @@ a#footer-url {
 			width: 66.66%;
 			.list-item-copy {
 				height: 220px;
-				padding-top: 24px;
-				padding-bottom: 24px;
 			}
 		}
 	}
@@ -792,8 +809,6 @@ a#footer-url {
 			width: 50%;
 			.list-item-copy {
 				height: 230px;
-				padding-top: 30px;
-				padding-bottom: 30px;
 			}
 		}
 	}

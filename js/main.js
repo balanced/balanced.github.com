@@ -24,7 +24,8 @@ $(window).load(function(){
 	var $container = $('#masonry');
 	// initialize
 	$container.masonry({
-	  itemSelector: '.item'
+	  itemSelector: '.item',
+	  transitionDuration: 0
 	});
 });
 
