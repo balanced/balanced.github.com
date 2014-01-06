@@ -11,11 +11,11 @@ tags:
 
 balanced (little 'b' denoting the app rather than Balanced the system/business which spans many applications) is at its heart an accounting app. As such, balanced has a few atoms which interact to model funds flow:
 
-* Funding Instruments, which are sources or destinations of funds (e.g. a [credit card](https://docs.balancedpayments.com/1.1/api/cards/) is a funding instrument and a source of funds). A Funding Instrument can be debited, credited, refunded, and reversed (the inverse of debits and credits respectively).
-* Transactions (e.g. a [Debit](https://docs.balancedpayments.com/1.1/api/debits/)), which represent the flow of funds to and from, a Marketplace's escrow account (which is a Funding Instrument).
-* Grouping constructs such as Marketplaces, [Customers](https://docs.balancedpayments.com/1.1/api/customers/) and [Orders](https://docs.balancedpayments.com/1.1/api/orders/). These constructs can have many Funding Instruments and Transactions associated with them.
+* Funding Instruments are sources or destinations of funds (e.g. a [credit card](https://docs.balancedpayments.com/1.1/api/cards/) is only a source). A Funding Instrument can be debited, credited, refunded, and reversed (the inverse of debits and credits respectively)
+* Transactions represent the flow of funds (e.g. a [Debit](https://docs.balancedpayments.com/1.1/api/debits/)) to and from a Marketplace's escrow account (which is a Funding Instrument)
+* Grouping constructs such as Marketplaces, [Customers](https://docs.balancedpayments.com/1.1/api/customers/) and [Orders](https://docs.balancedpayments.com/1.1/api/orders/). These constructs can have many Funding Instruments and Transactions associated with them
  
-Helping tie Funding Instruments and Transactions together is the center of balanced; The Ledger. Let's take a look at what the Ledger looks like (this is a [SQLAlchemy table declaration](http://docs.sqlalchemy.org/en/rel_0_9/orm/extensions/declarative.html)):
+Helping tie Funding Instruments and Transactions together is a core component of balanced known as the Ledger. Let's take a look at what the Ledger looks like (this is a [SQLAlchemy table declaration](http://docs.sqlalchemy.org/en/rel_0_9/orm/extensions/declarative.html)):
 
 {% highlight python %}
 ledger = Table(
@@ -34,7 +34,7 @@ ledger = Table(
 
 As you can see, it's pretty simple. The ledger table is simply a record of the Funding Instrument, an amount and the type of transaction (e.g. a credit of funds into the system). Optionally, you can link a record to its parent to denote a series of ledger entries. 
 
-With this information balanced is able to keep track of all movements of money. To get the balance of a Funding Instrument we can simply use the following pseudo code `balance = sum(entry.amount from ledger where funding_instrument = some_funding_instrument)`
+With this information balanced is able to keep track of all movements of money. To get the balance of a Funding Instrument we can simply use the following pseudo code: `balance = sum(entry.amount from ledger where funding_instrument = some_funding_instrument)`
 
 In order to make it easy for engineers at Balanced to operate on this ledger, we provide ourselves a couple of higher level methods on the Ledger class so we don't accidentally shoot ourselves in the foot and lose track of some funds:
 
@@ -60,7 +60,7 @@ class Ledger(Base):
         return inject
 {% endhighlight %}
 
-The Ledger class provides a few additional methods; `transfer`, `eject`, `debit`, and `credit` which are used depending on where the funds are coming from or going to. A simplistic view of the flow of funds through balanced for a Card debit which is transfered to a Bank account via a credit is `card.inject` -> `card.debit` -> `bank_account.credit` -> `bank_account.eject`. This is simplified because it skips the debit and credit operations on the Marketplace's escrow account. Inject and eject entries are single sided, where credit and debit are double sided operations (e.g. for every debit there will be a corresponding credit to another Funding Instrument).
+The Ledger class provides a few additional methods: `transfer`, `eject`, `debit`, and `credit` which are used depending on where the funds are coming from or going to. A simplistic view of the flow of funds through balanced for a Card debit which is transfered to a Bank account via a credit is `card.inject` -> `card.debit` -> `bank_account.credit` -> `bank_account.eject`. This is simplified because it skips the debit and credit operations on the Marketplace's escrow account. Inject and eject entries are single-sided, where credit and debit are double-sided operations (e.g. for every debit there will be a corresponding credit to another Funding Instrument).
 
 The corresponding code to initiate this flow of funds using our [ruby client](https://github.com/balanced/balanced-ruby) would be:
 
@@ -96,7 +96,7 @@ class InjectFundsMixin(_FundsMixin):
         target.ledger = inject or debit
 {% endhighlight %}
 
-By using mixins we can register a sink for a transaction type and the movement of funds between Funding Instruments is all taken care of when the Transaction transitions into the appropriate state for the Funding Instrument associated with it.
+By using mixins we can register a sink for a transaction type and the movement of funds between Funding Instruments. The transfer of funds is taken care of when the Transaction transitions into the appropriate state for the Funding Instrument associated with it. We will explain this in greater detail in our next blog post.
 
 The Ledger provides Balanced with enough information to accurately audit the flow of funds in our system, it's important to note that the Ledger is stateless, all operations on it are atomic, immutable and it is append only. Every Transaction in balanced has a corresponding Ledger entry that is associated with a Funding Instrument and that Ledger entry will then have child entries linked to it which represent the flow of funds through the system.
 
