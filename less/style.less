@@ -211,7 +211,10 @@ p {
 	padding: 20px 0;
 	background: @brand-gray;
 	color: #fff;
+	.nimbus-cond-font();
+	font-weight: 400;
 	font-size: 20px;
+	letter-spacing: .1em;
 	small {font-size: 1em;}
 }
 #footer-social {
@@ -258,11 +261,6 @@ a#footer-url {
 #content-info > .container,
 #article-main {padding: 0 10px;}
 
-#content-info {
-	.nimbus-cond-font();
-	font-weight: 400;
-}
-
 .timestyle {
 	color: #000;
 	text-align: center;
@@ -293,7 +291,7 @@ a#footer-url {
 #filter-indicator,
 #filter-options a {
 	height: 50px;
-	line-height: 42px;
+	line-height: 46px;
 }
 #yearfilter {
 	background: #000;
@@ -519,6 +517,7 @@ a#footer-url {
 		color: inherit;
 		.nimbus-cond-font();
 		font-weight: 400;
+		letter-spacing: .1em;
 		font-size: 20px;
 		line-height: 20px;
 		&:hover {color: @gray3;}
@@ -719,8 +718,14 @@ a#footer-url {
 		height: 60px;
 		font-size: 12px;
 	}
+	#copyright-info,
+	a#footer-url {
+		height: 22px;
+		line-height: 22px;
+		display: inline-block;
+		margin-right: 10px;
+	}
 	#copyright-info img {display: inline;}
-	a#footer-url {display: none;}
 
 	#content-info > .container,
 	#article-main {padding: 0 45px;}
@@ -734,7 +739,7 @@ a#footer-url {
 	#filter-indicator,
 	#filter-options a {
 		height: 40px;
-		line-height: 32px;
+		line-height: 36px;
 	}
 	#yearfilter {
 		height: 40px;

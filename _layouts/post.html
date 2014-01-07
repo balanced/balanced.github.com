@@ -8,12 +8,12 @@ layout: default
     {% include post-article-detail.html %}
 
     <nav class="clearfix" id="article-nav">
-      {% if page.next.url %}
+      {% if page.previous.url %}
         <a id="article-nav-next" href="{{ site.url }}{{ page.next.url }}">
-            <strong>Next</strong><!--
+            <strong>Previous</strong><!--
             --><span id="article-nav-next-name"><!--
             	--><strong>:</strong>
-              {{ page.next.title }}
+              {{ page.previous.title }}
             </span>
 			<span class="article-ico" id="article-ico-next"></span>
         </a>
