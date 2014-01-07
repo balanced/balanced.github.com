@@ -858,6 +858,11 @@ a#footer-url {
 #article-body h2:first-child {
   margin-top: 0;
 }
+#article-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 #author-bio {
   margin: 36px 0;
   border-top: 1px solid #bfbeb9;
@@ -924,6 +929,7 @@ a#footer-url {
   height: 20px;
   display: inline-block;
   color: #000;
+  letter-spacing: .1em;
 }
 #article-nav a #article-nav-next-name {
   display: none;
