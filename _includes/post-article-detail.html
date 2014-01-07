@@ -23,14 +23,14 @@
 
 <ul id="article-social">
   <li>
-    <a href="#" 
+    <a href="http://news.ycombinator.com/submitlink?u={{ site.url }}{{ post.url }}&t={{ post.title }}" 
        data-title="{{ post.title }}"
        data-url="{{ site.url }}{{ post.url }}">
       <span class="social-ico" id="social-ico-hacker"></span> Hacker News
     </a>
   </li>
   <li>
-    <a href="https://twitter.com/share"
+    <a href="https://twitter.com/home?status={{ site.url }}{{ post.url }} - {% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %} - via @balanced"
        data-url="{{ site.url}}{{ post.url }}"
        data-via="balanced"
        data-text="{% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %}"
