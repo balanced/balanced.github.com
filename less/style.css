@@ -484,6 +484,13 @@ a#footer-url {
 #article-main {
   padding: 0 10px;
 }
+#content-info {
+  font-family: 'NimbusSanNov-Cond', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+}
 .timestyle {
   color: #000;
   text-align: center;
@@ -818,6 +825,7 @@ a#footer-url {
   font-style: normal;
   letter-spacing: normal;
   text-transform: uppercase;
+  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
 }
