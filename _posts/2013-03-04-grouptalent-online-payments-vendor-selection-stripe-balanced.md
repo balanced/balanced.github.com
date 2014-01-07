@@ -2,6 +2,8 @@
 layout: post
 author: Jareau Wade
 title: "Customer Profile: GroupTalent"
+image: /img/blogimages/2013-03-04.jpg
+cover_image: /img/blogimages/2013-03-04-cover.jpg
 tags:
 - balanced
 - payments

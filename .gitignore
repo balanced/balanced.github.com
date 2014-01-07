@@ -1,3 +1,5 @@
+.vagrant/
+Vagrantfile
 _site
 .DS_Store
 *~
@@ -8,3 +10,4 @@ _includes/\.\#*
 *.iml
 
 .vagrant/
+*#

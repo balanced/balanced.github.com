@@ -2,6 +2,8 @@
 layout: post
 author: Nick Kleinschmidt
 title: "Searching for Ember.js"
+image: /img/blogimages/2013-06-18.jpg
+cover_image: /img/blogimages/2013-06-18-cover.jpg
 tags:
 - balanced
 - engineering

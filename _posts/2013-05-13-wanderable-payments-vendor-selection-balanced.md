@@ -2,6 +2,8 @@
 layout: post
 author: Jareau Wade
 title: "Customer Profile: Wanderable"
+image: /img/blogimages/2013-05-13.jpg
+cover_image: /img/blogimages/2013-05-13-cover.jpg
 tags:
 - balanced
 - payments

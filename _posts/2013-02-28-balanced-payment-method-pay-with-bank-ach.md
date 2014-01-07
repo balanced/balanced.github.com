@@ -2,6 +2,8 @@
 layout: post
 author: Jareau Wade
 title: "Balanced Adds New Payment Method: Pay with Bank Account"
+image: /img/blogimages/2013-02-28.jpg
+cover_image: /img/blogimages/2013-02-28-cover.jpg
 tags:
 - balanced
 - ACH

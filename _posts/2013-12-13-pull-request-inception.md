@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Steve Klabnik
+author_image: https://f.cloud.github.com/assets/2037452/1855345/90ad64c0-772c-11e3-8146-fafb92b81110.png
 title: "Pull Request Inception"
 tags:
 - balanced
