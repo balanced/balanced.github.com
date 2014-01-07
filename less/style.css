@@ -353,18 +353,12 @@ p {
   background: #fff;
   color: #000;
 }
-#banner > a {
-  display: block;
-  color: inherit;
-}
-#banner > a small em {
+#banner a {
+  color: #0096af;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-#banner > a:hover {
-  color: inherit;
-}
-#banner > a:hover small em {
+#banner a:hover {
   color: #000000;
 }
 #banner h1 {
@@ -732,7 +726,7 @@ a#footer-url {
   right: 0;
   bottom: 0;
   background-color: transparent;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -740,7 +734,7 @@ a#footer-url {
   color: #000;
 }
 .item a:hover .list-item-img:after {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 .item a:hover .list-item-copy {
   background: #BCBBB6!important;

@@ -174,14 +174,10 @@ p {
 	border-bottom: 5px solid #000;
 	background: #fff;
 	color: #000;
-	> a {
-		display: block;
-		color: inherit;
-		small em {.transition(all .5s ease);}
-		&:hover {
-			color: inherit;
-			small em {color: @link-color-hover;}
-		}
+	a {
+		color: @link-color;
+		.transition(all .5s ease);
+		&:hover {color: @link-color-hover;}
 	}
 	h1 {
 		margin: 0;
@@ -434,14 +430,14 @@ a#footer-url {
 				right: 0;
 				bottom: 0;
 				background-color: transparent;
-				background-color: rgba(0, 0, 0, 0.15);			
+				background-color: rgba(0, 0, 0, 0.0);			
 				.transition(all .5s ease);
 			}
 		}
 		&:hover	{ 
 			color: #000;
 			.list-item-img:after {
-				background-color: rgba(0, 0, 0, 0.0);			
+				background-color: rgba(0, 0, 0, 0.15);			
 			}
 			.list-item-copy {
 				background: #BCBBB6!important;
