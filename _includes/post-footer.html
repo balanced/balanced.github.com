@@ -6,11 +6,15 @@
   </h3>
   {% if post.author_image %}
     <img class="img-responsive" src="{{ post.author_image }}">
+    {% else %}
+    <img class="img-responsive" src="http://placehold.it/120x120">
   {% endif %}
   <p>
     <strong>{{ post.author }}</strong>
     {% if post.author_bio %}
       {{ post.author_bio }}
+      {% else %}
+      Bio goes here. Please fill out .md file
     {% endif %}
   </p>
 </aside>
