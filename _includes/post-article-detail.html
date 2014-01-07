@@ -23,13 +23,14 @@
 
 <ul id="article-social">
   <li>
-    <a data-title="{{ post.title }}"
+    <a href="#" 
+       data-title="{{ post.title }}"
        data-url="{{ site.url }}{{ post.url }}">
       <span class="social-ico" id="social-ico-hacker"></span> Hacker News
     </a>
   </li>
   <li>
-    <a href="https://twitter.com/share" class="twitter-share-button"
+    <a href="https://twitter.com/share"
        data-url="{{ site.url}}{{ post.url }}"
        data-via="balanced"
        data-text="{% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %}"
@@ -41,10 +42,11 @@
 
 
 <div id="article-body" itemscope itemtype="http://schema.org/BlogPosting">
+<!--
   <h2>
     <a href="{{ site.url }}{{ post.url }}" rel="bookmark">{{ post.title }}</a>
   </h2>
-
+-->
   {{ content }}
 </div>
 
