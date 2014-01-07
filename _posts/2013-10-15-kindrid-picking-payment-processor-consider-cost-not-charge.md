@@ -1,11 +1,9 @@
 ---
 layout: post
+author: Leighton Cusack
 title: "When Picking A Payment Processor, Consider What It Costs Not Just What They Charge"
 image: /img/blogimages/2013-10-15.jpg
 cover_image: /img/blogimages/2013-10-15-cover.jpg
-author: Leighton Cusack
-author_image: /img/authors/leighton_cusack.png
-author_bio: leads innovation projects at OneHope and is a co-founder of Kindrid, an SMS and mobile donation management platform for churches. To date, Kindrid is one of Balanced's fastest growing donation platforms. Follow Kindrid on Twitter: @_kindrid.
 tags:
 - balanced
 - kindrid
