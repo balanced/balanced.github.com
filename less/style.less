@@ -177,7 +177,7 @@ p {
 	a {
 		color: @link-color;
 		.transition(all .5s ease);
-		&:hover {color: @link-color-hover;}
+		&:hover {color: #000;}
 	}
 	h1 {
 		margin: 0;
@@ -283,6 +283,14 @@ a#footer-url {
 
 /* Listing */
 #listing-main {position: relative;}
+
+#yearfilter,
+#yearfilter #filter-btn,
+#filter-indicator,
+#filter-options a {
+	height: 50px;
+	line-height: 42px;
+}
 #yearfilter {
 	background: #000;
 	z-index: 20;
@@ -293,7 +301,6 @@ a#footer-url {
 		.sprited();
 		display: none;
 		width: 50px;
-		height: 40px;
 		background-position: -60px -60px;
 		background-color: @gray5;
 		position: relative;
@@ -318,7 +325,8 @@ a#footer-url {
 	#filter-indicator,
 	#filter-options a {
 		display: block;
-		padding: 4px 0 0;
+		padding: 0;
+		font-size: 42px;
 		.nimbus-cond-font();
 		font-weight: 700;
 		text-align: center;
@@ -326,8 +334,6 @@ a#footer-url {
 	}
 	#filter-indicator {
 		margin: 0;
-		font-size: 42px;
-		line-height: 46px;
 		background: #000;
 		color: #fff;
 		cursor: default;
@@ -650,6 +656,21 @@ a#footer-url {
 	/* Single Entry */
 	#mast-img {margin: 0 -25px;}
 
+	#author-bio {
+		margin-bottom: 0;
+		.clearfix();
+		p, img {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		img {
+			width: 80px;
+			height: 80px;
+			float: left;
+		}
+		p {margin-left: 104px;}
+	}
+
 }
 
 // For Large-Tablets/Small Desktops ~ 1024
@@ -703,18 +724,24 @@ a#footer-url {
 
 
 	/* Listing */
+	#yearfilter,
+	#yearfilter #filter-btn,
+	#filter-indicator,
+	#filter-options a {
+		height: 40px;
+		line-height: 32px;
+	}
 	#yearfilter {
+		height: 40px;
 		background: none;
 		position: absolute;
 		top: 0;
 		right: 0;
 		#filter-indicator,
 		#filter-options a {
-			height: 40px;
 			width: 80px;
 			margin: 0;
 			font-size: 30px;
-			line-height: 24px;
 		}
 		#filter-btn, 
 		#filter-indicator,
@@ -766,22 +793,9 @@ a#footer-url {
 		margin-top: 40px;
 	}
 
-
 	#author-bio {
-		margin-bottom: 0;
 		font-size: 13px;
 		line-height: 20px;
-		.clearfix();
-		p, img {
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-		img {
-			width: 80px;
-			height: 80px;
-			float: left;
-		}
-		p {margin-left: 104px;}
 	}
 
 	#article-nav {
@@ -796,6 +810,7 @@ a#footer-url {
 			}
 		}
 	}
+
 }
 
 
@@ -834,7 +849,7 @@ a#footer-url {
 			display: block; 
 			margin: 5px 0;
 		}
-		a {font-size: 12px;}
+		a {font-size: 14px;}
 	}
 
 	#article-body,

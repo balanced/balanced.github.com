@@ -359,7 +359,7 @@ p {
   transition: all 0.5s ease;
 }
 #banner a:hover {
-  color: #000000;
+  color: #000;
 }
 #banner h1 {
   margin: 0;
@@ -514,6 +514,13 @@ a#footer-url {
 #listing-main {
   position: relative;
 }
+#yearfilter,
+#yearfilter #filter-btn,
+#filter-indicator,
+#filter-options a {
+  height: 50px;
+  line-height: 42px;
+}
 #yearfilter {
   background: #000;
   z-index: 20;
@@ -558,7 +565,6 @@ a#footer-url {
   border: 0;
   display: none;
   width: 50px;
-  height: 40px;
   background-position: -60px -60px;
   background-color: #92918f;
   position: relative;
@@ -585,7 +591,8 @@ a#footer-url {
 #yearfilter #filter-indicator,
 #yearfilter #filter-options a {
   display: block;
-  padding: 4px 0 0;
+  padding: 0;
+  font-size: 42px;
   font-family: 'NimbusSanNov-Cond', Arial, Helvetica, sans-serif;
   font-style: normal;
   letter-spacing: normal;
@@ -596,8 +603,6 @@ a#footer-url {
 }
 #yearfilter #filter-indicator {
   margin: 0;
-  font-size: 42px;
-  line-height: 46px;
   background: #000;
   color: #fff;
   cursor: default;
@@ -980,6 +985,46 @@ a#footer-url {
   #mast-img {
     margin: 0 -25px;
   }
+  #author-bio {
+    margin-bottom: 0;
+  }
+  #author-bio:before,
+  #author-bio:after {
+    content: " ";
+    /* 1 */
+  
+    display: table;
+    /* 2 */
+  
+  }
+  #author-bio:after {
+    clear: both;
+  }
+  #author-bio:before,
+  #author-bio:after {
+    content: " ";
+    /* 1 */
+  
+    display: table;
+    /* 2 */
+  
+  }
+  #author-bio:after {
+    clear: both;
+  }
+  #author-bio p,
+  #author-bio img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  #author-bio img {
+    width: 80px;
+    height: 80px;
+    float: left;
+  }
+  #author-bio p {
+    margin-left: 104px;
+  }
 }
 @media (min-width: 768px) {
   body {
@@ -1028,7 +1073,15 @@ a#footer-url {
     width: 40px;
   }
   /* Listing */
+  #yearfilter,
+  #yearfilter #filter-btn,
+  #filter-indicator,
+  #filter-options a {
+    height: 40px;
+    line-height: 32px;
+  }
   #yearfilter {
+    height: 40px;
     background: none;
     position: absolute;
     top: 0;
@@ -1036,11 +1089,9 @@ a#footer-url {
   }
   #yearfilter #filter-indicator,
   #yearfilter #filter-options a {
-    height: 40px;
     width: 80px;
     margin: 0;
     font-size: 30px;
-    line-height: 24px;
   }
   #yearfilter #filter-btn,
   #yearfilter #filter-indicator,
@@ -1096,46 +1147,8 @@ a#footer-url {
     margin-top: 40px;
   }
   #author-bio {
-    margin-bottom: 0;
     font-size: 13px;
     line-height: 20px;
-  }
-  #author-bio:before,
-  #author-bio:after {
-    content: " ";
-    /* 1 */
-  
-    display: table;
-    /* 2 */
-  
-  }
-  #author-bio:after {
-    clear: both;
-  }
-  #author-bio:before,
-  #author-bio:after {
-    content: " ";
-    /* 1 */
-  
-    display: table;
-    /* 2 */
-  
-  }
-  #author-bio:after {
-    clear: both;
-  }
-  #author-bio p,
-  #author-bio img {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  #author-bio img {
-    width: 80px;
-    height: 80px;
-    float: left;
-  }
-  #author-bio p {
-    margin-left: 104px;
   }
   #article-nav {
     height: 30px;
@@ -1183,7 +1196,7 @@ a#footer-url {
     margin: 5px 0;
   }
   #article-social a {
-    font-size: 12px;
+    font-size: 14px;
   }
   #article-body,
   #author-bio {

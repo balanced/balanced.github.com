@@ -5,7 +5,7 @@
 <header id="article-mast">
   {% if post.image %}
   <div id="mast-img">
-    <img class="img-responsive" src="{{ post.image }}">
+    <img class="img-responsive" src="{{ post.cover_image }}">
   </div>
   {% endif %}
 
@@ -34,7 +34,7 @@
        data-via="balanced"
        data-text="{% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %}"
        data-lang="en">
-      <span class="social-ico" id="social-ico-twitter"></span> Twitter
+      <span class="social-ico" id="social-ico-twitter"></span> Tweet
     </a>
   </li>
 </ul>

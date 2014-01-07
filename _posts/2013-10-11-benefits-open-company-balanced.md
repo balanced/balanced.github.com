@@ -3,6 +3,7 @@ layout: post
 author: Jareau Wade
 title: "The Benefits of an Open Company Philosophy at Balanced"
 image: /img/blogimages/2013-10-11.jpg
+cover_image: /img/blogimages/2013-10-11-cover.jpg
 tags:
 - balanced
 - open company

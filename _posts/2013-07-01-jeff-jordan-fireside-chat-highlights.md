@@ -3,6 +3,7 @@ layout: post
 author: Richie Serna
 title: "Jeff Jordan on: eCommerce, Marketplaces, & Amazon"
 image: /img/blogimages/2013-07-01.jpg
+cover_image: /img/blogimages/2013-07-01-cover.jpg
 tags:
 - balanced
 - marketplaces
