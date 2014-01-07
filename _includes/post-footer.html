@@ -10,10 +10,9 @@
     <img class="img-responsive" src="http://placehold.it/120x120">
   {% endif %}
   <p>
+      <strong>{{ post.author }}</strong>
     {% if post.author_bio %}
       {{ post.author_bio }}
-      {% else %}
-      <strong>{{ post.author }}</strong>
-   {% endif %}
+    {% endif %}
   </p>
 </aside>
