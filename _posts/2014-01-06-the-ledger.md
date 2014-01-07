@@ -1,13 +1,13 @@
 ---
 layout: post
 author: Marshall Jones
-title: "The Ledger - How Balanced records funds flow"
+title: "The Ledger - How Balanced Records Funds Flow"
 tags:
 - balanced
 - engineering
 ---
 
-## The Ledger - How Balanced records funds flow
+## The Ledger - How Balanced Records Funds Flow
 
 Balanced, like many companies, has a number of internal applications. Today, I'd like to talk to you about how one of those apps, called 'balanced', handles its accounting, since that's at the heart of what we do.
 
