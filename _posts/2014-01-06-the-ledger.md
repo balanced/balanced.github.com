@@ -11,7 +11,7 @@ tags:
 
 Balanced, like many companies, has a number of internal applications. Today, I'd like to talk to you about how one of those apps, called 'balanced', handles its accounting, since that's at the heart of what we do.
 
-Balanced has a few atoms which interact to model funds flow:
+balanced has a few atoms which interact to model funds flow:
 
 * Funding Instruments are sources or destinations of funds (e.g. a [credit card](https://docs.balancedpayments.com/1.1/api/cards/) is only a source). A Funding Instrument can be debited, credited, refunded, and reversed (the inverse of debits and credits respectively)
 * Transactions represent the flow of funds (e.g. a [Debit](https://docs.balancedpayments.com/1.1/api/debits/)) to and from a Marketplace's escrow account (which is a Funding Instrument)
