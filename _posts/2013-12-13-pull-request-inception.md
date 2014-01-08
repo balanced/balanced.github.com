@@ -1,8 +1,10 @@
 ---
 layout: post
 author: Steve Klabnik
-author_image: https://f.cloud.github.com/assets/2037452/1855345/90ad64c0-772c-11e3-8146-fafb92b81110.png
+author_image: https://github-camo.global.ssl.fastly.net/33437474963ee5377ce471d24fd23c6dbb3c50c9/687474703a2f2f626c6f672e62616c616e6365647061796d656e74732e636f6d2f696d672f617574686f72732f73746576655f6b6c61626e696b2e706e67
 title: "Pull Request Inception"
+image: /img/blogimages/generic.jpg
+cover_image: /img/blogimages/generic-cover.jpg
 tags:
 - balanced
 - collaboration
