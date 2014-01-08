@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Steve Klabnik
-author_image: https://github-camo.global.ssl.fastly.net/33437474963ee5377ce471d24fd23c6dbb3c50c9/687474703a2f2f626c6f672e62616c616e6365647061796d656e74732e636f6d2f696d672f617574686f72732f73746576655f6b6c61626e696b2e706e67
+author_image: /img/authors/steve_klabnik.png
 title: "Pull Request Inception"
 image: /img/blogimages/2013-12-13.jpg
 cover_image: /img/blogimages/2013-12-13-cover.jpg

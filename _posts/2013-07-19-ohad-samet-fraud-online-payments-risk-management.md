@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Andrew Nossiter
-author_image: https://github-camo.global.ssl.fastly.net/f757bbe7b57e402d01779accc5e309b611f422b9/687474703a2f2f626c6f672e62616c616e6365647061796d656e74732e636f6d2f696d672f617574686f72732f616e647265775f6e6f7373697465722e706e67
+author_image: /img/authors/andrew_nossiter.png
 title: "Online Payments Risk Management & Fraud"
 image: /img/blogimages/2013-07-19.jpg
 cover_image: /img/blogimages/2013-07-19-cover.jpg

@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Marshall Jones
-author_image: https://f.cloud.github.com/assets/2037452/1864858/6ee4900c-77fe-11e3-9554-b1328cedac0e.png
+author_image: /img/authors/marshall_jones.png
 title: "The Ledger - How Balanced Records Funds Flow"
 image: /img/blogimages/generic.jpg
 cover_image: /img/blogimages/generic-cover.jpg

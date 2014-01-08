@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Nick Kleinschmidt
-author_image: https://github-camo.global.ssl.fastly.net/2f7fa3d236660ba5907d676aa660cae6d1ac01de/687474703a2f2f626c6f672e62616c616e6365647061796d656e74732e636f6d2f696d672f617574686f72732f6e69635f6b6c65696e7363686d6964742e706e67
+author_image: /img/authors/nic_kleinschmidt.png
 title: "Getting Started with Ember.js"
 image: /img/blogimages/2013-06-14.jpg
 cover_image: /img/blogimages/2013-06-14-cover.jpg
