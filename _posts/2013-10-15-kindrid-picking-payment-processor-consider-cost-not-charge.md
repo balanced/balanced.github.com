@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Leighton Cusack
-author_bio: leads innovation projects at OneHope and is a co-founder of Kindrid, an SMS and mobile donation management platform for churches. To date, Kindrid is one of Balanced's fastest growing donation platforms.
+author_bio: leads innovation projects at OneHopegit st and is a co-founder of Kindrid, an SMS and mobile donation management platform for churches. To date, Kindrid is one of Balanced's fastest growing donation platforms.
 author_image: https://github-camo.global.ssl.fastly.net/15163657fb06da2a57170d05392dd6ba61c216c7/687474703a2f2f626c6f672e62616c616e6365647061796d656e74732e636f6d2f696d672f617574686f72732f6c65696768746f6e5f63757361636b2e706e67
 title: "When Picking A Payment Processor, Consider What It Costs Not Just What They Charge"
 image: /img/blogimages/2013-10-15.jpg
