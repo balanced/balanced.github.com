@@ -10,6 +10,8 @@ tags:
 - pricing
 ---
 
+## Balanced Makes Volume Pricing Public
+
 I was negotiating with one of our banking partners a few months ago for
 a discount
 based on the increase in our transaction volume. I also asked for pricing
