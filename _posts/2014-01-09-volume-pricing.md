@@ -66,6 +66,7 @@ Without further ado, here it is ...
         <td>
             2.4% + 30¢
         </td>
+    </tr>
     <tr>
         <td>
             $1MM -- $5MM
