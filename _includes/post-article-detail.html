@@ -30,7 +30,7 @@
     </a>
   </li>
   <li>
-    <a href="https://twitter.com/home?status={{ site.url }}{{ post.url }} - {% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %} - via @balanced"
+    <a target="_blank" href="https://twitter.com/home?status={% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %}: {{ site.url }}{{ post.url }} /via @balanced"
        data-url="{{ site.url}}{{ post.url }}"
        data-via="balanced"
        data-text="{% if post.tweet-text %}{{ post.tweet-text }}{% else %}{{ post.title }}{% endif %}"
