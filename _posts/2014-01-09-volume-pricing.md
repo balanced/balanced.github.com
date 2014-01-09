@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Matin Tamizi
-author_image: /img/authors/matin_tamizi.jpg
+author_image: /img/authors/matin_tamizi.png
 title: "Balanced Makes Volume Pricing Public"
 image: /img/blogimages/2014-01-09.jpg
 cover_image: /img/blogimages/2014-01-09-cover.jpg
