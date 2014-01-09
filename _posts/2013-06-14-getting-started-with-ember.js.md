@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Nick Kleinschmidt
+author_image: /img/authors/nic_kleinschmidt.png
 title: "Getting Started with Ember.js"
 image: /img/blogimages/2013-06-14.jpg
 cover_image: /img/blogimages/2013-06-14-cover.jpg

@@ -1,6 +1,8 @@
 ---
 layout: post
 author: Leighton Cusack
+author_bio: leads innovation projects at OneHope and is a co-founder of Kindrid, an SMS and mobile donation management platform for churches. To date, Kindrid is one of Balanced's fastest growing donation platforms. 
+author_image: /img/authors/leighton_cusack.png
 title: "When Picking A Payment Processor, Consider What It Costs Not Just What They Charge"
 image: /img/blogimages/2013-10-15.jpg
 cover_image: /img/blogimages/2013-10-15-cover.jpg
@@ -47,4 +49,4 @@ We chose Balanced and haven’t looked back. We’ve been growing our processing
 
 ---
 
-[Leighton Cusack](https://twitter.com/lay2000lbs) leads innovation projects at [OneHope](http://onehope.net/) and is a co-founder of [Kindrid](https://kindrid.com/), an SMS and mobile donation management platform for churches. To date, Kindrid is one of Balanced's fastest growing donation platforms. Follow Kindrid on Twitter: [@_kindrid](https://twitter.com/_Kindrid).
+

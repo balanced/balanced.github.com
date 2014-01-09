@@ -1,7 +1,10 @@
 ---
 layout: post
 author: Marshall Jones
+author_image: /img/authors/marshall_jones.png
 title: "The Ledger - How Balanced Records Funds Flow"
+image: /img/blogimages/generic.jpg
+cover_image: /img/blogimages/generic-cover.jpg
 tags:
 - balanced
 - engineering

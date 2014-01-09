@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Andrew Nossiter
+author_image: /img/authors/andrew_nossiter.png
 title: "Online Payments Risk Management & Fraud"
 image: /img/blogimages/2013-07-19.jpg
 cover_image: /img/blogimages/2013-07-19-cover.jpg

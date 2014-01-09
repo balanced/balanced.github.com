@@ -1,6 +1,8 @@
 ---
 layout: post
 author: Jareau Wade
+author_bio: is a co-founder and head of growth at Balanced. Before that, he was the 1st employee and head of data acquisition at Milo.com where he Managed 60% of Milo's employees and designed many of their data acquisition systems. Jareau holds a BSE in Electrical Engineering from University of Pennsylvania where he built emergency personnel tracking systems using GPS.
+author_image: /img/authors/jareau_wade.png
 title: "Kicking off the Balanced Certified Developer Program with API Xchange"
 image: /img/blogimages/2013-08-15.jpg
 cover_image: /img/blogimages/2013-08-15-cover.jpg

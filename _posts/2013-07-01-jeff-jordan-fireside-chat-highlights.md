@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Richie Serna
+author_image: /img/authors/richie_serna.png
 title: "Jeff Jordan on: eCommerce, Marketplaces, & Amazon"
 image: /img/blogimages/2013-07-01.jpg
 cover_image: /img/blogimages/2013-07-01-cover.jpg

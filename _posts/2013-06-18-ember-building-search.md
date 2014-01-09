@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Nick Kleinschmidt
+author_image: /img/authors/nic_kleinschmidt.png
 title: "Searching for Ember.js"
 image: /img/blogimages/2013-06-18.jpg
 cover_image: /img/blogimages/2013-06-18-cover.jpg
