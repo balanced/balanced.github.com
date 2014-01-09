@@ -34,7 +34,7 @@ followed the same formula for everyone.
 
 Without further ado, here it is ...
 
-<table>
+<table style="width:500px;">
     <tr style="font-weight:bold;">
         <td>
             Card Processing Volume Per Month
