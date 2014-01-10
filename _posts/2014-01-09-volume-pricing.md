@@ -84,4 +84,4 @@ Without further ado, here it is ...
 </table>
 
 You can see our full pricing list on
-[our pricing page](https://www.balancedpayments.com/pricing)
+[our pricing page](https://www.balancedpayments.com/pricing).
