@@ -31,7 +31,7 @@ network environment of testing instance is slow. You can see
 [this build](https://travis-ci.org/balanced/billy/builds/16766115) took up 
 to 19 minutes, and `pip install` contributes about 15 minutes.
 
-![Slow builds](/img/blogimages/2014-01-11-slow-pip-install.png "Slow builds caused by pip install")
+![Slow build](/img/blogimages/2014-01-11-slow-pip-install.png "A slow build caused by pip install")
 
 ## Generate wheels
 
@@ -50,7 +50,7 @@ pip wheel --wheel-dir=.pip_wheels -r test_requirements.txt
 ```
 
 Then you should be able to see dependencies were packaged into .whl files in the
-.pip_wheels package.
+.pip_wheels folder.
 
 ```
 balanced-0.11.15-py27-none-any.whl
@@ -68,8 +68,7 @@ You can also add some extra necessary packages like this.
 pip wheel --wheel-dir=.pip_wheels psycopg2 flake8
 ```
 
-Next step, tar the folder into a file and upload to Amazon S3 or whatever 
-you want.
+Next step, tar the folder and upload to Amazon S3.
 
 ```
 tar -zcvf pip_wheels.tar.gz .pip_wheels/ 
@@ -98,6 +97,6 @@ rather than from the Internet.
 ![Fast builds](/img/blogimages/2014-01-11-fast-pip-install.png "Improved building time")
 
 See our [new build result](https://travis-ci.org/balanced/billy/builds/16767686)! 
-It's fast now. This could be also very helpful for saving time
+It's fast now. This trick could be also very helpful for saving time
 from the slow `pip install` in the deployment process.
 
