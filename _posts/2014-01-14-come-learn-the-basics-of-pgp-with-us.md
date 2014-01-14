@@ -6,6 +6,8 @@ title: "Come learn the basics of PGP with us"
 image: /img/blogimages/2014-01-14.jpg
 cover_image: /img/blogimages/2014-01-14-cover.jpg
 tags:
+- security
+- events
 ---
 
 When your business is built on using people's financial information, security is of
