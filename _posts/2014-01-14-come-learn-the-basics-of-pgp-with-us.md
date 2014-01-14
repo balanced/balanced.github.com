@@ -10,7 +10,10 @@ tags:
 
 When your business is built on using people's financial information, security is of
 paramount importance. Balanced complies with [the PCI DSS Level 1 standard](http://www.pcicomplianceguide.org/pcifaqs.php#5),
-which is the highest level of this important industry standard. Of course, PCI isn't
+which is the highest level of this important industry standard, which is like
+table stakes: you can't even play without implementing it. (And if you use Balanced,
+[balanced-js](https://github.com/balanced/balanced-js) ensures you don't need
+compliance yourself.) Of course, PCI isn't
 the end of the story: all of the other standard security practices that the software
 field has developed exist for good reason.
 
