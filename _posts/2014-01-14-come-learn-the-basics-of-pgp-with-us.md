@@ -3,8 +3,8 @@ layout: post
 author: Steve Klabnik
 author_image: /img/authors/steve_klabnik.png
 title: "Come learn the basics of PGP with us"
-image: /img/blogimages/2014-01-09.jpg
-cover_image: /img/blogimages/2014-01-09-cover.jpg
+image: /img/blogimages/2014-01-14.jpg
+cover_image: /img/blogimages/2014-01-14-cover.jpg
 tags:
 ---
 
