@@ -71,6 +71,7 @@ Let's have some fun and throw a wrench into passive surveillance!
 
 Since Balanced is hosting, we want to make sure we know how many of you are showing up.
 Please [register with a ticket](http://www.showclix.com/event/stevespgpparty) so we can
-get all of the logistics properly set up.
+get all of the logistics properly set up. Feel free to make up names and addresses, I won't
+be using any of that information for anything.
 
 I hope to see you there!
