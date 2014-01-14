@@ -3,7 +3,7 @@ name: Balanced Blog
 description: Balanced Blog
 url: http://blog.balancedpayments.com
 
-markdown: maruku
+markdown: kramdown
 pygments: true
 permalink: /:title
 
