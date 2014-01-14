@@ -14,7 +14,7 @@ which is the highest level of this important industry standard. Of course, PCI i
 the end of the story: all of the other standard security practices that the software
 field has developed exist for good reason.
 
-## Security for Humans
+### Security for Humans
 
 I'm also a big proponent of security
 and privacy technology for individuals, as well as businesses.
@@ -24,7 +24,7 @@ the Golden Gate Ruby Conference here in San Francisco late last year:
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/LjZk8PP-u3c?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
 
-It got good reveiws:
+It got good reviews:
 
 <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/steveklabnik">@steveklabnik</a> <a href="https://twitter.com/janl">@janl</a> &quot;saying I have nothing to hide is saying I&#39;m under informed on this issue&quot; is 100% my most important insight this year.</p>&mdash; Hugo Jobling (@dissimile) <a href="https://twitter.com/dissimile/statuses/417089522854535168">December 29, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -40,7 +40,7 @@ Basically, you get a bunch of people together, someone gives a short presentatio
 the basics of how this all works, and then you all make some keys, share them with each other,
 and get yourselves all set up in your mail clients.
 
-## Let's throw a party!
+### Let's throw a party!
 
 I'd been wanting to hold one of these for a while, but I couldn't find the time.
 Then, someone recently asked me if I was throwing a birthday party, as my birthday is
