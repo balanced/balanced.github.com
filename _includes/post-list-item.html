@@ -1,5 +1,15 @@
-<li class="hentry">
-    <span class="published updated" title="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</span>
-    <a class="entry-title" href="{{ site.url }}{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-    <address class="vcard author"><span class="fn">{{ post.author }}</span></address>
-</li>
+<article class="item masonry-item">
+  <a href="{{ site.url }}{{ post.url }}">
+    {% if post.image %}
+    <div class="list-item-img">
+      <img class="img-responsive" src="{{ post.image }}" alt="{{ post.image_alt }}">
+    </div>
+    {% endif %}
+    <div class="list-item-copy">
+      <div class="vertCent-parent">
+        <h2 class="vertCent-child">{{ post.title }}</h2>
+      </div>
+      {% include post-timestyle.html %}
+    </div>
+  </a>
+</article>

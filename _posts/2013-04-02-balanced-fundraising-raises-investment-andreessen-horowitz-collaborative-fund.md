@@ -2,6 +2,8 @@
 layout: post
 author: Jareau Wade
 title: "Andreessen Horowitz &amp; Collaborative Fund Add Additional Funds to Balanced's $3.4M Seed Round"
+image: /img/blogimages/2013-04-02.jpg
+cover_image: /img/blogimages/2013-04-02-cover.jpg
 tags:
 - balanced
 - a16z

@@ -3,43 +3,29 @@ layout: default
 description: This is the landing page
 ---
 
-<ul id="posts">
-{% for post in paginator.posts %}
-  <li class="hfeed post group">
-      {% include post-article.html %}
-  </li>
-{% endfor %}
-</ul>
-
-
-<aside id="sidebar">
-    <h3>Most recent posts</h3>
-    <ul class="posts-list hfeed">
-        {% for post in site.posts limit: 10 %}
-        {% include post-list-item.html %}
-        {% endfor %}
+<div id="listing-main" class="container clearfix" role="main">
+  <nav id="yearfilter">
+    <button id="filter-btn">Year Filter</button>
+    <div id="filter-indicator">2014</div>
+    <ul id="filter-options">
+      <li><a href="#">2014</a></li>
+      <li><a href="#">2013</a></li>
+      <li><a href="#">2012</a></li>
     </ul>
-</aside>
+  </nav>
 
-<div id="pagination">
-  <span id="previous">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <a href="/">Previous</a>
-      {% else %}
-        <a href="{{ paginator.previous_page_path }}">Previous</a>
-      {% endif %}
+
+  {% for post in site.posts limit: 10 %}
+    {% if forloop.first %}
+      {% include post-list-featured.html %}
+      <div id="masonry">
     {% else %}
-      Previous
+      {% include post-list-item.html %}
     {% endif %}
-  </span>
 
-  <span id="next">
-  {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}" class="next">Next</a>
-  {% else %}
-    Next
-  {% endif %}
-  </span>
+    {% if forloop.last %}
+      </div>
+    {% endif %}
+  {% endfor %}
 
 </div>

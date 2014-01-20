@@ -1,7 +1,11 @@
 ---
 layout: post
 author: Jareau Wade
+author_image: /img/authors/jareau_wade.png
+author_bio: is a co-founder and head of growth at Balanced. Before that, he was the 1st employee and head of data acquisition at Milo.com where he Managed 60% of Milo's employees and designed many of their data acquisition systems. Jareau holds a BSE in Electrical Engineering from University of Pennsylvania where he built emergency personnel tracking systems using GPS.
 title: "The Benefits of an Open Company Philosophy at Balanced"
+image: /img/blogimages/2013-10-11.jpg
+cover_image: /img/blogimages/2013-10-11-cover.jpg
 tags:
 - balanced
 - open company
