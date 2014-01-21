@@ -90,11 +90,11 @@ Founder/CEO, of Raise was the friend I referred to in this post. It was his
 girlfriend that cemented the idea that there was such a need amongst consumers.
 
 [Crowdtilt](crowdtilt.com) has shown their support in
-[a public discussion](link to github issue) since the beginning. James and
+[a public discussion](link.com) since the beginning. James and
 Khaled, the founders of Crowdtilt, jumped at the chance of doing whatever they
 could to make the ability to push money to debit cards a reality. Crowdtilt
 is a platform to crowdfund anything from
-[a campaign to support the Jamaican bobsled team](link to campaign) to
+[a campaign to support the Jamaican bobsled team](link.com) to
 a campaign amongst friend for a birthday.
 
 [Wanderable](wanderable.com) also immediately picked up on how powerful it
