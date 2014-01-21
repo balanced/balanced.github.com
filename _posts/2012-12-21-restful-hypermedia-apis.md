@@ -132,6 +132,6 @@ internally, let us know!
 and we'll keep you updated on our progress of open sourcing it.
 
 You can reach me on [twitter](https://twitter/mahmoudimus) or email me:
-m [@] balancedpayments.
+m@balancedpayments.com
 
  [1]: https://twitter.com/steveklabnik/status/282209954285359105
