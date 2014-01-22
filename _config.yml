@@ -2,6 +2,7 @@ title: "Balanced: Blog"
 name: Balanced Blog
 description: Balanced Blog
 url: http://blog.balancedpayments.com
+future: false
 
 markdown: kramdown
 pygments: true
