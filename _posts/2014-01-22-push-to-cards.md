@@ -20,6 +20,12 @@ we reached our goal of $50k with our biggest backers being
 [Wanderable](https://wanderable.com/),
 [Crowdtilt](https://www.crowdtilt.com/), and
 [InstantCab](http://instantcab.com/).
+I don't think it would have been possible to take this approach to product
+validation prior to a white-labeled crowdfunding platform like
+[Crowdhoster](http://www.crowdhoster.com/) or without taking an open
+approach to building a business and communicating with customers.
+This post talks about our reasoning and approach towards developing a new
+product.
 
 We don't have the flexibility to try out functionality in our API. We either
 release and support it forever, or we never build it at all. It's just not
