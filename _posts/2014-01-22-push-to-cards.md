@@ -81,13 +81,13 @@ Paying a couple using their debit card number solves that problem.
 
 [![Crowdtilt](/img/blogimages/crowdtilt_logo.jpg)](https://www.crowdtilt.com/)
 
-Crowdtilt let's you crowdfund *anything*. They are the company behind
+Crowdtilt lets you crowdfund *anything*. They are the company behind
 Crowdhoster--the platform that powers our crowdfunding campaign. Crowdtilt is
 also a current Balanced customer. James and Khaled, the co-founders of
 Crowdtilt, have shared with me on numerous occasions how annoying it was for
 their customers to have to hunt down their bank account information. Their
 [iPhone app](https://itunes.apple.com/us/app/crowdtilt-do-more-together/id691096785?mt=8)
-let's you launch a crowdfunding campaign in under a minute. Now, they're
+lets you launch a crowdfunding campaign in under a minute. Now, they're
 going to reduce the friction even further.
 
 [![InstantCab](/img/blogimages/instantcab_logo.jpg)](http://instantcab.com/)
