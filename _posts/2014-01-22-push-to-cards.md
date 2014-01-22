@@ -2,106 +2,107 @@
 layout: post
 author: Matin Tamizi
 author_image: /img/authors/matin_tamizi.png
-title: "Pushing Money to Debit Cards"
-image: /img/blogimages/2014-01-09.jpg
-cover_image: /img/blogimages/2014-01-09-cover.jpg
+title: "Balanced Will Release an API to Push Money to Debit Cards"
+image: /img/blogimages/1_22_2014_image_600x424.jpg
+cover_image: "/img/blogimages/1_22_2014_image_1020x340.jpg"
 tags:
 - open
 - crowdfunding
 ---
 
-ACH bank transfers, even with all of it's warts, are a powerful way to pay a
-seller on a
-marketplace. The seller can receive the money the next business day. We've
-accepted it for a long time since it's
-certainly better than checks, PayPal, or a wire transfer. But, we could do
-so much better instead of accepting what's available to us today.
+Balanced launched a
+[crowdfunding campaign](https://balanced.crowdhoster.com/let-s-push-to-debit-cards)
+yesterday to gauge interest
+in building an API that gives marketplaces the ability to pay sellers using
+only a seller's debit card number and expiration date. In 25 hours,
+we reached our goal of $50k with our biggest backers being
+[Raise](https://www.raise.com/),
+[Wanderable](https://wanderable.com/),
+[Crowdtilt](https://www.crowdtilt.com/), and
+[InstantCab](http://instantcab.com/).
 
-I was having dinner the other night with a friend. His girlfriend doesn't
-work in tech, which can be refreshing if you live in Silicon Valley. I decided
-that I needed to get someone's opinion that wasn't biased by working in
-payments, commerce, or in the tech industry even. I asked her what she does
-if a website asks her for her bank account number and routing if they needed
-to pay her. She responded, "I would call the bank and asked them." and followed
-with "But, it's weird to even need to enter that information." Her response
-reflects how many people think.
+We don't have the flexibility to try out functionality in our API. We either
+release and support it forever, or we never build it at all. It's just not
+possible to rip something out once your customers depend on it to run their
+business.
 
-I reflected then about my thought process when I have to enter my bank account
-information online. My checking account is at Wells Fargo who unfortunately
-doesn't easily make my account number available in their online banking portal.
-I have to open up a PDF statement and take the account number from there.
-There's probably some security related reason for not displaying my account
-number, but it certainly doesn't make my life easier.                       
+We struggled with that challenge a year ago for
+[ACH debits](https://www.balancedpayments.com/ach-debits). After a lot of
+research, we decided that it didn't make sense to move forward, but it
+was a
+[public discussion](https://github.com/balanced/balanced-api/issues/2),
+and we operate as an
+[open company](https://www.balancedpayments.com/open).
+I had to explain why.
 
-Using ACH payouts is a powerful way a seller, but then you need them to enter
-their bank account information—-a clearly painful process. I asked my friend's
-girlfriend another question. I wanted to know what she thought about only
-having to enter her debit card number to receive money. She smiled and answered,
-"That's easy. My debit card is in my wallet."
+![Matin's explanation](/img/blogimages/why-no-ach-debits.png)
 
-I thought then about what someone can do with my bank account information.
-They can debit money directly from my bank account if they have access to
-an ACH debit system. That can happen with a card as well, but it's not nearly
-as simple to fight an ACH debit as it is to file a chargeback. It's also
-a lot harder to close your bank account and open a new one instead of just
-having the bank mail you a new debit card. It's much scarier to share my
-bank account information than my debit card number—-something that I put into
-many sites on a regular basis.
+In the end, there was so much demand and a push from our customers to pay
+even more than what we thought they would pay. The public conversation changed
+everything.
 
-Balanced wants to solve the problem entirely. Forget about asking people to
-look up their bank account information and trust you to enter than information.
-Forget about needing to wait days to even know if that's the correct account
-number. We want to build an API to give marketplaces the ability to deposit
-money into a seller's checking account using only the seller's debit card number
-and expiration date.
+There was also a public conversation for Balanced to build an API to
+[push money to cards](https://github.com/balanced/balanced-api/issues/32).
+We did the research, realized it was in fact possible, but it wasn't enough
+of a priority. It wasn't clear whether there was enough demand, so we took
+a different approach this time by running a crowdfunding campaign on Crowdhoster
+to ask our customers to put their money where their mouth is. If you really
+want this, show us ... and they did.
 
-It's interesting why no one has done this yet and made it readily accessible
-through a simple API. It's not an easy problem to solve. It requires us
-integrating into different systems and, in many cases, going over ATM networks.
-The ATM networks have an additional advantage of the transfer being instant
-(24 hours a day, 7 days a week). It's a hard problem, but we think it could be
-worth it.
+## The Main Backers
 
-Unfortunately, Balanced doesn't have some of the same advantages as a consumer
-focused company. Once we build a new feature in our API, it needs to stay.
-Companies are going to build on top of it. We can't exactly rip it out if we
-realize later there wasn't demand.
+[![Raise.com](/img/blogimages/raise_logo.jpg)](https://www.raise.com/)
 
-To test the market and our hypothesis, we're taking a novel approach. We're
-asking marketplaces to show their interest by backing a
-[crowdfunding campaign](https://balanced.crowdhoster.com/let-s-push-to-debit-cards). The
-purpose is not to get someone else to fund our development. We can do that on
-our own. All of the money goes towards the transaction fees we would charge
-the marketplace for the transfers. Balanced also gives the backers early access
-and discounted fees in exchange.
-The marketplace paying their fees upfront
-though is the best way to demonstrate that there really is a need for the
-service.
+Raise jumped in right away with a $20,000 contribution becoming the largest
+backer, and one of our primary partners to make this happen. Raise is a
+marketplace for gift cards. George, the Founder/CEO, and Angelo who runs
+payments at Raise immediately got it.
 
-## The current backers
+It all became clear when I had dinner Monday night with George, Angelo, and
+George's girlfriend who is also Angelo's sister :-). I asked her about having
+to enter her account number and routing number into a site. She explained that
+she'd prefer not to share her bank account information and would have to call
+her bank to even find out what her bank account information was. Raise wants
+anyone to be able to sell their gift cards online, and that means making it as
+simple as possible to do so.
 
-It's been only a day since we announced the campaign, and we've already met
-our goal of $50,000. The first companies that backed the campaign immediately
-saw the value.
+[![Wanderable](/img/blogimages/wanderable_logo.jpg)](https://wanderable.com/)
 
-[Raise](raise.com), a rapidly growing marketplace for gift cards, realized how
-important it was to make it trivial to pay their sellers. George, the
-Founder/CEO, of Raise was the friend I referred to in this post. It was his
-girlfriend that cemented the idea that there was such a need amongst consumers.
+Wanderable is a free wedding registry for honeymoon destinations. As a current
+Balanced customer, we've worked with them to manage couples mistyping their
+bank account number. It's not possible to validate a bank account number in
+real-time, so Wanderable would have to ask the couple to come back days later.
+Paying a couple using their debit card number solves that problem.
 
-[Crowdtilt](crowdtilt.com) has shown their support in
-[a public discussion](link.com) since the beginning. James and
-Khaled, the founders of Crowdtilt, jumped at the chance of doing whatever they
-could to make the ability to push money to debit cards a reality. Crowdtilt
-is a platform to crowdfund anything from
-[a campaign to support the Jamaican bobsled team](link.com) to
-a campaign amongst friend for a birthday.
+[![Crowdtilt](/img/blogimages/crowdtilt_logo.jpg)](https://www.crowdtilt.com/)
 
-[Wanderable](wanderable.com) also immediately picked up on how powerful it
-was to reduce the friction to pay a couple for their wedding registry.
-They hated going through the back and forth when a couple would mistype
-their bank account number and for Wanderable not knowing for days later.
+Crowdtilt let's you crowdfund *anything*. They are the company behind
+Crowdhoster--the platform that powers our crowdfunding campaign. Crowdtilt is
+also a current Balanced customer. James and Khaled, the co-founders of
+Crowdtilt, have shared with me on numerous occasions how annoying it was for
+their customers to have to hunt down their bank account information. Their
+[iPhone app](https://itunes.apple.com/us/app/crowdtilt-do-more-together/id691096785?mt=8)
+let's you launch a crowdfunding campaign in under a minute. Now, they're
+going to reduce the friction even further.
 
-I want to thank our early backers, and I want to thank anyone else that
-understands the problem and sees the value we're trying to create. I thank
-you for your support. I'm excited to make this a reality.
+[![InstantCab](/img/blogimages/instantcab_logo.jpg)](http://instantcab.com/)
+
+InstantCab competes with Uber and Lyft to provide an amazing service to get a
+ride. Aarjav started pinging me
+[on Twitter](https://twitter.com/aarjav/status/425738289098657792)
+asking about more information. He shared with me last night that they had
+challenges with drivers mistyping their bank account number, and that is was
+easier to just ask them for a check to verify the driver's bank account
+information. That's a painful operations challenged that they're now going to
+solve.
+
+
+## Next Steps
+
+It's clear now that we have to move forward, and our community has shown us
+that there's *real* demand. We're going to continue the campaign to provide
+backers with early access and a discount. All of the contribution will go
+towards the transaction fees for the service.
+
+I'm incredibly excited to build something I've wanted to exist for a long time
+and support companies that enable new forms of commerce.
