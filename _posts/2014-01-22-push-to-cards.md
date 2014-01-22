@@ -111,3 +111,7 @@ towards the transaction fees for the service.
 
 I'm incredibly excited to build something I've wanted to exist for a long time
 and support companies that enable new forms of commerce.
+
+----
+
+Comments and discussion on [Hacker News](https://news.ycombinator.com/item?id=7105416)
