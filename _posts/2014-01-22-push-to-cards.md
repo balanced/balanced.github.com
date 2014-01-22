@@ -66,6 +66,11 @@ her bank to even find out what her bank account information was. Raise wants
 anyone to be able to sell their gift cards online, and that means making it as
 simple as possible to do so.
 
+What's interesting is that Raise wasn't a customer of Balanced prior to the
+campaign. They just saw the value to innovate and be an early and, thus
+far, the largest backer.
+
+
 [![Wanderable](/img/blogimages/wanderable_logo.jpg)](https://wanderable.com/)
 
 Wanderable is a free wedding registry for honeymoon destinations. As a current
