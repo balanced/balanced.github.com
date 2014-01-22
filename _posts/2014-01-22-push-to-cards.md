@@ -98,7 +98,7 @@ ride. Aarjav started pinging me
 asking about more information. He shared with me last night that they had
 challenges with drivers mistyping their bank account number, and that is was
 easier to just ask them for a check to verify the driver's bank account
-information. That's a painful operations challenged that they're now going to
+information. That's a painful operations challenge that they're now going to
 solve.
 
 
