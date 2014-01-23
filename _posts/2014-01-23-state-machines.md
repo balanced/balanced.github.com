@@ -10,7 +10,7 @@ tags:
 - engineering
 ---
 
-## State machines - How Balanced controls funds flow
+## State machines - How Balanced Controls Funds Flow
 
 In our [previous blog post about the Ledger](http://blog.balancedpayments.com/the-ledger/) we talked about how balanced (little 'b' denoting the app rather than Balanced the system/business which spans many applications) is at its heart an accounting app.
 
