@@ -158,3 +158,8 @@ class LedgerSink(EjectFundsMixin, Credit.reconcile_sink.Optimistic):
 For a Credit, we optimistically debit at the start of the Transaction's lifecycle so the funds cannot be double spent, if the Transaction moves to the FAILED state then these funds will be credited back to the source of the Transaction. For an Optimistic reconciliation no action is taken when it transitions to the SUCCEEDED state since the funds were moved at the start of the Transaction's lifecycle.
 
 Since Balanced began in 2012 we transitioned the state of tens of millions of transactions. If you're looking to transition careers and like working on problems like these you should [get in touch](mailto:jobs@balancedpayments.com).
+
+---
+
+Comments and discussion on
+[Hacker News](https://news.ycombinator.com/item?id=7111087)
