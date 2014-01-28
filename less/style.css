@@ -662,6 +662,10 @@ a#footer-url {
 #masonry .item {
   width: 100%;
 }
+code {
+  font-size: 12px;
+  line-height: 18px;
+}
 .vertCent-parent {
   display: table;
   width: 100%;
