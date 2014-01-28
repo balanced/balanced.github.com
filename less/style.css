@@ -400,11 +400,11 @@ p {
   letter-spacing: normal;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 12px;
   letter-spacing: .1em;
 }
 #content-info small {
-  font-size: 1em;
+  font-size: 12px;
 }
 #footer-social {
   padding: 0;
@@ -874,6 +874,11 @@ a#footer-url {
   display: block;
   margin: 25px auto;
   border-radius: 120px;
+}
+#author-bio .img-responsive {
+  width: 80px;
+  height: 80px;
+  float: none;
 }
 #article-nav {
   height: 40px;
