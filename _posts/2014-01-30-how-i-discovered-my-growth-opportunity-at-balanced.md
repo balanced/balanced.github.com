@@ -4,15 +4,14 @@ author: Kyungmin Kim
 author_image: /img/authors/kyungmin_kim.png
 author_bio: (aka KK) joined Balanced as a front-end engineer in January 2014 after attending App Academy. She launched her career at Google as a UX designer. 
 title: "How I Discovered My Growth Opportunity at Balanced"
-image: https://d262ilb51hltx0.cloudfront.net/fit/t/1600/1280/desat/multiply/yellow/overlay/yellow/gradv/29/81/55/1*UXFocJfV2WWM5hrcnmSxuQ.png
-cover_image: https://d262ilb51hltx0.cloudfront.net/fit/t/1600/1280/desat/multiply/yellow/overlay/yellow/gradv/29/81/55/1*UXFocJfV2WWM5hrcnmSxuQ.png
+image: /img/blogimages/2014-01-30.jpg
+cover_image: /img/blogimages/2014-01-30-cover.jpg
 tags:
 - balanced
 - hiring
 - culture
 - women in tech
 - diversity
-
 ---
 
 *KK's story was originally published [here](https://medium.com/women-in-tech/adf6520f3e20) on her personal blog*
