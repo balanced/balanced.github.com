@@ -22,16 +22,16 @@ $(document).ready(function(){
 	var mastPhotoResize = function() {
 		var photoSelector = function() {
 			$( window ).resize(function() {
-				if ($(window).width() <= 600 && $('#mast-img .img-responsive').attr('src').match(/cover.jpg/) =="cover.jpg")
+				if ($(window).width() <= 600 && $('#mast-img .img-responsive, #feat-img .img-responsive').attr('src').match(/cover.jpg/) =="cover.jpg")
 				{
-					$("#mast-img .img-responsive").each(function() {
+					$('#mast-img .img-responsive, #feat-img .img-responsive').each(function() {
 				    	var src = $(this).attr("src").replace("-cover.jpg", ".jpg");
 						$(this).attr("src", src);
 				    });
 				}
-				else if ($(window).width() >= 600 && $('#mast-img .img-responsive').attr('src').match(/cover.jpg/) != "cover.jpg")
+				else if ($(window).width() >= 600 && $('#mast-img .img-responsive, #feat-img .img-responsive').attr('src').match(/cover.jpg/) != "cover.jpg")
 				{
-				 	$("#mast-img .img-responsive").each(function() {
+				 	$('#mast-img .img-responsive, #feat-img .img-responsive').each(function() {
 						var src = $(this).attr("src").match(/[^\.]+/) + "-cover.jpg";
 						$(this).attr("src", src);
 					})
@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 	   if ($(window).width() <= 600)
 		{
-			$("#mast-img .img-responsive").each(function() {
+			$('#mast-img .img-responsive, #feat-img .img-responsive').each(function() {
 				var src = $(this).attr("src").replace("-cover.jpg", ".jpg");
 				$(this).attr("src", src);
 			});

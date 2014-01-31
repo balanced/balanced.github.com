@@ -3,8 +3,8 @@ layout: post
 author: Matin Tamizi
 author_image: /img/authors/matin_tamizi.png
 title: "Balanced Will Release an API to Push Money to Debit Cards"
-image: /img/blogimages/1_22_2014_image_600x424.jpg
-cover_image: "/img/blogimages/1_22_2014_image_1020x340.jpg"
+image: /img/blogimages/1_22_2014_image.jpg
+cover_image: "/img/blogimages/1_22_2014_image-cover.jpg"
 tags:
 - open
 - crowdfunding
