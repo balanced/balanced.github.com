@@ -1226,7 +1226,10 @@ code {
   #article-social a {
     font-size: 14px;
   }
-  #article-body,
+  #article-body {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
   #author-bio {
     clear: right;
     margin-top: 0;
