@@ -34,7 +34,6 @@ The Balanced community is full of extremely talented people, just like Ben, that
 
 -[@jkwade](https://twitter.com/jkwade)
 
----
 
 Learn more about Balanced's ['Open Company' philosophy](https://www.balancedpayments.com/open). 
 

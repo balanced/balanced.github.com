@@ -18,6 +18,44 @@ $(document).ready(function(){
 			return true;
 		}
 	}
+
+	var mastPhotoResize = function() {
+		var photoSelector = function() {
+			$( window ).resize(function() {
+				if ($(window).width() <= 600 && $('#mast-img .img-responsive').attr('src').match(/cover.jpg/) =="cover.jpg")
+				{
+					$("#mast-img .img-responsive").each(function() {
+				    	var src = $(this).attr("src").replace("-cover.jpg", ".jpg");
+						$(this).attr("src", src);
+				    });
+				}
+				else if ($(window).width() >= 600 && $('#mast-img .img-responsive').attr('src').match(/cover.jpg/) != "cover.jpg")
+				{
+				 	$("#mast-img .img-responsive").each(function() {
+						var src = $(this).attr("src").match(/[^\.]+/) + "-cover.jpg";
+						$(this).attr("src", src);
+					})
+				}
+			});
+		}
+
+
+	   if ($(window).width() <= 600)
+		{
+			$("#mast-img .img-responsive").each(function() {
+				var src = $(this).attr("src").replace("-cover.jpg", ".jpg");
+				$(this).attr("src", src);
+			});
+			photoSelector();
+		}
+		else
+		{
+			$( window ).resize(function() {
+			photoSelector();
+			});
+		}
+	};
+	mastPhotoResize();
 });
 
 $(window).load(function(){

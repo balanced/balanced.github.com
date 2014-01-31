@@ -29,5 +29,5 @@ Now 15% of our payouts are even faster!
 #### What this means for Balanced customers:
 Same-day payouts to Wells Fargo customers will be made immediately available to all Balanced developers, whether you're using just [Balanced Payouts](http://blog.balancedpayments.com/announcing-balanced-payouts/) or Processing and Payouts together. No action is required to begin using same-day payouts. Balanced will simply begin speeding up payouts for eligible merchants. 
 
----
+
 Thanks to Ken Yeung at TNW for [covering](http://thenextweb.com/insider/2013/02/25/balanced-payments-brings-same-day-payouts-to-wells-fargo-customers/) this announcement.
