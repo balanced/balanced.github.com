@@ -49,5 +49,5 @@ Overall, the new name has been received very positively. I've heard a few "oh th
 - Make the change along with a major product change
 - Get out of the building and test your ideas on real people (however informally)
 
----
+
 Follow Balanced on the interwebs: ([twitter](https://twitter.com/balanced), [github](https://github.com/balanced/)), and check out our [docs](https://www.balancedpayments.com/docs/api?language=bash).

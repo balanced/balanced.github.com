@@ -159,7 +159,6 @@ For a Credit, we optimistically debit at the start of the Transaction's lifecycl
 
 Since Balanced began in 2012 we transitioned the state of tens of millions of transactions. If you're looking to transition careers and like working on problems like these you should [get in touch](mailto:jobs@balancedpayments.com).
 
----
 
 Comments and discussion on
 [Hacker News](https://news.ycombinator.com/item?id=7111087)

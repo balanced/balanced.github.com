@@ -37,5 +37,5 @@ Using [balanced.js](https://www.balancedpayments.com/docs/overview?language=bash
 
 Read the full story [here](http://blog.wanderable.com/2013/05/10/receiving-your-funds-with-love/).
 
----
+
 Follow [Jenny](https://twitter.com/phethyr) and [Wanderable](https://twitter.com/wanderable) on Twitter.

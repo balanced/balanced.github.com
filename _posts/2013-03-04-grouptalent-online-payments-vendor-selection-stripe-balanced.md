@@ -36,6 +36,6 @@ Read the full story [here](https://grouptalent.com/blog/why-we-switched-from-str
 
 One interesting bit of the story Wes didn't share is that GroupTalent originally planned to use Stripe for processing and Balanced just for payouts, but during the integration process realized that set-up would take over a week to move the money from Stripe to their developers' bank accounts (via Balanced) -- getting funds from Stripe alone is a 7-day process. So they decided to use Balanced for processing _and_ payouts, which gave them the advantage of next-day payouts, a huge win for their developers. 
 
----
+
  If you'd like to be featured in one of Balanced's customer profiles please email support at balancedpayments.com.
  

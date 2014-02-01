@@ -24,8 +24,8 @@ Forge selected Balanced as the payments engine under it's hood because of the un
 >Balanced was the best choice for us because of the ability to pay out to our merchants. There are a few other options, like Stripe, that would allow us to take payments almost as easily, but __depositing money in our merchants' bank accounts would've been extremely difficult if it weren't for Balanced.__
 
 
----
+
  If you'd like to be featured in one of Balanced's customer profiles please email support at balancedpayments.com.
  
----
+
 The guys at Forge posted their work to HN: [http://news.ycombinator.com/item?id=5214218](http://news.ycombinator.com/item?id=5214218)

@@ -186,5 +186,5 @@ References:
 3. [Detecting Malice](http://www.detectmalice.com/)
 4. [Ohad Samet's blog on risk](http://www.ohadsamet.com/blog/)
 
----
+
 This post sparked some great fraud/chargeback discussion on [Hacker News](http://news.ycombinator.com/item?id=5258942) and [/r/startups](http://www.reddit.com/r/startups/comments/18ywwk/nothing_is_certain_except_death_and_taxes_and/)

@@ -38,5 +38,5 @@ The idea for Balanced Bank Payments, its spec, common uses cases, and even the p
 ### How to request access
 We'll be rolling out invites to a limited beta of Balanced Bank Payments over the next few weeks. If you'd like to request access please email us: support at balancedpayments.com. Include "Bank Payments Beta Access Request" in your subject.
 
-- --
+
 Earlier this week, we launched same-day payouts for all Wells Fargo customers. Check it out [here](http://blog.balancedpayments.com/introducing-balanced-same-day-payouts-wells-fargo/)!
