@@ -383,7 +383,7 @@ p {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -65px;
+  bottom: -52px;
   color: inherit;
 }
 #banner small em {
@@ -875,7 +875,7 @@ code {
 }
 #author-bio img {
   display: block;
-  margin: 25px auto;
+  margin: 25px 10px auto auto;
   border-radius: 120px;
 }
 #author-bio .img-responsive {
@@ -1226,10 +1226,7 @@ code {
   #article-social a {
     font-size: 14px;
   }
-  #article-body {
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
+  #article-body,
   #author-bio {
     clear: right;
     margin-top: 0;
