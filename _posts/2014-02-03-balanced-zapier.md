@@ -20,14 +20,15 @@ Although Balanced is a payments API that’s integrated by developers, but many 
 
 ### How to get started on Zapier
 
-1. Sign up for a [Zapier account](https://zapier.com/app/signup)
+1. Sign up for a [Zapier account](https://zapier.com/app/signup),
 
-2. [Connect your Balanced account to Zapier](https://zapier.com/help/balanced/)
+2. [Connect your Balanced account to Zapier](https://zapier.com/help/balanced/),
 
-3. Check out a few of the [pre-made Balanced Zaps](https://zapier.com/zapbook/balanced-payments/) below or
+3. Check out a few of these [pre-made Balanced Zaps](https://zapier.com/zapbook/balanced-payments/), or
 
 4. Start creating your own
 
 Hope this helps,
+
 -[@jkwade](https://twitter.com/jkwade)
 
