@@ -14,7 +14,7 @@ tags:
 - diversity
 ---
 
-*KK's story was originally published [here](https://medium.com/women-in-tech/adf6520f3e20) on her personal blog*
+*KK's story was originally published [here](https://medium.com/women-in-tech/adf6520f3e20) on her personal blog. Comments on [Hacker News](https://news.ycombinator.com/item?id=7193260).*
 
 ## Before Balanced
 I first came to the US in 2008 to attend the Human Computer Interaction (HCI) program at Carnegie Mellon. Prior to that, I was an undergraduate student studying IT business at Korea Advanced Institute of Science and Technology. I grew up as a liberal arts student, always eager to make web apps. HCI seemed to be the perfect intersection between business and computer science. At Carnegie Mellon, I learned how to apply the principles of design and psychology for designing and prototyping usable interactive systems. After my [capstone project](http://www.hcii.cmu.edu/M-HCI/2009/Salesforce/index.html) with Salesforce.com, I got my first job at Google as a UX designer.
