@@ -178,10 +178,8 @@ table {
 .clearfix:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearfix:after {
   clear: both;
@@ -325,10 +323,8 @@ p {
 .container:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .container:after {
   clear: both;
@@ -337,10 +333,8 @@ p {
 .container:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .container:after {
   clear: both;
@@ -416,10 +410,8 @@ p {
 #footer-social:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 #footer-social:after {
   clear: both;
@@ -428,10 +420,8 @@ p {
 #footer-social:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 #footer-social:after {
   clear: both;
@@ -535,10 +525,8 @@ a#footer-url {
 #yearfilter:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 #yearfilter:after {
   clear: both;
@@ -547,10 +535,8 @@ a#footer-url {
 #yearfilter:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 #yearfilter:after {
   clear: both;
@@ -638,10 +624,8 @@ a#footer-url {
 #masonry:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 #masonry:after {
   clear: both;
@@ -650,10 +634,8 @@ a#footer-url {
 #masonry:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 #masonry:after {
   clear: both;
@@ -771,7 +753,6 @@ a#footer-url {
   margin: 0 -10px;
   background: #000;
   /* default background-color */
-
 }
 #mast-img img {
   margin-left: auto;
@@ -1006,10 +987,8 @@ a#footer-url {
   #author-bio:after {
     content: " ";
     /* 1 */
-  
     display: table;
     /* 2 */
-  
   }
   #author-bio:after {
     clear: both;
@@ -1018,10 +997,8 @@ a#footer-url {
   #author-bio:after {
     content: " ";
     /* 1 */
-  
     display: table;
     /* 2 */
-  
   }
   #author-bio:after {
     clear: both;
@@ -1035,6 +1012,7 @@ a#footer-url {
     width: 80px;
     height: 80px;
     float: left;
+    margin-right: 60px;
   }
   #author-bio p {
     margin-left: 104px;
@@ -1216,10 +1194,7 @@ a#footer-url {
   #article-social a {
     font-size: 14px;
   }
-  #article-body {
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
+  #article-body,
   #author-bio {
     clear: right;
     margin-top: 0;
