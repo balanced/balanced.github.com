@@ -863,6 +863,7 @@ code {
   width: 80px;
   height: 80px;
   float: left;
+  margin-right: 60px;
 }
 #article-nav {
   height: 40px;
@@ -1022,7 +1023,6 @@ code {
     width: 80px;
     height: 80px;
     float: left;
-    margin-right: 60px;
   }
   #author-bio p {
     margin-left: 104px;
