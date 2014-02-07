@@ -86,11 +86,12 @@ If you're curious as to how this works, [RFC
 
 ## Multiple API keys per marketplace
 
-This isn't so much a _new_ feature as one that we're just talking about now.
-It's long [been possible to programatically create and delete API
+This isn't so much a _new_ feature as one that we're just talking about now. And it
+lacks some polish, but given our open-ness, we like to talk about in-progress things
+too.  It's long [been possible to programatically create and delete API
 keys](https://github.com/balanced/balanced-api/blob/revision1/features/rest/api_keys.feature),
-but it wasn't really documented. We use this feature extensively for things like
-guest accounts, as well as [creating a clean environment every time we run
+but it wasn't really documented. We use this feature extensively for things
+like guest accounts, as well as [creating a clean environment every time we run
 acceptance
 tests](https://github.com/balanced/balanced-api/blob/revision1/features/support/initial_setup.rb#L8-L17).
 
