@@ -862,8 +862,7 @@ code {
 #author-bio .img-responsive {
   width: 80px;
   height: 80px;
-  float: left;
-  margin-right: 60px;
+  margin: 20px auto;
 }
 #article-nav {
   height: 40px;
@@ -1216,7 +1215,7 @@ code {
   }
   #author-bio {
     width: 189px;
-    padding-left: 24px;
+    padding-left: 0px;
     border-top: none;
     border-left: 1px solid #bfbeb9;
     float: right;
@@ -1228,7 +1227,7 @@ code {
     float: none;
   }
   #author-bio p {
-    margin-left: auto;
+    margin-left: 24px;
   }
   #article-nav {
     clear: both;
