@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Steve KLabnik
+author: Steve Klabnik
 author_image: /img/authors/steve_klabnik.png
 title: "More Details About Bitcoin"
 image: /img/blogimages/2_21_2014_image_600x424.jpg
@@ -56,7 +56,7 @@ integration and one of the Gittip team members. As they say:
 
 Finally, Balanced is generally interested in furthering all kinds of commerce,
 cryptocurrencies included. I've been gathering resources to write a whitepaper
-on cryptocurrencies and their affects on the payments industry, but it's not
+on cryptocurrencies and their effects on the payments industry, but it's not
 yet finished. You can see hints of parts of it in the preceding paragraph.
 The payments industry has integrated new technologies before, and will do so
 with cryptocurrencies as well.
@@ -103,7 +103,7 @@ in the exact same way.
 
 Step 4 changes slightly, as you're making a slightly different call. Rather
 than making a charge with a `Card` or `BankAccount`, you're making one with an
-`ExternalAccount`. You can see the API specifications for `ExternalCount`s [on
+`ExternalAccount`. You can see the API specifications for `ExternalAccount`s [on
 GitHub](https://github.com/balanced/balanced-api/blob/revision1/features/external_accounts.feature).
 Right now, the only provider of external accounts is Coinbase.
 
