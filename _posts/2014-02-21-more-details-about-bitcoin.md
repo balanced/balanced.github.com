@@ -2,7 +2,7 @@
 layout: post
 author: Steve Klabnik
 author_image: /img/authors/steve_klabnik.png
-title: "More Details About Bitcoin"
+title: "More Details About Our Bitcoin Integration"
 image: /img/blogimages/2_21_2014_image_600x424.jpg
 cover_image: /img/blogimages/2_21_2014_image_1020x340.jpg
 tags:
