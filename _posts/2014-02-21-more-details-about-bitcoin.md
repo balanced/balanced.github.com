@@ -152,3 +152,5 @@ currently generic, it won't actually work for anyone but our launch partners.
 Hopefully that answers all of your questions about this integration. We'd
 appreciate feedback [on the GitHub issue](https://github.com/balanced/balanced-api/issues/204)
 about any and all aspects of this feature.
+
+You can also discuss this post [on Hacker News](https://news.ycombinator.com/item?id=7279938) and/or [/r/bitcoin](http://www.reddit.com/r/Bitcoin/comments/1ykq2m/more_details_about_our_bitcoin_integration/).
