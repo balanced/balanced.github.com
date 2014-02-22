@@ -142,8 +142,8 @@ we need to get all of that going before a feature can be considered finished.
 Documentation is incredibly important, especially on how to test your
 integration.
 
-Lastly, there are a few small technical changes internally we need to make to
-make this happen automatically on a per-merchant basis. This follows the normal
+Lastly, there are a few small technical changes internally we need to make
+this happen automatically on a per-merchant basis. This follows the normal
 engineering practice of make it work, then make it scale. While the interface is
 currently generic, it won't actually work for anyone but our launch partners.
 
