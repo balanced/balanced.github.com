@@ -41,7 +41,7 @@ Here it is, but in more depth.
 
 Here's a diagram of how it all fits together:
 
-![Balanced Architecture]()
+![Balanced Architecture](img/blogimages/balanced_arch_1.jpg)
 
 This is the simplest version of the diagram. Let's talk about this, and then slowly dig into the details.
 
@@ -83,7 +83,7 @@ As you can see, the store is a really dumb, really simple piece of software. It'
 
 So that's how it works at a basic level, but there's much more to it than that. Let's expand the API part of the diagram:
 
-![Balanced Architecture 2]()
+![Balanced Architecture 2](img/blogimages/balanced_arch_2.jpg)
 
 One of the nice things about our API is that you don't get a 'test sandbox': you just create a 'test marketplace,' but still hit `https://api.balancedpayments.com` Test marketplaces are exactly like production marketplaces, except the PCI store knows not to propagate the charges to the card networks, and we don't charge you any money for transactions that occur on test marketplaces.
 
@@ -93,7 +93,7 @@ So we actually have a router component that checks to see if it's a test marketp
 
 ## Splitting up the API, and introducing `midlr`
 
-![Balanced Architecture 3]()
+![Balanced Architecture 3](img/blogimages/balanced_arch_3.jpg)
 
 "The API" isn't just one application, though: it's two! The API actually talks to a component called `precog`, which does our own fraud detection. So in reality, the conversation is "Hey `precog`, please charge card `/cards/123` $10", and if  `precog` says it's okay, it says "Hey `knox`, please charge card `/cards/123` $10." `knox` is the internal name of the PCI store, after [Fort Knox](http://www.knox.army.mil/).
 
@@ -105,7 +105,7 @@ We use `midlr` to filter out _all_ sensitive data. It ensures that no card infor
 
 Here's the last diagram. Red shows the network boundaries.
 
-![Balanced Architecture 4]()
+![Balanced Architecture 4](img/blogimages/balanced_arch_4.jpg)
 
 `knox`, `midlr`, and `js` are all on their own Amazon account. Only a subset of our staff has access to this: I personally wouldn't even know how to get into those servers. `precog`, `api`, and `router` are all on an Amazon account which most of our developers have access to, and that's where most of the actual work in building new features goes. Finally, your application is obviously not a part of Balanced, so I circled it separately too.
 
