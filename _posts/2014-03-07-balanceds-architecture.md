@@ -120,3 +120,7 @@ see the code, as well. :)
 
 I hope this has taught you a bit about how to properly design systems that deal with
 sensitive financial data.
+
+---
+
+Discuss on [HackerNews](https://news.ycombinator.com/item?id=7362442).
