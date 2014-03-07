@@ -34,7 +34,7 @@ that when you're dealing with people's money, that you get things right.
 In that light, I thought it would be prudent to share exactly how Balanced works under the hood.
 We want to eventually open source 100% of the software that powers Balanced, but we're not quite
 there yet. In the meantime, I'd like to share with you at a high level how Balanced actually works.
-I previously shared [some of this in my post about our Coinbase integration](more-details-about-bitcoin/), 
+I previously shared [some of this in my post about our Coinbase integration](/more-details-about-bitcoin/), 
 but this is a broader discussion of the rest of our architecture.
 
 ## The diagram(s)
