@@ -17,8 +17,7 @@ that runs financial systems. It's been in the news because of the massive
 [meltdown of Mt. Gox](http://www.wired.com/wiredenterprise/2014/03/bitcoin-exchange/),
 that most prominent of Bitcoin exchanges, as well as [Silk Road 2's transaction malleability
 bug](http://www.forbes.com/sites/andygreenberg/2014/02/13/silk-road-2-0-hacked-using-bitcoin-bug-all-its-funds-stolen/).
-While we wait for the Japanese bankruptcy courts to determine exactly what happened, (and
-[and maybe create new regulations](http://online.wsj.com/news/articles/SB10001424052702303630904579419862242970416?mg=reno64-wsj&url=http%3A%2F%2Fonline.wsj.com%2Farticle%2FSB10001424052702303630904579419862242970416.html))
+While we wait for the Japanese bankruptcy courts to determine exactly what happened, ([and maybe create new regulations](http://online.wsj.com/news/articles/SB10001424052702303630904579419862242970416?mg=reno64-wsj&url=http%3A%2F%2Fonline.wsj.com%2Farticle%2FSB10001424052702303630904579419862242970416.html))
 it's clear that software architecture (and quality) is at the heart of the
 discussion: [Mt. Gox's source code has been leaked](https://bitcointalk.org/index.php?topic=498522.0;all).
 The first post in that thread sums up the reactions that I've seen around the internet:
