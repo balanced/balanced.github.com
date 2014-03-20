@@ -2,9 +2,9 @@
 layout: post
 author: Marshall Jones
 author_image: /img/authors/marshall_jones.png
-title: Introducing Balanced rev 1.1: Now with Orders
-image: /img/blogimages/3_20_2014_image_600x424.jpg
-cover_image: /img/blogimages/3_20_2014_image_1020x340.jpg
+title: Introducing Balanced rev 1.1 - Now with Orders
+image: /img/blogimages/2014-03-20.jpg
+cover_image: /img/blogimages/2014-03-20-cover.jpg
 tags:
 - balanced
 - api
@@ -22,27 +22,27 @@ Let's break this down into a real-world use-case to help better illustrate how O
 ## A Quick Walkthrough 
 An Order would be a natural mapping to a campaign on your crowdfunding site. If Joe Blogs creates a campaign then you would also create an Order on Balanced. Let me whip out some ruby psuedo code. 
    
-```ruby
+{% highlight ruby %}
 seller = Balanced::Customer.find(seller_href)
 order = Balanced::Order.new(:customer => seller).save
-```
-   
+{% endhighlight %}
+
 Then, every time someone contributes to the campaign, you would simply associate the related card debit to the order. 
 
-```ruby
+{% highlight ruby %}
 card.debit(:amount => 100, :order => order)
-```
-   
+{% endhighlight %}
+
 Now we can interrogate the Order object to find out how much we've taken in for the campaign and other interesting facts
    
-```ruby
+{% highlight ruby %}
 order.amount_escrowed
 => 100
-```
-   
+{% endhighlight %}
+
 When the campaign closes, we can pay out to the merchant and take our cut, Balanced will ensure that the total amount paid out does not exceed the total amount paid into the Order. In this example we pay ourselves out 10% and the remainder to the merchant:
    
-```ruby
+{% highlight ruby %}
 profit = order.amount_escrowed * .10
 order.credit_to(
    :destination => merchant.bank_accounts.first, 
@@ -52,5 +52,6 @@ order.credit_to(
    :destination => Balanced::Marketplace.my_marketplace.owner_customer.bank_accounts.first, 
    :amount => profit
 )
-```
+{% endhighlight %}
+
 And that's all there is to Orders! Balanced focuses on providing features that address the problems marketplaces face as they scale their business. Orders save Balanced customers hundreds of thousands of dollars in accidental payouts and accoun reconciliation. If you'd like to discuss with us how Orders can help your business [send us an email](mailto:support@balancedpayments.com) or [jump into IRC](http://webchat.freenode.net/?channels=balanced&uio=MTE9OTIaf) and chat with a Balanced employee any time.
