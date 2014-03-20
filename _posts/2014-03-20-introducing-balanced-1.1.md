@@ -2,7 +2,7 @@
 layout: post
 author: Marshall Jones
 author_image: /img/authors/marshall_jones.png
-title: Introducing Balanced rev 1.1 - Now with Orders
+title: Introducing Balanced's New API: rev 1.1
 image: /img/blogimages/2014-03-20.jpg
 cover_image: /img/blogimages/2014-03-20-cover.jpg
 tags:
