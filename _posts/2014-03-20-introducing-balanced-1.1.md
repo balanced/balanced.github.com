@@ -54,4 +54,4 @@ order.credit_to(
 )
 {% endhighlight %}
 
-And that's all there is to Orders! Balanced focuses on providing features that address the problems marketplaces face as they scale their business. Orders save Balanced customers hundreds of thousands of dollars in accidental payouts and accoun reconciliation. If you'd like to discuss with us how Orders can help your business [send us an email](mailto:support@balancedpayments.com) or [jump into IRC](http://webchat.freenode.net/?channels=balanced&uio=MTE9OTIaf) and chat with a Balanced employee any time.
+And that's all there is to Orders! Balanced focuses on providing features that address the problems marketplaces face as they scale their business. Orders save Balanced customers hundreds of thousands of dollars in accidental payouts and account reconciliation. If you'd like to discuss with us how Orders can help your business [send us an email](mailto:support@balancedpayments.com) or [jump into IRC](http://webchat.freenode.net/?channels=balanced&uio=MTE9OTIaf) and chat with a Balanced employee any time.
