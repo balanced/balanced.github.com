@@ -45,7 +45,7 @@ When the campaign closes, we can pay out to the merchant and take our cut, Balan
 {% highlight ruby %}
 profit = order.amount_escrowed * .10
 order.credit_to(
-   :destination => merchant.bank_accounts.first, 
+   :destination => order.merchant.bank_accounts.first, 
    :amount => order.amount_escrowed - profit
 )
 order.credit_to(
