@@ -2,7 +2,7 @@
 layout: post
 author: Kimling Lam
 author_image: /img/authors/kimling_lam.png
-title: Quarterly Brief: Growth, Bitcoin Support, Events
+title: "Quarterly Brief: Growth, Bitcoin Support, Events"
 image: /img/blogimages/2014-04-02.jpg
 cover_image: /img/blogimages/2014-04-02-cover.jpg
 tags:
