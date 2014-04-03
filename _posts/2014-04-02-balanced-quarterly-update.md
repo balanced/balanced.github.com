@@ -1,10 +1,10 @@
 ---
 layout: post
 author: Kimling Lam
-author_image: /img/authors/author_kimling_lam.png
+author_image: /img/authors/kimling_lam.png
 title: Quarterly Brief: Growth, Bitcoin Support, Events
-image: /img/blogimages/4_2_2014_image_600x424.jpg
-cover_image: /img/blogimages/4_2_2014_image_1020x340.jpg
+image: /img/blogimages/2014-04-02.jpg
+cover_image: /img/blogimages/2014-04-02-cover.jpg
 tags:
 - balanced
 - newsletter
