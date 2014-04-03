@@ -40,6 +40,10 @@ We will be giving a live demo of new Balanced features at [FinovateSpring 2014](
 We have a limited amount of 50% off tickets reserved for investors. Please contact kimling@balancedpayments.com if you're an investor and want to get 50% off registration fees. 
 
 ## Neighbor.ly Love - Customers Love Us! 
+![Neighbor.ly Love](http://i.imgur.com/6wbaAy9.png?1)
+
 We're really happy to read about customers switching to Balanced and blogging about why they made the change. We're welcoming Neighbor.ly to the Balanced family after switching from Paypal and Authorize.net. Additionally, Neighbor.ly has been able to cut their project fee from 5% to 3%. Why did Neighbor.ly make the switch? [Read more...](http://blog.neighbor.ly/2014/switching-to-balanced-and-cutting-our-fee)
 
 
+Pay it forward,
+-[@kimling](https://twitter.com/kimling)
