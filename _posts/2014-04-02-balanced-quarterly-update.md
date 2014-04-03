@@ -46,4 +46,5 @@ We're really happy to read about customers switching to Balanced and blogging ab
 
 
 Pay it forward,
+
 -[@kimling](https://twitter.com/kimling)
