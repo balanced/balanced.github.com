@@ -15,7 +15,7 @@ tags:
 
 Balanced is now 23 full time employees strong, working hard to bring you the features and level of service you deserve. Please let us know if you have questions, comments or feedback. We're here to help. 
 
-## We're Now Processing Over $0.5 Billion a Year!
+## We're Now Processing Over Half a Billion a Year!
 Last quarter we announced how we're taking on PayPal and Stripe while experiencing incredible growth:
 - We were processing over $1M per day 
 - Transaction volume grew by 757% in 2013
@@ -29,7 +29,7 @@ Read more about our 2013 momentum in [TechCrunch](http://techcrunch.com/2014/01/
 ## Balanced adds Bitcoin support via Partnership with Coinbase
 ![Balanced Bitcoin](http://i.imgur.com/VrMilSz.jpg)
 
-[From Techcrunch] (http://techcrunch.com/2014/02/20/balanced-coinbase-bitcoin/): *Coinbase will be listed as an option right alongside options for accepting credit card payments. Users who wish to pay with bitcoin will be prompted to log in to their Coinbase digital wallet — sort of like logging into Facebook Connect — and then they’ll be able to instantly have money deducted from their account.*
+[From Techcrunch](http://techcrunch.com/2014/02/20/balanced-coinbase-bitcoin/): *Coinbase will be listed as an option right alongside options for accepting credit card payments. Users who wish to pay with bitcoin will be prompted to log in to their Coinbase digital wallet — sort of like logging into Facebook Connect — and then they’ll be able to instantly have money deducted from their account.*
 
 ## Demoing On-Stage at Finovate
 ![Finovate Demo](http://i.imgur.com/PQF7sM5.jpg)
