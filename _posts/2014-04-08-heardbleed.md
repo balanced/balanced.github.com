@@ -1,0 +1,128 @@
+---
+layout: post
+author: Steve Klabnik
+author_image: /img/authors/steve_klabnik.png
+title: "Heartbleed"
+image: /img/blogimages/2014-04-08.jpg
+cover_image: /img/blogimages/2014-04-08-cover.jpg
+tags:
+- balanced
+- security
+---
+
+# Heartbleed
+
+Yesterday, a serious vulnerability, [CVE-2014-0160](https://www.openssl.org/news/secadv_20140407.txt)
+\("[Heartbleed](https://heartbleed.com)"\), was disclosed regarding certain versions of
+[OpenSSL](https://www.openssl.org), a very popular library used on many websites on the internet.
+
+I'll cut to the chase: [Balanced](https://balancedpayments.com), like almost everyone on the web, was 
+affected by Hearbleed. **No customer data was directly leaked by this vulnerability, and we've since 
+patched our servers and rotated our keys.**
+
+If you use an official client library, we will be releasing some nice-to-have updates in the near 
+future. If you've logged into Balanced from a public or unsecure wifi connection, you may want to 
+rotate your API keys to be extra safe.
+
+Now that that's out of the way, let's talk details.
+
+## About Heartbleed
+
+You can read [http://heartbleed.com/](http://heartbleed.com/) for a full summary,
+but this paragraph explains it most succinctly:
+
+> The Heartbleed bug allows anyone on the Internet to read the memory of the
+> systems protected by the vulnerable versions of the OpenSSL software.
+> This compromises the secret keys used to identify the service providers and
+> to encrypt the traffic, the names and passwords of the users and the actual
+> content. This allows attackers to eavesdrop on communications, steal data
+> directly from the services and users and to impersonate services and users.
+
+Unfortunately, the versions of OpenSSL that were affected have been used widely
+over the last two years, and so quite a large number of hosts were affected. :(
+
+## How it affected Balanced
+
+If you read [my previous post on Balanced's
+architecture](http://blog.balancedpayments.com/balanceds-architecture/), you'll
+know that we are built in a very SOA style. This means that the primary hosts of
+ours that are exposed to the broader internet are
+https://api.balancedpayments.com and https://js.balancedpayments.com . Those
+both go through `midlr`, so it's really one set of servers that was affected.
+
+Remember, Heartbleed allows you to read the memory of the affected server.
+`midlr`, as an ELB, basically just terminates SSL and forwards the request on,
+the only sensitive information that's in RAM on `midlr` is the private key
+for our SSL certificates.
+
+So what happens when someone gets our SSL private key? In a certain sense, it
+turns HTTPS into HTTP: what was previously a confidential conversation between
+the two of us could be listened in by a third party. We have no evidence of any
+of our customers being man-in-the-middled to us.
+
+## Steps we are taking
+
+As a first step, we've upgraded OpenSSL on all of our hosts, regardless of their
+exposure, and we've rotated all of our keys.
+
+`knox`, our PCI store which contains our card data, has also undergone full key
+rotation, and we've re-encrypted all of our card data with a new key. You can
+never be too safe.
+
+We're currently discussing things with our upstream vendors to make sure that
+they are also patched up quickly.
+
+## Client libraries
+
+There's one small detail, though: client libraries need to use the new
+certificate, not the old one.
+
+Unfortunately, doing a survey of our most commonly used client libraries, it
+seems that support for doing this is pretty spotty, and requires manual
+intervention to verify that you're not using a valid-but-revoked certificate.
+
+:'(
+
+We are working on patches to add this functionality to our client libraries,
+but that will take some time. Expect an update soon.
+
+## Steps you may wish to take
+
+If you've logged into Balanced via a shady connection lately, you may wish
+to revoke your API keys and generate new ones. Here's how: First, go to your
+dashboard and choose 'settings'
+
+![settings](http://i.imgur.com/HFrk8Um.png)
+
+Next, scroll down to where your keys are: 
+
+![keys](http://i.imgur.com/iWmrXGb.png)
+
+This is a fresh test marketplace I created for just these screen shots. ;)
+
+Anyway, on the upper right there it says "Add key." Go head and make a new one,
+giving it a more memorable name than "Testing Testing." You now have two keys...
+
+![cancel](http://i.imgur.com/dL3lgQp.png)
+
+... and a button that lets you get rid of one.  You'll want to update your
+client library to use the new key before you get rid of the old one, but once
+you've done that, just click that `x` to get rid of your old key, and now
+you're just left with the new one:
+
+![one key](http://i.imgur.com/CfLUQJY.png)
+
+And that's it!
+
+If you have any questions about this vulnerabilty and how it affects you,
+we'd be happy to help. Please [jump into #balanced on
+Freenode](https://webchat.freenode.net/?channels=%23balanced) and
+ping `steveklabnik` or `mahmoudimus`, and we'd be happy to discuss
+it further.
+
+## Summary
+
+Every once in a while, a security issue happens. It's unfortunate that this one
+is so serious and yet so widespread. We take these kinds of issues very
+seriously, and take steps as quickly as we can to protect you and your data.
+
