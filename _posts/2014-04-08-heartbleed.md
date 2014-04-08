@@ -99,28 +99,9 @@ Here are some helpful links:
 - https://gist.github.com/mitsuhiko/10130454
 
 If you've logged into Balanced via an untrusted connection lately, you may wish
-to revoke your API keys and generate new ones. Here's how: First, go to your
-dashboard and choose 'settings'
+to revoke your API keys and generate new ones. We've built a convenient GIF for you:
 
-![settings](http://i.imgur.com/HFrk8Um.png)
-
-Next, scroll down to where your keys are: 
-
-![keys](http://i.imgur.com/iWmrXGb.png)
-
-This is a fresh test marketplace I created for just these screen shots. ;)
-
-Anyway, on the upper right there it says "Add key." Go head and make a new one,
-giving it a more memorable name than "Testing Testing." You now have two keys...
-
-![cancel](http://i.imgur.com/dL3lgQp.png)
-
-... and a button that lets you get rid of one.  You'll want to update your
-client library to use the new key before you get rid of the old one, but once
-you've done that, just click that `x` to get rid of your old key, and now
-you're just left with the new one:
-
-![one key](http://i.imgur.com/CfLUQJY.png)
+![ROTATENOW](http://i.imgur.com/s6KnEw8.gif)
 
 And that's it!
 
