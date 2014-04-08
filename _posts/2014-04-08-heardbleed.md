@@ -13,10 +13,10 @@ tags:
 # Heartbleed
 
 Yesterday, a serious vulnerability, [CVE-2014-0160](https://www.openssl.org/news/secadv_20140407.txt)
-\("[Heartbleed](https://heartbleed.com)"\), was disclosed regarding certain versions of
+\("[Heartbleed](http://heartbleed.com)"\), was disclosed regarding certain versions of
 [OpenSSL](https://www.openssl.org), a very popular library used on many websites on the internet.
 
-I'll cut to the chase: [Balanced](https://balancedpayments.com), like almost everyone on the web, was 
+We'll cut to the chase: [Balanced](https://balancedpayments.com), like almost everyone on the web, was 
 affected by Hearbleed. **No customer data was directly leaked by this vulnerability, and we've since 
 patched our servers and rotated our keys.**
 
@@ -45,27 +45,32 @@ over the last two years, and so quite a large number of hosts were affected. :(
 
 If you read [my previous post on Balanced's
 architecture](http://blog.balancedpayments.com/balanceds-architecture/), you'll
-know that we are built in a very SOA style. This means that the primary hosts of
+know that we are built using Service Oriented Architecture. This means that the primary hosts of
 ours that are exposed to the broader internet are
 https://api.balancedpayments.com and https://js.balancedpayments.com . Those
-both go through `midlr`, so it's really one set of servers that was affected.
+both go through `Midlr`, so it's really one set of servers that was affected.
 
-Remember, Heartbleed allows you to read the memory of the affected server.
-`midlr`, as an ELB, basically just terminates SSL and forwards the request on,
-the only sensitive information that's in RAM on `midlr` is the private key
+Remember, Heartbleed allows you to read the memory of the affected server --
+`Midlr`. The ELB essentially terminates SSL and forwards the request on,
+the only sensitive information that is in RAM on `Midlr` is the private key
 for our SSL certificates.
 
 So what happens when someone gets our SSL private key? In a certain sense, it
 turns HTTPS into HTTP: what was previously a confidential conversation between
-the two of us could be listened in by a third party. We have no evidence of any
-of our customers being man-in-the-middled to us.
+the two of us could be listened in by a third party.
+
+At this time, we have no evidence of any of our customers being 
+man-in-the-middled to us.
 
 ## Steps we are taking
 
 As a first step, we've upgraded OpenSSL on all of our hosts, regardless of their
 exposure, and we've rotated all of our keys.
 
-`knox`, our PCI store which contains our card data, has also undergone full key
+We also put pressure on AWS and were among the first companies to have our 
+ELBs upgraded.
+
+`Knox`, our PCI store which contains our card data, has also undergone full key
 rotation, and we've re-encrypted all of our card data with a new key. You can
 never be too safe.
 
@@ -88,7 +93,7 @@ but that will take some time. Expect an update soon.
 
 ## Steps you may wish to take
 
-If you've logged into Balanced via a shady connection lately, you may wish
+If you've logged into Balanced via an untrusted connection lately, you may wish
 to revoke your API keys and generate new ones. Here's how: First, go to your
 dashboard and choose 'settings'
 
