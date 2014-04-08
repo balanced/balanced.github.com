@@ -59,10 +59,7 @@ So what happens when someone gets our SSL private key? In a certain sense, it
 turns HTTPS into HTTP: what was previously a confidential conversation between
 the two of us could be listened in by a third party.
 
-At this time, we have no evidence of any of our customers being 
-man-in-the-middled to us.
-
-## Steps we are taking
+## Steps we have took/are taking
 
 As a first step, we've upgraded OpenSSL on all of our hosts, regardless of their
 exposure, and we've rotated all of our keys.
@@ -79,19 +76,27 @@ they are also patched up quickly.
 
 ## Client libraries
 
-There's one small detail, though: client libraries need to use the new
-certificate, not the old one.
+Doing a survey of our most commonly used client libraries, it seems that support
+for upgrading our client libraries to use certificates is pretty spotty, and requires
+manual intervention to verify that you're not using a valid-but-revoked certificate.
 
-Unfortunately, doing a survey of our most commonly used client libraries, it
-seems that support for doing this is pretty spotty, and requires manual
-intervention to verify that you're not using a valid-but-revoked certificate.
-
-:'(
+We will need to upgrade our client libraries need to use the new certificate.
 
 We are working on patches to add this functionality to our client libraries,
-but that will take some time. Expect an update soon.
+but that will take some time. Expect an update on that front soon.
 
 ## Steps you may wish to take
+
+### Check if you're vulnerable
+
+You can use publically available 3rd party code to check if your application stack is vulnerable.  
+Here are some helpful links:
+
+
+- http://filippo.io/Heartbleed/
+- https://github.com/FiloSottile/Heartbleed
+- https://gist.github.com/takeshixx/10107280
+- https://gist.github.com/mitsuhiko/10130454
 
 If you've logged into Balanced via an untrusted connection lately, you may wish
 to revoke your API keys and generate new ones. Here's how: First, go to your
