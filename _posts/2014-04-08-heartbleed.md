@@ -136,3 +136,4 @@ Every once in a while, a security issue happens. It's unfortunate that this one
 is so serious and yet so widespread. We take these kinds of issues very
 seriously, and take steps as quickly as we can to protect you and your data.
 
+-- Steve and Mahmoud
