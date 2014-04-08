@@ -3,8 +3,8 @@ layout: post
 author: Steve Klabnik
 author_image: /img/authors/steve_klabnik.png
 title: "Heartbleed"
-image: /img/blogimages/2014-04-08.png
-cover_image: /img/blogimages/2014-04-08-cover.png
+image: /img/blogimages/2014-04-08.jpg
+cover_image: /img/blogimages/2014-04-08-cover.jpg
 tags:
 - balanced
 - security
