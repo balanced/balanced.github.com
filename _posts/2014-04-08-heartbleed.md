@@ -59,7 +59,7 @@ So what happens when someone gets our SSL private key? In a certain sense, it
 turns HTTPS into HTTP: what was previously a confidential conversation between
 the two of us could be listened in by a third party.
 
-## Steps we have took/are taking
+## Steps we have taken
 
 As a first step, we've upgraded OpenSSL on all of our hosts, regardless of their
 exposure, and we've rotated all of our keys.
