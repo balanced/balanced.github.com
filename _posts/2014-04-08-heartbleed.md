@@ -17,7 +17,7 @@ Yesterday, a serious vulnerability, [CVE-2014-0160](https://www.openssl.org/news
 [OpenSSL](https://www.openssl.org), a very popular library used on many websites on the internet.
 
 We'll cut to the chase: [Balanced](https://balancedpayments.com), like almost everyone on the web, was 
-affected by Hearbleed. **No customer data was directly leaked by this vulnerability, and we've since 
+affected by Heartbleed. **No customer data was directly leaked by this vulnerability, and we've since 
 patched our servers and rotated our keys.**
 
 If you use an official client library, we will be releasing some nice-to-have updates in the near 
