@@ -87,8 +87,6 @@ but that will take some time. Expect an update on that front soon.
 
 ## Steps you may wish to take
 
-### Check if you're vulnerable
-
 You can use publically available 3rd party code to check if your application stack is vulnerable.  
 Here are some helpful links:
 
@@ -98,8 +96,8 @@ Here are some helpful links:
 - [https://gist.github.com/takeshixx/10107280](https://gist.github.com/takeshixx/10107280)
 - [https://gist.github.com/mitsuhiko/10130454](https://gist.github.com/mitsuhiko/10130454)
 
-If you've logged into Balanced via an untrusted connection lately, you may wish
-to revoke your API keys and generate new ones. We've built a convenient GIF for you:
+As an extra precaution, we advise you to rotate your Balanced API keys. (and you probably should for your
+other services, too.) We've built a convenient GIF for you:
 
 ![ROTATENOW](http://i.imgur.com/s6KnEw8.gif)
 
