@@ -102,39 +102,11 @@ like](https://github.com/balanced/balanced-api/commit/a71a415311929c88d8e8c976d6
 
 ```
 ===============
-accounts.update
+customers.create
 ===============
 
-:uri: /v1/marketplaces/(marketplace:marketplace)/accounts/(account:account)
-:methods: PUT
-
-
-Allows partial updates to accounts within your marketplace, all
-parameters are optional.
-
-
-.. list-table::
-    :widths: 20 80
-    :header-rows: 1
-
-    * - Name
-      - Description
-    * - ``email_address``
-      - The email address of the account, unique constraint.
-    * - ``name``
-      - The display name of the account `optional`.
-    * - ``merchant_uri``
-      - The URI of a merchant account created during a request
-        for more information
-    * - ``card_uri``
-      - The URI of a credit card tokenized via balanced.js. Setting
-        this will associate the card with this account as well as
-        setting it as the default funding source for this account.
-    * - ``bank_account_uri``
-      - The URI of a bank account tokenized via balanced.js. Setting
-        this will associate the bank account with this account as well
-        as setting it as the default funding destination **and**
-        funding source.
+:uri: /v1/marketplaces/(marketplace:marketplace)/customers
+:methods: POST
 ```
 
 This worked okay, but there were a few problems: there was no way for scenarios
@@ -189,24 +161,25 @@ Cucumber](https://github.com/balanced/balanced-api/pull/431). The Cucumber
 tests look like this:
 
 ```
-Feature: Test information
-  We provide our users with a number of test credit card and bank account
-  numbers. These test numbers allow you to reproduce specific kinds of success
-  or failures to test your system.
+Feature: Customers
 
-  We also provide test data for underwriting, identity verification, and AVS
-  information.
-
-  Note: all credit cards must include a future expiration date and month. This
-  is calculated automatically inside the test.
-
-  Scenario: Successful VISA charge.
-    The 4111111111111111 code gives you a VISA card that can be charged.
-
-    Given I've tokenized the card "4111111111111111" with the CVV "123"
-    When I debit the card
+  Scenario: Creating a customer
+    When I POST to /customers with the JSON API body:
+      """
+      {
+        "customers": [{
+          "name": "Balanced Testing"
+        }]
+      }
+      """
     Then I should get a 201 Created status code
-    Then the response is valid according to the "debits" schema
+    And the response is valid according to the "customers" schema
+    And the fields on this customer match:
+      """
+      {
+        "name": "Balanced Testing"
+      }
+      """
 ```
 
 I'm often skeptical of Cucumber, and it's often mis-used, but I think this is
