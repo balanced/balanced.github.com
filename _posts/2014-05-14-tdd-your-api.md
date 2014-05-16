@@ -205,6 +205,29 @@ which the spec failed while the feature was being built out helped [make sure
 that everyone was on the same
 page.](https://github.com/balanced/balanced-api/issues/607#issuecomment-43114594)
 
+## Getting outside feedback
+
+Having a public repository to talk about all of this has been very valuable.
+Even in the intial implementation, I was able to solicit feedback from [the
+authors](https://github.com/balanced/balanced-api/pull/431#issuecomment-29705876)
+of
+Cucumber](https://github.com/balanced/balanced-api/pull/431#issuecomment-29884794)
+and some [skeptical feedback from
+friends](https://github.com/balanced/balanced-api/pull/431#issuecomment-29706071).
+It's much harder to ask for feedback when you can't share the code. We try to be
+mostly open source anyway, but if we weren't, I wouldn't have to worry that I'd
+be leaking sensitive information, because the test repository is 100% public.
+
+We've also been able to get feedback on new features too. When Jon Matonis
+[criticized Balanced for not supporting
+Bitcoin](http://www.forbes.com/sites/jonmatonis/2012/11/26/payments-startup-balanced-innovates-in-wrong-direction/),
+we just [opened an issue](https://github.com/balanced/balanced-api/issues/204).
+There's a ton of discussion there, and we were able to explain some of our
+concerns, try to find solutions, and at least acknowledge the request in some
+way. Over a year later, this has materialized into our [partnership with
+Coinbase](http://blog.balancedpayments.com/bitcoin/), and I'll be able to close
+that issue soon.
+
 ## Going forward
 
 Now that we have a testable validation that our API is working as intended, we
