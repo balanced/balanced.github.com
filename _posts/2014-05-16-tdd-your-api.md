@@ -413,7 +413,7 @@ push-to-card. By using this approach, we caught problems before the
 feature was even finished. The initial implementation contained a bug with
 a typo in one of the response keys. There was [some
 confusion](https://github.com/balanced/balanced-api/issues/607) in one corner
-of the spec, and while some of the discussion happned in person, the ways in
+of the spec, and while some of the discussion happened in person, the ways in
 which the spec failed while the feature was being built out helped [make sure
 that everyone was on the same
 page.](https://github.com/balanced/balanced-api/issues/607#issuecomment-43114594)
@@ -421,7 +421,7 @@ page.](https://github.com/balanced/balanced-api/issues/607#issuecomment-43114594
 ## Getting outside feedback
 
 Having a public repository to talk about all of this has been very valuable.
-Even in the intial implementation, I was able to solicit feedback from [the
+Even in the initial implementation, I was able to solicit feedback from [the
 authors](https://github.com/balanced/balanced-api/pull/431#issuecomment-29705876)
 of
 [Cucumber](https://github.com/balanced/balanced-api/pull/431#issuecomment-29884794)
