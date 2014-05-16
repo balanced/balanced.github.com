@@ -208,5 +208,14 @@ general continuous integration suite. We'd like to run this test every hour, or
 every three hours, which can be a form of alerting against 
 [regressions](https://github.com/balanced/balanced-api/issues/591).
 
-But in general, I think this approach is quite sound. It's been a lot of fun to
-watch a feature come together from the outside.
+In order to do all that, we need to [fix our
+build](https://travis-ci.org/balanced/balanced-api/builds/25288588). That's
+what happens when you don't run the tests automatically: regressions can creep
+in and you won't realize it. These failures are all related to [a
+bug](https://github.com/balanced/balanced-api/issues/591) which only happens
+with a brand new marketplace, and doesn't strictly affect customer behavior. I
+wanted the fix to roll out before this post, but you don't always get what you
+want. This is a good reminder that tests are not perfect, and that they're a
+tool to alert you that something may have gone wrong, not proof that there's an
+error. Test code can be fragile or have bugs, too. But without these tests,
+we wouldn't have realized that there was a regression, no matter how small.
