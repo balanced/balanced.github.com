@@ -279,7 +279,10 @@ full glory. Can you find the dependent scenarios?
             "$ref": "responses/customers.json"
           matches: { "customers": [ { "merchant_status": "underwritten" } ] }
 
-`card_fixtures.yml`:
+Whew! That's a ton of stuff. `grep` can help you a bit here, but it's still not
+very fun. The same words repeat quite a bit.
+
+Here's `card_fixtures.yml`:
 
     require:
       - ./customer_fixtures.yml
