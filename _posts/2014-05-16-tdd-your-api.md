@@ -424,7 +424,7 @@ Having a public repository to talk about all of this has been very valuable.
 Even in the intial implementation, I was able to solicit feedback from [the
 authors](https://github.com/balanced/balanced-api/pull/431#issuecomment-29705876)
 of
-Cucumber](https://github.com/balanced/balanced-api/pull/431#issuecomment-29884794)
+[Cucumber](https://github.com/balanced/balanced-api/pull/431#issuecomment-29884794)
 and some [skeptical feedback from
 friends](https://github.com/balanced/balanced-api/pull/431#issuecomment-29706071).
 It's much harder to ask for feedback when you can't share the code. We try to be
