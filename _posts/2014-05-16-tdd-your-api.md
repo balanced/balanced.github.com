@@ -101,40 +101,36 @@ It was settled that reStructured Text was the answer. [Here's what they looked
 like](https://github.com/balanced/balanced-api/commit/a71a415311929c88d8e8c976d6199b493953800c),
 roughly.
 
-```
-===============
-accounts.create
-===============
+    ===============
+    accounts.create
+    ===============
 
-:uri: /v1/marketplaces/(marketplace:marketplace)/accounts
-:methods: POST
+    :uri: /v1/marketplaces/(marketplace:marketplace)/accounts
+    :methods: POST
 
-Fields
-******
+    Fields
+    ******
 
 
-.. list-table::
-   :widths: 20 80
-   :header-rows: 1
+    .. list-table::
+       :widths: 20 80
+       :header-rows: 1
 
-   * - Name
-     - Description
-   * - ``email_address``
-     - The email address of the account, unique constraint.
-   * - ``name``
-     - The display name of the account `optional`.
-```
+       * - Name
+         - Description
+       * - ``email_address``
+         - The email address of the account, unique constraint.
+       * - ``name``
+         - The display name of the account `optional`.
 
 Some bits removed for brevity. And then creating a card:
 
-```
-====================
-cards.create
-====================
+    ====================
+    cards.create
+    ====================
 
-:uri: /v1/marketplaces/(marketplace:marketplace)/cards
-:methods: POST
-```
+    :uri: /v1/marketplaces/(marketplace:marketplace)/cards
+    :methods: POST
 
 This was okay, but it wasn't great. For example, I now have an account, and I
 have a card, but I can't add that card to that account, because they're two
@@ -153,27 +149,25 @@ sought.
 The next iteration of this idea used YAML instead of rST. The YAML tests looked
 like this:
 
-```
-require:
-  - ../card_fixtures.yml
-  - ../customer_fixtures.yml
-scenarios:
-  - name: add_card_to_customer
-    request:
-      method: PATCH
-      href: "{card,cards.href}"
-      schema:
-        "$ref": "requests/_patch.json"
-      body: [{
-        "op": "replace",
-        "path": "/cards/0/links/customer",
-        "value": "{customer,customers.id}"
-      }]
-    response:
-      schema:
-        "$ref": "responses/cards.json"
-      matches: { "cards": [ { "links": { "customer": "{customer,customers.id}" } } ] }
-```
+    require:
+      - ../card_fixtures.yml
+      - ../customer_fixtures.yml
+    scenarios:
+      - name: add_card_to_customer
+        request:
+          method: PATCH
+          href: "{card,cards.href}"
+          schema:
+            "$ref": "requests/_patch.json"
+          body: [{
+            "op": "replace",
+            "path": "/cards/0/links/customer",
+            "value": "{customer,customers.id}"
+          }]
+        response:
+          schema:
+            "$ref": "responses/cards.json"
+          matches: { "cards": [ { "links": { "customer": "{customer,customers.id}" } } ] }
 
 It's almost a serialized HTTP request. Since they have names, they can refer to
 each other, and you can do things like interpolate variables, use a regular
@@ -192,173 +186,169 @@ full glory. Can you find the dependent scenarios?
 
 `customer_fixtures.yml`:
 
-```
-scenarios:
-  - name: customer
-    request:
-      method: POST
-      href: /customers
-      schema:
-        "$ref": "../requests/customer.json"
-      body: {
-        "name": "Balanced testing"
-      }
-    response:
-      status_code: 201
-      schema:
-        "$ref": "../responses/customers.json"
-
-  - name: underwritten_merchant
-    request:
-      method: POST
-      href: /customers
-      schema:
-        "$ref": "requests/customer.json"
-      body: {
-        "name": "Henry Ford",
-        "dob_month": 7,
-        "dob_year": 1963,
-        "address": {
-          "postal_code": "48120"
-        }
-      }
-    response:
-      status_code: 201
-      schema:
-        "$ref": "responses/customers.json"
-      matches: { "customers": [ { "merchant_status": "underwritten" } ] }
-
-  - name: customer_with_card
-    request:
-      method: POST
-      href: /customers
-      schema:
-        "$ref": "requests/customer.json"
-      body: {
-        "name": "Darius the Great",
-        "email": "darius.great@gmail.com",
-        "source": {
-          "name": "Darius the Great",
-          "number": "4111111111111111",
-          "expiration_month": 12,
-          "expiration_year": 2016,
-          "cvv": "123",
-          "address": {
-            "line1": "965 Mission St",
-            "line2": "Suite 425",
-            "city": "San Francisco",
-            "state": "CA",
-            "postal_code": "94103"
+    scenarios:
+      - name: customer
+        request:
+          method: POST
+          href: /customers
+          schema:
+            "$ref": "../requests/customer.json"
+          body: {
+            "name": "Balanced testing"
           }
-        },
-        "meta": {
-          "ip_address": "174.240.15.249"
-        }
-      }
-    response:
-      status_code: 201
-      schema:
-        "$ref": "responses/customers.json"
+        response:
+          status_code: 201
+          schema:
+            "$ref": "../responses/customers.json"
 
-  - name: merchant_with_bank_account
-    request:
-      method: POST
-      href: /customers
-      schema:
-        "$ref": "requests/customer.json"
-      body: {
-        "name": "Henry Ford",
-        "dob_month": 7,
-        "dob_year": 1963,
-        "address": {
-          "postal_code": "48120"
-        },
-        "destination": {
-          "name": "Kareem Abdul-Jabbar",
-          "account_number": "9900000000",
-          "routing_number": "021000021",
-          "account_type": "checking"
-        }
-      }
-    response:
-      status_code: 201
-      schema:
-        "$ref": "responses/customers.json"
-      matches: { "customers": [ { "merchant_status": "underwritten" } ] }
-```
+      - name: underwritten_merchant
+        request:
+          method: POST
+          href: /customers
+          schema:
+            "$ref": "requests/customer.json"
+          body: {
+            "name": "Henry Ford",
+            "dob_month": 7,
+            "dob_year": 1963,
+            "address": {
+              "postal_code": "48120"
+            }
+          }
+        response:
+          status_code: 201
+          schema:
+            "$ref": "responses/customers.json"
+          matches: { "customers": [ { "merchant_status": "underwritten" } ] }
+
+      - name: customer_with_card
+        request:
+          method: POST
+          href: /customers
+          schema:
+            "$ref": "requests/customer.json"
+          body: {
+            "name": "Darius the Great",
+            "email": "darius.great@gmail.com",
+            "source": {
+              "name": "Darius the Great",
+              "number": "4111111111111111",
+              "expiration_month": 12,
+              "expiration_year": 2016,
+              "cvv": "123",
+              "address": {
+                "line1": "965 Mission St",
+                "line2": "Suite 425",
+                "city": "San Francisco",
+                "state": "CA",
+                "postal_code": "94103"
+              }
+            },
+            "meta": {
+              "ip_address": "174.240.15.249"
+            }
+          }
+        response:
+          status_code: 201
+          schema:
+            "$ref": "responses/customers.json"
+
+      - name: merchant_with_bank_account
+        request:
+          method: POST
+          href: /customers
+          schema:
+            "$ref": "requests/customer.json"
+          body: {
+            "name": "Henry Ford",
+            "dob_month": 7,
+            "dob_year": 1963,
+            "address": {
+              "postal_code": "48120"
+            },
+            "destination": {
+              "name": "Kareem Abdul-Jabbar",
+              "account_number": "9900000000",
+              "routing_number": "021000021",
+              "account_type": "checking"
+            }
+          }
+        response:
+          status_code: 201
+          schema:
+            "$ref": "responses/customers.json"
+          matches: { "customers": [ { "merchant_status": "underwritten" } ] }
 
 `card_fixtures.yml`:
 
-```
-require:
-  - ./customer_fixtures.yml
-scenarios:
-  - name: card
-    request:
-      method: POST
-      href: /cards
-      schema:
-        "$ref": "requests/card.json"
-      body: {
-        "number": "4111 1111 1111 1111",
-        "expiration_month": 12,
-        "expiration_year": 2016,
-        "cvv": "123",
-        "address": {
-          "line1": "965 Mission St",
-          "postal_code": "94103"
-        }
-      }
-    response:
-      status_code: 201
-      schema:
-        "$ref": "responses/cards.json"
+    require:
+      - ./customer_fixtures.yml
+    scenarios:
+      - name: card
+        request:
+          method: POST
+          href: /cards
+          schema:
+            "$ref": "requests/card.json"
+          body: {
+            "number": "4111 1111 1111 1111",
+            "expiration_month": 12,
+            "expiration_year": 2016,
+            "cvv": "123",
+            "address": {
+              "line1": "965 Mission St",
+              "postal_code": "94103"
+            }
+          }
+        response:
+          status_code: 201
+          schema:
+            "$ref": "responses/cards.json"
 
-  - name: customer_card
-    request:
-      method: POST
-      href: /cards
-      schema:
-        "$ref": "requests/card.json"
-      body: {
-        "number": "4111 1111 1111 1111",
-        "expiration_month": 12,
-        "expiration_year": 2016,
-      }
-    response:
-      status_code: 201
-      schema:
-        "$ref": "responses/cards.json"
+      - name: customer_card
+        request:
+          method: POST
+          href: /cards
+          schema:
+            "$ref": "requests/card.json"
+          body: {
+            "number": "4111 1111 1111 1111",
+            "expiration_month": 12,
+            "expiration_year": 2016,
+          }
+        response:
+          status_code: 201
+          schema:
+            "$ref": "responses/cards.json"
 
-  - name: associate_customer_card_with_customer
-    request:
-      method: PUT
-      href: "{customer,customers.href}"
-      schema:
-        "$ref": "requests/customer.json"
-      body: {
-        "card_uri": "{customer_card,cards.href}"
-      }
-    response:
-      schema:
-        "$ref": "responses/customers.json"
+      - name: associate_customer_card_with_customer
+        request:
+          method: PUT
+          href: "{customer,customers.href}"
+          schema:
+            "$ref": "requests/customer.json"
+          body: {
+            "card_uri": "{customer_card,cards.href}"
+          }
+        response:
+          schema:
+            "$ref": "responses/customers.json"
 
-  - name: card_processor_failure
-    request:
-      method: POST
-      href: /cards
-      schema:
-        "$ref": "requests/card.json"
-      body: {
-        "number": "4444444444444448",
-        "expiration_month": 12,
-        "expiration_year": 2018
-      }
-    response:
-      status_code: 201
-      schema:
-        "$ref": "responses/cards.json"
-```
+      - name: card_processor_failure
+        request:
+          method: POST
+          href: /cards
+          schema:
+            "$ref": "requests/card.json"
+          body: {
+            "number": "4444444444444448",
+            "expiration_month": 12,
+            "expiration_year": 2018
+          }
+        response:
+          status_code: 201
+          schema:
+            "$ref": "responses/cards.json"
 
 You can explore the full suite
 [here](https://github.com/balanced/balanced-api/tree/54ec6f0d0cb5bcdfd1e36c1493c7ee247438db27).
@@ -386,30 +376,28 @@ Replacing this system was my first task here. [I decided to use
 Cucumber](https://github.com/balanced/balanced-api/pull/431). The Cucumber
 tests look like this:
 
-```
-Feature: Credit cards
+    Feature: Credit cards
 
-  Scenario: Add a card to a customer
-    Given I have tokenized a card
-    And I have created a customer
-    When I make a PATCH request to /cards/:card_id with the body:
-      """
-        [{
-          "op": "replace",
-          "path": "/cards/0/links/customer",
-          "value": ":customer_id"
-        }]
-      """
-    Then I should get a 200 OK status code
-    And I make a GET request to /cards/:card_id
-    Then the response is valid according to the "cards" schema
-    And the fields on this card match:
-      """
-        {
-          "links": { "customer": ":customer_id" }
-        }
-      """
-```
+      Scenario: Add a card to a customer
+        Given I have tokenized a card
+        And I have created a customer
+        When I make a PATCH request to /cards/:card_id with the body:
+          """
+            [{
+              "op": "replace",
+              "path": "/cards/0/links/customer",
+              "value": ":customer_id"
+            }]
+          """
+        Then I should get a 200 OK status code
+        And I make a GET request to /cards/:card_id
+        Then the response is valid according to the "cards" schema
+        And the fields on this card match:
+          """
+            {
+              "links": { "customer": ":customer_id" }
+            }
+          """
 
 I'm often skeptical of Cucumber, and it's often mis-used, but I think this is
 a pretty great use case. It's language agnostic, which is important to us, and
