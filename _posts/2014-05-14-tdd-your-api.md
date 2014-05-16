@@ -154,6 +154,15 @@ of work to get up and running.
 
 Time to throw it all out and do something again!
 
+At this point, it was clear that building something totally custom wasn't the
+right answer. The maintenance costs are just too high. And other people
+build APIs, so they _must_ do something like this, right? Well, while there
+are some tools for doing things like this, none of them are particuarly great.
+They were all missing at least one thing that we considered vital. One of the
+bigger issues is that many of these tools assume that you're simply doing 'Rails
+style REST,' and not using hypermedia. Or they require you to write a WSDL or
+WADL or use RAML.
+
 ## Eat your cucumbers!
 
 Replacing this system was my first task here. [I decided to use
