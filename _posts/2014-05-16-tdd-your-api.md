@@ -465,3 +465,8 @@ It's hard to get any complex software system behavior correct. So far, we've
 found that these external tests give us a really nice forum for working out
 these kinds of issues. They also give us something to share with our customers,
 and a way to ask for advice from experts outside of the company.
+
+You can discuss this post [on Hacker
+News](https://news.ycombinator.com/item?id=7756750),
+[/r/programming](http://www.reddit.com/r/programming/comments/25q6f8/tdd_your_api/),
+or [lobste.rs](https://lobste.rs/s/1bm3uf/tdd_your_api).
