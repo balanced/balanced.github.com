@@ -196,9 +196,18 @@ a pretty great use case. It's language agnostic, which is important to us, and
 it's got lots of room for explanations and clarifications.
 
 [Here](https://github.com/balanced/balanced-api/pull/580) are the specs for
-push-to-card. We already caught one bug with this approach, before the
-feature was even finished: the initial implementation contained a bug with
-a typo in one of the response keys.
+push-to-card. By using this approach, we caught problems before the
+feature was even finished. The initial implementation contained a bug with
+a typo in one of the response keys. There was [some
+confusion](https://github.com/balanced/balanced-api/issues/607) in one corner
+of the spec, and while some of the discussion happned in person, the ways in
+which the spec failed while the feature was being built out helped [make sure
+that everyone was on the same
+page.](https://github.com/balanced/balanced-api/issues/607#issuecomment-43114594)
+
+It's hard to get any complex software system behavior correct. So far, we've
+found that these external tests give us a really nice forum for working out
+these kinds of issues.
 
 ## Going forward
 
