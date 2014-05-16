@@ -3,8 +3,8 @@ layout: post
 author: Steve Klabnik
 author_image: /img/authors/steve_klabnik.png
 title: "TDD your API"
-image: /img/blogimages/5_14_2014_image_600x424.jpg
-cover_image: /img/blogimages/5_14_2014_image_1020x340.jpg
+image: /img/blogimages/5_16_2014_image_600x424.jpg
+cover_image: /img/blogimages/5_16_2014_image_1020x340.jpg
 tags:
 - balanced
 - api
