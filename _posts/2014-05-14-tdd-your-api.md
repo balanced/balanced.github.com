@@ -205,10 +205,6 @@ which the spec failed while the feature was being built out helped [make sure
 that everyone was on the same
 page.](https://github.com/balanced/balanced-api/issues/607#issuecomment-43114594)
 
-It's hard to get any complex software system behavior correct. So far, we've
-found that these external tests give us a really nice forum for working out
-these kinds of issues.
-
 ## Going forward
 
 Now that we have a testable validation that our API is working as intended, we
@@ -228,3 +224,8 @@ want. This is a good reminder that tests are not perfect, and that they're a
 tool to alert you that something may have gone wrong, not proof that there's an
 error. Test code can be fragile or have bugs, too. But without these tests,
 we wouldn't have realized that there was a regression, no matter how small.
+
+It's hard to get any complex software system behavior correct. So far, we've
+found that these external tests give us a really nice forum for working out
+these kinds of issues. They also give us something to share with our customers,
+and a way to ask for advice from experts outside of the company.
