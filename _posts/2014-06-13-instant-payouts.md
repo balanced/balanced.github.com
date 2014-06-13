@@ -3,10 +3,12 @@ layout: post
 author: Matin Tamizi
 author_image: /img/authors/matin_tamizi.png
 title: "Instant Payouts"
-image: /img/blogimages/2_20_2014_image_600x424.jpg
-cover_image: /img/blogimages/2_20_2014_image_1020x340.jpg
+image: /img/blogimages/1_22_2014_image.jpg
+cover_image: /img/blogimages/1_22_2014_image-cover.jpg
 tags:
 - instant
+- push-to-card
+- payouts
 ---
 
 
