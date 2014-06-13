@@ -13,8 +13,9 @@ tags:
 We released our [Push to Card](https://www.balancedpayments.com/push-to-card)
 API a few weeks ago to allow marketplaces to send money to a customer’s checking
 account using a debit card number. Starting today, Balanced now supports
-instant payouts to 50% of bank accounts in the US using the same API and debit
-card number.
+instant payouts to 50% of bank accounts in the U.S. using the same API and debit
+card number. We're working on bringing instant payouts to over 70% of debit card
+users in the U.S. in the coming weeks.
 
 ### What does "instant" mean?
 
