@@ -36,8 +36,8 @@ coverage.
 
 ### Why does instant matter?
 
-There's a period where a marketplace issues a payout to when the money shows up
-in a customer's bank account. We've affectionately referred to that period
+There's a delay from when a marketplace issues a payout to when the money shows up
+in a customer's bank account. We affectionately refer to the period during the delay
 as "the black hole of payments". It's the stressful period where a marketplace
 and their customer is left wondering, "Where's my money!?" We've tried to reduce
 the size of the black hole and provide more transparency into it, but we want to
