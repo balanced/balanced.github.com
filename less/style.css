@@ -616,9 +616,17 @@ a#footer-url {
 #yearfilter #filter-options a:hover {
   color: #000;
 }
+.pagination {
+  margin-bottom: 50px;
+  float: right;
+}
+.pagination a,
+.pagination span {
+  margin-right: 10px;
+}
 #masonry {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 #masonry:before,
 #masonry:after {

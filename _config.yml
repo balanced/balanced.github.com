@@ -8,7 +8,10 @@ pygments: true
 permalink: /:title
 
 lsi: false
-paginate: 5
+paginate: 24
+
+generic_cover_image: /img/blogimages/generic-cover.jpg
+generic_image: /img/blogimages/generic.jpg
 
 exclude:
 - CNAME

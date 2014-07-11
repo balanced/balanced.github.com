@@ -1,10 +1,8 @@
 <article class="item" id="list-item-featured">
   <a href="{{ post.url }}" rel="bookmark">
-    {% if post.image %}
     <div class="list-item-img" id="feat-img">
-      <img class="img-responsive" src="{{ post.cover_image }}" alt="{{ post.image_alt }}">
+      <img class="img-responsive" src="{% if post.cover_image %}{{ post.cover_image }}{% else %}{{site.generic_cover_image}}{% endif %}" alt="{{ post.image_alt }}">
     </div>
-    {% endif %}
     <div class="list-item-copy" id="feat-headline">
       <h2 class="entry-title">
         {{ post.title }}
