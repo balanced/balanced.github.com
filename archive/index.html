@@ -1,15 +1,24 @@
 ---
 layout: default
-title: My blog's archive
-description: All posts are gathered here
+title: Balanced Blog
+description: Balanced Blog Archive
 ---
 
 <article>
-    <ul class="posts-list hfeed">
-    {% for post in paginator.posts %}
-    {% include post-list-item.html %}
+    {% for post in site.posts %}
+        {% unless post.next %}
+          <h3>{{ post.date | date: '%Y' }}</h3>
+        {% else %}
+          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+          {% if year != nyear %}
+            <h3>{{ post.date | date: '%Y' }}</h3>
+          {% endif %}
+        {% endunless %}
+
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+
     {% endfor %}
-    </ul>
 </article>
 
 {% if site.tags.size > 0 %}

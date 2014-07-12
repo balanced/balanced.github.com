@@ -1,5 +1,10 @@
 $(document).ready(function(){
 	headerToggleInit();
+
+	$('#filter-options a').click(function(event){
+		console.log($(event.target).text())
+	});
+
 	function headerToggleInit(){
 		var open = false;
 		$('#filter-btn').click(function(){
