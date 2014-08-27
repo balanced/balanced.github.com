@@ -4,7 +4,7 @@ description: Balanced Blog
 url: http://blog.balancedpayments.com
 
 markdown: kramdown
-pygments: true
+highligher: true
 permalink: /:title
 
 lsi: false
