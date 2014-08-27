@@ -1,10 +1,10 @@
 ---
 layout: post
-author: Matin Tamizi
-author_image: /img/authors/matin_tamizi.png
+author: Andrew Nossiter
+author_image: /img/authors/andrew_nossiter.png
 title: "Announcing Dispute Portal and Mass Payout"
-image: /img/blogimages/instant-payouts-square.jpg
-cover_image: /img/blogimages/instant-payouts-landscape.jpg
+image: /img/blogimages/8_27_2014_image_600x424.jpg
+cover_image: /img/blogimages/8_27_2014_image_1020x340.jpg
 tags:
 - balanced
 - dashboard
