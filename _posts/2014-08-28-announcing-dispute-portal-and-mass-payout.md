@@ -13,7 +13,7 @@ tags:
 ---
 
 
-We recently released a couple of new features to Balanced Dashboard to make it easier for marketplaces to handle disputes and make a large number of payouts.
+We recently released a couple of new features to the Balanced Dashboard to make it easier for marketplaces to handle disputes and make a large number of payouts.
 
 ### Dispute Portal
 
@@ -25,7 +25,7 @@ Once you’ve clicked Submit the documentation and any notes that you’ve left 
 
 ### Mass Payout
 
-In another effort to streamline things on the Balanced dashboard, we’d also like to announce the introduction of a new masspay feature!  You’re now able to mass import payouts to the dashboard directly from a csv in order to send out large numbers of credits to your customers and sellers.  We’ve included step-by-step instructions of how to do this directly in your dashboard, so please review this by clicking on the “Import Payouts” link on your dashboard directly next to the transaction export link.
+In another effort to streamline things on the Balanced dashboard, we’d also like to announce the introduction of a new masspay feature!  You’re now able to mass import payouts to the dashboard directly from a CSV in order to send out large numbers of credits to your customers and sellers.  We’ve included step-by-step instructions of how to do this directly in your dashboard, so please review this by clicking on the “Import Payouts” link on your dashboard directly next to the transaction export link.
 
 ### Let us know
 
