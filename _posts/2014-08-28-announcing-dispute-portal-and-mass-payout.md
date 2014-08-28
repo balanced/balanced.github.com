@@ -17,8 +17,7 @@ We recently released a couple of new features to the Balanced Dashboard to make 
 
 ### Dispute Portal
 
-
-Handling credit card disputes can be a messy affair, but at Balanced we’re trying to make this process as painless as possible for our customers. Starting today you’ll be able to fight chargebacks directly via the dashboard without bothering to contact support thanks to our new dispute portal!
+Handling credit card disputes can be a messy affair, but at Balanced we’re trying to make this process as painless as possible for our customers. Starting today, you’ll be able to fight chargebacks directly via the dashboard without having to contact support thanks to our new dispute portal!
 
 ![Dispute portal](/img/blogimages/dispute-details-page.png)
 
@@ -26,7 +25,7 @@ We’ve tried to keep layout changes to a minimum for you, and to that effect th
 
 Please note that any documentation must be submitted in the format of a black and white PDF or JPEG, and each document must be no larger than 1MB in size. Remember, the more documentation that you have, the better! If you want to accept the dispute without protest, you won’t need to do anything; once the date to reply to the dispute by has passed it will automatically update to “lost”, effectively refunding your customer. For a helpful reminder of chargeback best practices, please review our <a href="https://support.balancedpayments.com/hc/en-us/categories/200147154-Fraud-Chargebacks">dispute documentation</a>.
 
-Once you’ve clicked "Submit", the documentation and any notes that you’ve left will be sent out to the credit card issuer, and the state of the dispute will update from “Pending” to “Submitted” to indicate that it’s already been addressed. Once the credit card issuer renders a decision the status will then update to “Won” or “Lost”.
+Once you’ve clicked "Submit", the documentation and notes will be sent out to the credit card issuer, and the state of the dispute will update from “Pending” to “Submitted” to indicate that it’s already been addressed. Once the credit card issuer renders a decision the status will then update to “Won” or “Lost”.
 
 ### Mass Payout
 
