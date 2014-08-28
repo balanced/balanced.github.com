@@ -3,8 +3,8 @@ layout: post
 author: Andrew Nossiter
 author_image: /img/authors/andrew_nossiter.png
 title: "Announcing Dispute Portal"
-image: /img/blogimages/8_27_2014_image_600x424.jpg
-cover_image: /img/blogimages/8_27_2014_image_1020x340.jpg
+image: /img/blogimages/8_28_2014_image_600x424.jpg
+cover_image: /img/blogimages/8_28_2014_image_1020x340.jpg
 tags:
 - balanced
 - dashboard
