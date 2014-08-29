@@ -11,7 +11,6 @@ tags:
 - dispute-portal
 ---
 
-
 Handling credit card disputes can be a messy affair, but at Balanced we are making this process as painless as possible for our customers. Starting today, you’ll be able to fight chargebacks directly via the dashboard without having to contact support thanks to our new dispute portal!
 
 ![Dispute portal](/img/blogimages/dispute-details-page.png)
