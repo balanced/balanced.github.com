@@ -2,7 +2,7 @@
 layout: post
 author: Matin Tamizi
 author_image: /img/authors/matin_tamizi.png
-title: "Balanced is shutting down in 90 days"
+title: "Balanced will be shutting down in 90 days"
 image: /img/blogimages/balanced-logo.jpg
 cover_image: /img/blogimages/balanced-logo-cover.jpg
 ---
