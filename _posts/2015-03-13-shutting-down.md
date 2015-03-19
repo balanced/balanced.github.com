@@ -18,7 +18,7 @@ Our full API and dashboard will be available over the next 90 days (until June 1
 
 We realize this is sudden and we're sorry for any inconvenience this causes. The full Balanced team will stay on for the 90-day migration period and a portion of the team will continue beyond then to make sure we're able to provide you with the level of support you need. We appreciate you working with us and want to do everything we can to minimize the impact on your business.
 
-To learn more about the migration, what it means to you, and the steps required to make the switch, go to balancedpayments.com/stripe. You'll be able to sign into your dashboard and begin the process to migrate your data to Stripe.
+To learn more about the migration, what it means to you, and the steps required to make the switch, go to [the migration FAQ](https://www.balancedpayments.com/stripe/faq). You'll be able to sign into your dashboard and begin the process to migrate your data to Stripe.
 
 Feel free to reach out to us at
 [support@balancedpayments.com](mailto:support@balancedpayments.com) or me at
